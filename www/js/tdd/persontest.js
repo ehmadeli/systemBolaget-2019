@@ -1,6 +1,6 @@
 let assert = require('assert');
-let Person = require('./person.js');
-let Systembolaget = require('./bolaget.js');
+let Person = require('../person.js');
+let Systembolaget = require('../bolaget.js');
 
 module.exports = class PersonTest {
 // constructor(){

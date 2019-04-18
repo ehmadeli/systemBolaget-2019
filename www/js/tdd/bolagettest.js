@@ -1,5 +1,5 @@
-let Systembolaget     = require('./bolaget');
-let Person = require('./person.js');
+let Systembolaget     = require('../bolaget');
+let Person = require('../person.js');
 let assert = require('assert');
 
 module.exports = class SystembolagetTest {

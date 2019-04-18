@@ -1,6 +1,6 @@
 let assert = require('assert');
-let Product = require('./product.js');
-let data = require('../json/sortiment.json');
+let Product = require('../product.js');
+let data = require('../../json/sortiment.json');
 //let Systembolaget = require('./bolaget.js');
 
 module.exports = class ProductTest {
