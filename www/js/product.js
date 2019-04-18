@@ -1,6 +1,6 @@
 let assert = require('assert');
 
-module.exports = class Product {
+class Product {
  
     constructor(data){
       // just transfer all properties 
@@ -18,3 +18,8 @@ module.exports = class Product {
   }
    
   // Nu är products en array med 18 695 instanser av Product
+  // Export the class as a module if on backend
+  
+if(typeof module === 'object'){
+    module.exports = Product;
+  }

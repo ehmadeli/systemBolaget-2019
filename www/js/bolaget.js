@@ -1,7 +1,7 @@
 let assert = require('assert');
 let Person = require('./person.js');
 
-module.exports = class Systembolaget {
+class Systembolaget {
   constructor(ageLimit){
     
     assert (typeof ageLimit == 'number', 'The ageLimit ' + ageLimit + ' is not a number');
@@ -33,4 +33,8 @@ module.exports = class Systembolaget {
     this.people.splice(this.people.indexOf(person), 1);
     console.log(person.name + ' left the store');
   }
+}
+
+if(typeof module === 'object'){
+  module.exports = Systembolaget;
 }

@@ -1,6 +1,6 @@
 let assert = require('assert');
 
-module.exports = class Person {
+class Person {
   constructor(name, age){
     
     assert (typeof name == 'string', 'The name ' + name + ' is not a string');
@@ -14,4 +14,8 @@ module.exports = class Person {
     this.name = name;
     this.age = age;
   }
+}
+
+if(typeof module === 'object'){
+  module.exports = Person;
 }

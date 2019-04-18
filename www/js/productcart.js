@@ -1,13 +1,11 @@
 let assert = require('assert');
 
-module.exports = class ProductCart {
- 
-    constructor(){
+class ProductCart {
+     constructor(){
       this.products = [];
       this.quantity = [];
     }
    
-
 addProductToCart(product, quantity = 1){
     this.products.push(product);
     this.quantity.push(quantity);
@@ -25,7 +23,9 @@ changeQuantityOfProduct(product, newQuantity){
         deleteProductFromCart(product);
     }
 }
-
 }
+if(typeof module === 'object'){
+    module.exports = ProductCart;
+  }
    
   
