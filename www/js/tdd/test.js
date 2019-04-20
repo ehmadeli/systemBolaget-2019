@@ -1,11 +1,13 @@
 let PersonTest = require('./persontest.js');
 let SystembolagetTest = require('./bolagettest.js');
 let ProductTest = require('./producttest.js');
+let ProductCartTest = require('./productcarttest.js');
 
 let allTests = [
     new PersonTest(),
     new SystembolagetTest(),
-    new ProductTest()
+    new ProductTest(),
+    new ProductCartTest()
 ]
 
 
