@@ -1,4 +1,5 @@
 let assert = require('assert');
+let fs = require('fs');
 let Product = require('../product.js');
 let ProductCart = require('../productcart.js');
 let data = require('../../json/sortiment.json');
@@ -68,9 +69,12 @@ testProducCartParameters(){
         "A prodCart was created with the price  of the product but now has a diff. price"
     );
  
+    //Save ProductCart to file
+    assert.doesNotThrow(
+         function() { prodCart.saveProductCart(); },
+         "The products quantity  is less then 1"
+     );
     
-  
-
 
   }
   

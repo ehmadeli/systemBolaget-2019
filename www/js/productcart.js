@@ -1,4 +1,5 @@
 let assert = require('assert');
+let fs = require('fs');
 let Product = require('./product.js');
 
 class ProductCart {
@@ -46,6 +47,14 @@ emptyProductCart(){
     }
 }
 
+saveProductCart(){
+    fs.writeFile('../../json/productcart.json', JSON.stringify(this), (err) => {
+        if (err) throw err;
+        console.log('The ProductCart file has been saved!');
+        return true;
+      });
+
+}
 
 
 }
