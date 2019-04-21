@@ -21,6 +21,7 @@ testProductNames(){
     assert.notEqual(tmp.namn, '', "The product with empty name exist");
 
     assert (typeof tmp.prisinklmoms == 'number', 'The products price ' + tmp.prisinklmoms + ' is not a number');
+    assert.notEqual(tmp.prisinklmoms, 0,  "The products price  equals Zero");
     assert (typeof tmp.prisPerLiter == 'number', 'The products price ' + tmp.prisPerLiter + ' is not a number');
 
     assert.notEqual(tmp.category, undefined, "The products category with no name exist");
