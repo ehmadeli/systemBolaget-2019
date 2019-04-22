@@ -48,7 +48,7 @@ emptyProductCart(){
 }
 
 saveProductCart(){
-    fs.writeFile('../../json/productcart.json', JSON.stringify(this), (err) => {
+    fs.writeFile('../../json/productcart.json', JSON.stringify(this, null, 2), (err) => {
         if (err) throw err;
         console.log('The ProductCart file has been saved!');
         return true;
