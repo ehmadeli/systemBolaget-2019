@@ -70,11 +70,23 @@ testProducCartParameters(){
     );
  
     //Save ProductCart to file
+    prodCart.addProductToCart(products[1], validQuantity);
+    prodCart.addProductToCart(products[5], validQuantity + 3);
     assert.doesNotThrow(
          function() { prodCart.saveProductCart(); },
-         "The products quantity  is less then 1"
+         "The  products cart  is not save"
      );
     
+
+    //Read ProductCart to object
+    assert.doesNotThrow(
+        function() { prodCart.readProductCart(); },
+        "The products cart  is not read"
+    );
+    assert(prodCart.products[0] == 'Renat', "The first product in productCart is not the same");
+    assert(prodCart.quantity[2] == 4, "The 3td product quantity in productCart is not the same");
+    assert(prodCart.price[1] == 139, "The second product price in productCart is not the same");
+
 
   }
   

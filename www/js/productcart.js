@@ -53,9 +53,20 @@ saveProductCart(){
         console.log('The ProductCart file has been saved!');
         return true;
       });
-
 }
 
+readProductCart(){
+    fs.readFile('../../json/productcart.json', (err, data) => {
+        if (err) throw err;
+        let cart = JSON.parse(data);
+        this.products = cart.products;
+        this.quantity = cart.quantity;
+        this.price = cart.price;
+        console.log('The ProductCart file has been read!');
+        console.log(this); // Test Only
+        return true;
+      });
+}
 
 }
 
