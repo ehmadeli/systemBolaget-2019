@@ -90,6 +90,82 @@ testProducCartParameters(){
 
   }
   
+  testProductCartNames(){
+    let products = [];
+    let prodCart = new ProductCart();
+    let validQuantity = 3;
+
+    for(let t of data){
+        let tmp = new Product(t);
+        tmp.category.push(tmp.varugrupp);
+        tmp.category.push(tmp.varugrupp + ' från ' + tmp.ursprunglandnamn);
+        products.push(tmp);
+    }
+
+    assert.throws(
+        function() { prodCart.addProductToCart(undefined, validQuantity); },
+        "A product cart without product was created"
+    );
+
+    assert.throws(
+        function() { prodCart.addProductToCart('', validQuantity); },
+        "A product cart with empty name was created"
+    );
+
+    assert.throws(
+        function() { prodCart.addProductToCart(1234, validQuantity); },
+        "A product cart with number-name was created"
+    );
+
+  }
+
+
+  testProductQuantity(){
+    let products = [];
+    let prodCart = new ProductCart();
+    let validQuantity = 1;
+
+    for(let t of data){
+        let tmp = new Product(t);
+        tmp.category.push(tmp.varugrupp);
+        tmp.category.push(tmp.varugrupp + ' från ' + tmp.ursprunglandnamn);
+        products.push(tmp);
+    }
+
+
+    let validproductName = 'Mouse';
+    assert.throws(
+      function() { prodCart.addProductToCart(validproductName, undefined); },
+      "A product with no productquentity was created"
+    );
+  assert.throws(
+    function() { prodCart.addProductToCart(validproductName, ' '); },
+    "A product with an empty string productquantity was created"
+  );
+  assert.throws(
+    function() { prodCart.addProductToCart(validproductName, '123456'); },
+    "A person with the productquantity-string '123456' was created"
+  );
+  assert.throws(
+    function() { prodCart.addProductToCart(validproductName, { quantity: 30 }); },
+    "A product with an productquantity - object was created"
+  );
+
+  // Try creating a product and then
+  // Check if the quentity of the product actually matches the value
+  // we used when creating it
+//   let p = product(validproductName, 0);
+//   assert(
+//     p.validproductquantity = 0,
+//     "A product was created with the productquantity 0 but now has a diff. quantity"
+//   );
+//   let p = product(validproductName, -1);
+//   assert(
+//     p.validproductquantity =-1,
+//     "A product was created with the productquantity -1 but now has a diff. quantity"
+//   );
+}
+
 
 
 }
