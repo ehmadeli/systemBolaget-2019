@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Feature:As a User, I should be able to see an overview of the shopping cart / its contents.
+=======
+Feature: As a User, I should be able to see an overview of the shopping cart / its contents.
+>>>>>>> master
 
 Scenario: Successfully overview the shopping cart
 Given that I have already products in the cart
