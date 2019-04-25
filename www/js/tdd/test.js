@@ -11,7 +11,8 @@ let allTests = [
     new ProductTest(),
     new ProductCartTest(),
     new CategoryTest(),
-    new Perchaseformtest(),
+    new Perchaseformtest()
+    
 ]
 
 for (let testClass of allTests){

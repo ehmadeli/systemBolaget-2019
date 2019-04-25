@@ -1,5 +1,6 @@
 let assert = require('assert');
 let Person = require('../person.js');
+let PurchaseForm = require('../purchaseform.js');
 let Systembolaget = require('../bolaget.js');
 
 module.exports = class PersonTest {
