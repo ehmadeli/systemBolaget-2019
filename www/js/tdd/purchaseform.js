@@ -11,9 +11,9 @@ class PurchaseForm {
     assert (age > 0, 'The age ' + age + ' is less than 0');
     assert (age <= 100, 'The age ' + age + ' is above 100');
 
-    assert (typeof address == 'string', 'The name ' + name + ' is not a string');
-    assert (isNaN(address), 'The name ' + name + ' only consists of a bunch of numbers');
-    assert (address != '', 'The name is an empty string');
+    assert (typeof address == 'string', 'The address ' + address + ' is not a string');
+    assert (isNaN(address), 'The address ' + address + ' only consists of a bunch of numbers');
+    assert (address != '', 'The address is an empty string');
 
     this.name = name;
     this.age = age;
