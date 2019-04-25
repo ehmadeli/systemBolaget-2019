@@ -1,5 +1,4 @@
-feature: 
-As a User, I should be able to remove 
+Feature:As a User, I should be able to remove 
 a product from my shopping cart.
 
 Scenario: successfully remove product from the shopping cart
