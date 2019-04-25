@@ -69,9 +69,14 @@ testProducCartParameters(){
         "A prodCart was created with the price  of the product but now has a diff. price"
     );
  
-    //Save ProductCart to file
+    //Test totalSum of ProductsCart
     prodCart.addProductToCart(products[1], validQuantity);
     prodCart.addProductToCart(products[5], validQuantity + 3);
+    console.log('>>>== ' + prodCart.totalSumOfProductsCart());
+    assert(prodCart.totalSumOfProductsCart() == 1067, 'TotalSum is not equal 1067');
+
+
+    //Save ProductCart to file
     assert.doesNotThrow(
          function() { prodCart.saveProductCart(); },
          "The  products cart  is not save"

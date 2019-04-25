@@ -48,6 +48,12 @@ emptyProductCart(){
     }
 }
 
+totalSumOfProductsCart(){
+    return this.price.reduce(function(a,b) {
+        return a + b;
+    }, 0);
+}
+
 saveProductCart(){
     fs.writeFile('../../json/productcart.json', JSON.stringify(this, null, 2), (err) => {
         if (err) throw err;
