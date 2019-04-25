@@ -1,4 +1,4 @@
-feature:
+Feature:
 As a User, I should be able to
 empty the entire shopping cart.
 

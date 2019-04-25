@@ -1,4 +1,4 @@
-feature:
+Feature:
 As a User, I must be able to make purchases without 
 registering an account. (Payment is not made for real)
 

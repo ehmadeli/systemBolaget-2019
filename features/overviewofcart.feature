@@ -1,4 +1,4 @@
-feature:
+Feature:
 As a User, I should be able to see an overview
 of the shopping cart / its contents.
 
