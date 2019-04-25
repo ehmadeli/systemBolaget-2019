@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 Feature: 
 As a User, I should be able to remove 
+=======
+Feature:As a User, I should be able to remove 
+>>>>>>> master
 a product from my shopping cart.
 
 Scenario: successfully remove product from the shopping cart

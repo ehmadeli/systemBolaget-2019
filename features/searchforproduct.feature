@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 Feature:
 As a user, I should be able to search
 for a product so that i can find it easily.
+=======
+Feature: As a user, I should be able to search for a product so that i can find it easily.
+>>>>>>> master
 
 Scenario: Successfully search for a product.
     Given that there is a product in the shop.
