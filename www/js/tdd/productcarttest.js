@@ -166,6 +166,52 @@ testProducCartParameters(){
 //   );
 }
 
+testRemoveProductFromCartNames(){
+    let products = [];
+    let prodCart = new ProductCart();
+    let validQuantity = 3;
 
+    for(let t of data){
+        let tmp = new Product(t);
+        tmp.category.push(tmp.varugrupp);
+        tmp.category.push(tmp.varugrupp + ' från ' + tmp.ursprunglandnamn);
+        products.push(tmp);
+    }
+    prodCart.addProductToCart(products[0], 1);
+    prodCart.addProductToCart(products[1],  3);
+    prodCart.addProductToCart(products[2],  2);
+    prodCart.addProductToCart(products[3],  3);
+    prodCart.addProductToCart(products[4],  1);
+    
+    assert.throws(
+        function() { prodCart.deleteProductFromCart(undefined)},
+        "A product with an undefined  was removed"
+      );
+
+      assert.throws(
+        function() { prodCart.deleteProductFromCart('Martini')},
+        "A product with an string  was removed"
+      );
+
+      assert.throws(
+        function() { prodCart.deleteProductFromCart('')},
+        "A product with an string  was removed"
+      );
+
+      assert.throws(
+        function() { prodCart.deleteProductFromCart(12345)},
+        "A product with an numbers  was removed"
+      );
+
+      //Testa remove the product
+      assert.doesNotThrow(
+        function() { prodCart.deleteProductFromCart(products[4]); },
+        "The products cart  is not removed"
+    );
+   assert.notEqual(prodCart.products[3], 'Viña Soledad', "The last product  in productCart is not removed");
+   //assert.equal(prodCart.products[2], 'Viña Soledad', "The last product  in productCart is not removed");
 
 }
+
+}
+
