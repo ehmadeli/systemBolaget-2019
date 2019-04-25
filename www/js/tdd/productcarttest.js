@@ -208,8 +208,17 @@ testRemoveProductFromCartNames(){
         function() { prodCart.deleteProductFromCart(products[4]); },
         "The products cart  is not removed"
     );
-   assert.notEqual(prodCart.products[3], 'Viña Soledad', "The last product  in productCart is not removed");
+   assert.notEqual(prodCart.products[prodCart.products.length -1], 'Viña Soledad', "The last product  in productCart is not removed");
    //assert.equal(prodCart.products[2], 'Viña Soledad', "The last product  in productCart is not removed");
+
+    assert(prodCart.products.length == 4, 'Products array has the same size after elements removing');
+    assert.notEqual(prodCart.products[prodCart.products.length -1], 'Viña Soledad', "The last product  in productCart is not removed");
+
+  //Testa remove the product with zero quantity
+  assert.throws(
+    function() {prodCart.addProductToCart(products[3],  0); },
+     "The product with zero quantity is added"
+    );
 
 }
 
