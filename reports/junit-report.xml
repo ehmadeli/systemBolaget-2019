@@ -2,10 +2,10 @@
 <testsuites>
     <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart." tests="3" failures="1" skipped="2">
         <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/addtocart.feature">
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\addtocart.feature">
             </property>
         </properties>
-        <testcase name="Given that a product is available in the shop" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart." time="15.002804484">
+        <testcase name="Given that a product is available in the shop" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart." time="15.006428653">
             <failure message="function timed out after 15000 milliseconds">function timed out after 15000 milliseconds</failure>
         </testcase>
         <testcase name="When I add the product to cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart.">
@@ -19,7 +19,7 @@
     </testsuite>
     <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart." tests="4" failures="0" skipped="4">
         <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/addtocart.feature">
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\addtocart.feature">
             </property>
         </properties>
         <testcase name="Given that a products are available in the shop" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart.">
@@ -41,7 +41,7 @@
     </testsuite>
     <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/addtocart.feature">
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\addtocart.feature">
             </property>
         </properties>
         <testcase name="Given that there is a product that is out of stock" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products">
@@ -53,258 +53,6 @@
             </skipped>
         </testcase>
         <testcase name="Then page should say &apos;Out of stock&apos;" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" tests="3" failures="0" skipped="2">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/adjustquantity.feature">
-            </property>
-        </properties>
-        <testcase name="Given the product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart">
-        </testcase>
-        <testcase name="When i press the minus button" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then it should decrease one product from the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-increase-of-the-same-product-in-the-shopping-cart" tests="3" failures="0" skipped="2">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/adjustquantity.feature">
-            </property>
-        </properties>
-        <testcase name="Given the product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-increase-of-the-same-product-in-the-shopping-cart">
-        </testcase>
-        <testcase name="When I press the plus button" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-increase-of-the-same-product-in-the-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then it should increase one product into the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-increase-of-the-same-product-in-the-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-adjust-amount-of-products-in-the-shopping-cart" tests="3" failures="0" skipped="2">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/adjustquantity.feature">
-            </property>
-        </properties>
-        <testcase name="Given the product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-adjust-amount-of-products-in-the-shopping-cart">
-        </testcase>
-        <testcase name="When i type into textbox the amount of products" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-adjust-amount-of-products-in-the-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then it should add as many products to the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-adjust-amount-of-products-in-the-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;the-quantity-of-the-product-can-never-go-below-one-if-it-does-it-is-removed" tests="3" failures="0" skipped="2">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/adjustquantity.feature">
-            </property>
-        </properties>
-        <testcase name="Given the product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;the-quantity-of-the-product-can-never-go-below-one-if-it-does-it-is-removed">
-        </testcase>
-        <testcase name="When i type the number of amount to zero in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;the-quantity-of-the-product-can-never-go-below-one-if-it-does-it-is-removed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then it should be removed from the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;the-quantity-of-the-product-can-never-go-below-one-if-it-does-it-is-removed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-select-different-amount-of-the-same-product." tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/differentquantities.feature">
-            </property>
-        </properties>
-        <testcase name="Given the product is available in the shop" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-select-different-amount-of-the-same-product.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When i click on the add button several times" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-select-different-amount-of-the-same-product.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then it should add as many products i want to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-select-different-amount-of-the-same-product.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/emptycart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that there are already several products in the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When i click on the empty shopping cart button" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then It should remove all the products from the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/overviewofcart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I have already products in the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click on the Cart button" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then I can see all the products in the cart and their details" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/purchasewithoutreg.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I have added the product in the shopping cart" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click on the buy button &apos;without registration&apos;" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then I should come to the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/purchasewithoutreg.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am already on the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I fill up the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And click on the buy button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then It should confirm me product is ordered" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/removeproduct.feature">
-            </property>
-        </properties>
-        <testcase name="Given that product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click on the remove button in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then It should be removed from the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-a-product." tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/searchforproduct.feature">
-            </property>
-        </properties>
-        <testcase name="Given that there is a product in the shop." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-a-product.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I search the product with the product number" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-a-product.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then this product comes up in the list" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-a-product.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found." tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/searchforproduct.feature">
-            </property>
-        </properties>
-        <testcase name="Given that there is no product left in the shop." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I search the product with the product number" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then it displayed the message &apos;Product not found&apos;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/shutbrowser.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I already have products in my cart" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I close my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And I reopen my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then I should get the same shopping cart as previous" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:/Users/Dindator/Desktop/systemBolaget-2019_New/systemBolaget-2019/features/shutbrowser.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I already have products in my cart" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I refresh my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then I should get the same shopping cart as previous" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser">
             <skipped message="">
             </skipped>
         </testcase>
