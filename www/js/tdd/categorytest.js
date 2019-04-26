@@ -17,7 +17,5 @@ testCategoryNames(){
         assert.notEqual(category.array[i], '', "The category entry with empty name exist");
        // console.log(category.array[i]);
     }    
-
-   
  }
  }

@@ -13,11 +13,12 @@ addProductToCart(product, quantity){
     assert (product instanceof Product, product + ' entering is not a Product');
 
     assert (typeof quantity == 'number', 'The products quantity ' + quantity + ' is not a number');
-    assert (quantity > 0, 'The products quantity  is less then 1');
+    assert (quantity > 0, 'The products quantity  is less then 0');
 
-    this.products.push(product.namn);
-    this.quantity.push(quantity);
-    this.price.push(quantity * product.prisinklmoms / 1);
+        this.products.push(product.namn);
+        this.quantity.push(quantity);
+        this.price.push(quantity * product.prisinklmoms / 1);
+    
 }
 
 deleteProductFromCart(product){
@@ -45,6 +46,12 @@ emptyProductCart(){
         this.quantity.splice(0,this.quantity.length);
         this.price.splice(0,this.price.length);
     }
+}
+
+totalSumOfProductsCart(){
+    return this.price.reduce(function(a,b) {
+        return a + b;
+    }, 0);
 }
 
 saveProductCart(){

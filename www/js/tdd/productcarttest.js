@@ -69,9 +69,14 @@ testProducCartParameters(){
         "A prodCart was created with the price  of the product but now has a diff. price"
     );
  
-    //Save ProductCart to file
+    //Test totalSum of ProductsCart
     prodCart.addProductToCart(products[1], validQuantity);
     prodCart.addProductToCart(products[5], validQuantity + 3);
+    console.log('>>>== ' + prodCart.totalSumOfProductsCart());
+    assert(prodCart.totalSumOfProductsCart() == 1067, 'TotalSum is not equal 1067');
+
+
+    //Save ProductCart to file
     assert.doesNotThrow(
          function() { prodCart.saveProductCart(); },
          "The  products cart  is not save"
@@ -208,8 +213,17 @@ testRemoveProductFromCartNames(){
         function() { prodCart.deleteProductFromCart(products[4]); },
         "The products cart  is not removed"
     );
-   assert.notEqual(prodCart.products[3], 'Viña Soledad', "The last product  in productCart is not removed");
+   assert.notEqual(prodCart.products[prodCart.products.length -1], 'Viña Soledad', "The last product  in productCart is not removed");
    //assert.equal(prodCart.products[2], 'Viña Soledad', "The last product  in productCart is not removed");
+
+    assert(prodCart.products.length == 4, 'Products array has the same size after elements removing');
+    assert.notEqual(prodCart.products[prodCart.products.length -1], 'Viña Soledad', "The last product  in productCart is not removed");
+
+  //Testa remove the product with zero quantity
+  assert.throws(
+    function() {prodCart.addProductToCart(products[3],  0); },
+     "The product with zero quantity is added"
+    );
 
 }
 

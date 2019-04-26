@@ -1,0 +1,3451 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cucumber Feature Report</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" >
+    <style type="text/css">
+      .panel-heading {
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .pull-right-lg {
+        float: left;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+.left {
+    float: left;
+}
+
+.metadata {
+    overflow: auto;
+    letter-spacing: 0.2px;
+    border-color: white;
+    line-height: 1.6;
+    color: #4d4d4d;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding-bottom: 3px;
+}
+
+.panel-heading a {
+    padding: 10px 15px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.panel-heading i.glyphicon-chevron-down {
+    display: none;
+}
+
+.panel-heading i.glyphicon-chevron-right {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-down {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-right {
+    display: none;
+}
+
+.generated-on {
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.panel-title b {
+    padding-right: 10px;
+}
+
+.panel-heading .label-container {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.panel-heading .label-container label {
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.navbar .label-container {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+
+.navbar {
+    margin-bottom: 10px;
+}
+
+.navbar .label {
+    font-size: 20px;
+}
+
+.navbar .project-name {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tags {
+    margin-left: 18px;
+    margin-right: 20px;
+    padding-top: 5px;
+    margin-bottom: -4px;
+}
+
+.tag {
+    font-size: 13px;
+    color: #696969;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.chart {
+    padding-bottom: 15px;
+}
+
+div.chart div div svg rect {
+    fill: #f5f5f5;
+}
+
+.arguments {
+    margin-left: 30px;
+    margin-top: 1em;
+}
+
+#directory {
+    background-color: #f0f0f0;
+}
+
+.screenshot {
+    padding: 2% 0 2% 0;
+}
+
+.description {
+    background-color: white;
+    border-color: white;
+    line-height: 1.6;
+    color: #6f6f6f;
+    font-weight: 400;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 0.1em 0.5em 1.2em 1.5em
+}
+
+#scenario-description {
+    padding-bottom: 1em;
+    padding-left: 0.2em;
+}
+
+.scrollBar {
+    overflow-x: scroll;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.info {
+    background-color: #fbfbfb;
+}
+
+pre {
+    display: block;
+    padding: 10px;
+    margin-top: 1em;
+    margin-right: 3em;
+    font-size: 13px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.step-duration {
+    float: right;
+    color: #BDBDBD;
+}
+
+.footer-div {
+    text-align: right;
+    vertical-align: middle;
+    height: 3.5%;
+    width: 100%;
+}
+
+.footer-container {
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 18%;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.show-modal:hover {
+    background-color: #f0f0f0;
+}
+
+.footer-link {
+    font-size: 13px;
+    float: right;
+}
+
+.footer-link:hover {
+    color: darkgray;
+}
+
+.steps {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: -4px;
+}
+
+.all-features {
+    padding-top: 0.6em;
+}
+
+.keyword {
+    color: #616161;
+}
+
+    </style>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+        
+          <a class="navbar-brand">Cucumberjs Report</a>
+          <div class="project-name visible-md visible-lg">-cucumber-intro</div>
+          <div class="label-container">
+            <span class="label label-success" title=scenarios>Passed: 0</span>
+            <span class="label label-danger" title=scenarios>Failed: 1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="generated-on">Thu Apr 25 2019 15:34:07 GMT+0200 (Central European Summer Time)</div>
+
+      <div class="row">
+        <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
+        <div class="chart col-lg-6 col-md-6" id="piechart_scenarios"></div>
+      </div>
+
+      
+
+      
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+    
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags">
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeature_cucumber_intro0">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>As a user, I should be able to add the selected product into the shopping cart to be able to buy the product
+                        <span class="label-container">
+              
+              <span class="label label-danger"
+                                                         title="1 Scenarios Failed">1</span>
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeature_cucumber_intro0" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro0_0">
+                                    <div>
+
+                                        <div style="padding-right: 70px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Successfully add a product to the cart.
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              <span class="label label-warning"
+                                                                title="3 Steps Skipped">3</span>
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro0_0"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> that a product is available in the shop</span>
+                            
+                          
+                              <span class="step-duration">
+                               15s 14ms
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_00"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_00"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_00">
+                                            <br> function timed out after 15000 milliseconds</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_00" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>function timed out after 15000 milliseconds</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> I select the product</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> put it in the cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> it should apear in the cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">After </span>
+                          <span> </span>
+                            
+                          
+                              <span class="step-duration">
+                               545ms
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+                                <a class="toggle" href="javascript: void(0);">Screenshot +</a>
+
+                                <a class="screenshot"
+                                   style="cursor: pointer"
+
+                                   data-toggle="modal"
+                                   data-target="#ss-modal-0_04">
+
+                                    <img class="screenshot" style="height:100%;width:100%;display:none;"
+                                         id="my-images" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAOnCAYAAADBRFtbAAAAAXNSR0IArs4c6QAAIABJREFUeJzs2cENwCAQwLDS/Xc+lkBCRPYE+WfNzHwAAAAAAAAAPO+/HQAAAAAAAADAGQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAC7PTuQAQAAABjkb32PrzQCmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAABHryE/AAADmklEQVQAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMBF4SgtKlRmlaAAAAABJRU5ErkJggg=="/>
+                                </a>
+
+                                <div class="modal fade" id="ss-modal-0_04" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="ss-modal-title">
+                                                    Screenshot
+                                                </h4>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img class="screenshot" style="height:100%;width:100%;"
+                                                     id="my-ss-images" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAOnCAYAAADBRFtbAAAAAXNSR0IArs4c6QAAIABJREFUeJzs2cENwCAQwLDS/Xc+lkBCRPYE+WfNzHwAAAAAAAAAPO+/HQAAAAAAAADAGQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAC7PTuQAQAAABjkb32PrzQCmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAABHryE/AAADmklEQVQAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMBF4SgtKlRmlaAAAAABJRU5ErkJggg=="/>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags">
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeature_cucumber_intro1">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>As a user, I should be able to adjust the quantity of a product anytime to fulfill my needs.
+                        <span class="label-container">
+              
+              
+              
+              
+              
+              <span class="label label-primary"
+                                                            title="4 Ambiguous Scenarios">4</span>
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeature_cucumber_intro1" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro1_0">
+                                    <div>
+
+                                        <div style="padding-right: 50px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>successfully decrease of the same product in the shopping cart
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              <span class="label label-warning"
+                                                                title="2 Steps Skipped">2</span>
+                              
+                              <span class="label label-primary"
+                                                                  title="1 Ambiguous Steps">1</span>
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro1_0"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-primary" title="Ambiguous"><i
+                                            class="glyphicon glyphicon-question-sign"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> the product is already in the shopping cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> i press the minus button</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> it should decrease one product from the cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro1_1">
+                                    <div>
+
+                                        <div style="padding-right: 50px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>successfully increase of the same product in the shopping cart
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              <span class="label label-warning"
+                                                                title="2 Steps Skipped">2</span>
+                              
+                              <span class="label label-primary"
+                                                                  title="1 Ambiguous Steps">1</span>
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro1_1"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-primary" title="Ambiguous"><i
+                                            class="glyphicon glyphicon-question-sign"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> the product is already in the shopping cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> I press the plus button</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> it should increase one product into the cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro1_2">
+                                    <div>
+
+                                        <div style="padding-right: 50px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>successfully adjust amount of products in the shopping cart
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              <span class="label label-warning"
+                                                                title="2 Steps Skipped">2</span>
+                              
+                              <span class="label label-primary"
+                                                                  title="1 Ambiguous Steps">1</span>
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro1_2"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-primary" title="Ambiguous"><i
+                                            class="glyphicon glyphicon-question-sign"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> the product is already in the shopping cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> i type into textbox the amount of products</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> it should add as many products to the cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro1_3">
+                                    <div>
+
+                                        <div style="padding-right: 50px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>The quantity of the product can never go below one if it does it is removed
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              <span class="label label-warning"
+                                                                title="2 Steps Skipped">2</span>
+                              
+                              <span class="label label-primary"
+                                                                  title="1 Ambiguous Steps">1</span>
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro1_3"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-primary" title="Ambiguous"><i
+                                            class="glyphicon glyphicon-question-sign"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> the product is already in the shopping cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> i type the number of amount to zero in the shopping cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> it should be removed from the cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+    
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags">
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeature_cucumber_intro2">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>As a user, I should be able to select different quantities of a product to my shopping cart to have control on my shopping.
+                        <span class="label-container">
+              
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeature_cucumber_intro2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro2_0">
+                                    <div>
+
+                                        <div style="padding-right: 10px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>successfully select different amount of the same product.
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro2_0"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> the product is available in the shop</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^the product is available in the shop$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> i click on the add button several times</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^i click on the add button several times$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> it should add as many products i want to the cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^it should add as many products i want to the cart$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags">
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeature_cucumber_intro3">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>As a User, I should be able to empty the entire shopping cart.
+                        <span class="label-container">
+              
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeature_cucumber_intro3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro3_0">
+                                    <div>
+
+                                        <div style="padding-right: 10px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Succssfully empty the whole shopping cart
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro3_0"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> that there are already several products in the cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^that there are already several products in the cart$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> i click on the empty shopping cart button</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^i click on the empty shopping cart button$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> It should remove all the products from the cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^It should remove all the products from the cart$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+    
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags">
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeature_cucumber_intro4">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>As a User, I should be able to see an overview of the shopping cart / its contents.
+                        <span class="label-container">
+              
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeature_cucumber_intro4" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro4_0">
+                                    <div>
+
+                                        <div style="padding-right: 10px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Successfully overview the shopping cart
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro4_0"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> that I have already products in the cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^that I have already products in the cart$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> I click on the Cart button</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^I click on the Cart button$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> I can see all the products in the cart and their details</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^I can see all the products in the cart and their details$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags">
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeature_cucumber_intro5">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>As a User, I must be able to make purchases without registering an account. (Payment is not made for real)
+                        <span class="label-container">
+              
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeature_cucumber_intro5" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro5_0">
+                                    <div>
+
+                                        <div style="padding-right: 10px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Successfully come to ordering page
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro5_0"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> that I have added the product in the shopping cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^that I have added the product in the shopping cart$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> I click on the buy button &#39;without registration&#39;</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^I click on the buy button 'without registration'$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> I should come to the ordering page</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^I should come to the ordering page$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro5_1">
+                                    <div>
+
+                                        <div style="padding-right: 10px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>successfully buy a product without having an account
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro5_1"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> that I am already on the ordering page</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^that I am already on the ordering page$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> I fill up the ordering page</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^I fill up the ordering page$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> click on the buy button</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^click on the buy button$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> It should confirm me product is ordered</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^It should confirm me product is ordered$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+    
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags">
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeature_cucumber_intro6">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>As a User, I should be able to remove
+                        <span class="label-container">
+              
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeature_cucumber_intro6" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    <div class="description">a product from my shopping cart.</div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro6_0">
+                                    <div>
+
+                                        <div style="padding-right: 10px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>successfully remove product from the shopping cart
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro6_0"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> that product is already in the shopping cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^that product is already in the shopping cart$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> I click on the remove button in the shopping cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^I click on the remove button in the shopping cart$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> It should be removed from the shopping cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^It should be removed from the shopping cart$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags">
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeature_cucumber_intro7">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>As a user, I should be able to search for a product so that i can find it easily.
+                        <span class="label-container">
+              
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeature_cucumber_intro7" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro7_0">
+                                    <div>
+
+                                        <div style="padding-right: 10px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Successfully search for a product.
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro7_0"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> that there is a product in the shop.</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^that there is a product in the shop.$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> I search the product with the product number</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^I search the product with the product number$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> this product comes up in the list</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^this product comes up in the list$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro7_1">
+                                    <div>
+
+                                        <div style="padding-right: 10px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Product not found.
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro7_1"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> that there is no product left in the shop.</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^that there is no product left in the shop.$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> I search the product with the product number</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^I search the product with the product number$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> it displayed the message &#39;Product not found&#39;</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^it displayed the message 'Product not found'$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+    
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags">
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeature_cucumber_intro8">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>As a User, I should be able to shut down the browser and reopen it with the same shopping cart.
+                        <span class="label-container">
+              
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeature_cucumber_intro8" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro8_0">
+                                    <div>
+
+                                        <div style="padding-right: 10px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Successfully be able to reopen with the same shopping cart even if browser is shut down
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro8_0"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> that I already have products in my cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^that I already have products in my cart$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> I close my browser</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^I close my browser$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> I reopen my browser</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^I reopen my browser$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> I should get the same shopping cart as previous</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^I should get the same shopping cart as previous$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenario_cucumber_intro8_1">
+                                    <div>
+
+                                        <div style="padding-right: 10px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Successfully be able to reopen with the same shopping cart even if i refresh the browser
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_cucumber_intro8_1"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> that I already have products in my cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^that I already have products in my cart$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> I refresh my browser</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^I refresh my browser$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> I should get the same shopping cart as previous</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+                                <pre class=info>
+<br>Then(/^I should get the same shopping cart as previous$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+    </div>
+
+    <div class="navbar-fixed-bottom row-fluid footer-div ">
+      <div class="navbar-inner">
+        <div class="footer-container">
+          <a  target="_blank" href="https://www.npmjs.com/package/cucumber-html-reporter">
+            <div class="text-muted footer-link">
+              generated by @cucumber-html-reporter
+            </div>
+             </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", {packages: ["corechart"]});
+        google.setOnLoadCallback(function() {drawChart({
+                                                            "title" : "Features",
+                                                            "failed" : 1,
+                                                            "passed" : 7,
+                                                            "notdefined" : 0,
+                                                            "pending" : 0,
+                                                            "skipped" : 0,
+                                                            "ambiguous" : 1
+                                                        })
+                                            });
+        google.setOnLoadCallback(function() {drawChart({
+                                                            "title" : "Scenarios",
+                                                            "failed" : 1,
+                                                            "passed" : 0,
+                                                            "notdefined" : 0,
+                                                            "pending" : 0,
+                                                            "skipped" : 0,
+                                                            "ambiguous" : 4
+                                                        })
+                                            });
+    </script>
+    <script>
+      $(document).ready(function() {
+    $('.collapse').on('hide.bs.collapse', function(e) {
+        e.stopPropagation();
+        $(this).prev().removeClass('open');
+    }).on('show.bs.collapse', function(e) {
+        e.stopPropagation();
+        $(this).prev().addClass('open');
+    });
+
+    var $generated = $('.generated-on');
+
+    $generated.text('Generated ' + moment($generated.text()).fromNow());
+});
+
+      function drawChart(chartData) {
+    var data = google.visualization.arrayToDataTable([
+        ['Task', 'Cucumber Results'],
+        ['Passed', chartData.passed],
+        ['Failed', chartData.failed],
+        ['Pending', chartData.pending],
+        ['Undefined', chartData.notdefined],
+        ['Ambiguous', chartData.ambiguous],
+        ['Skipped', chartData.skipped]        
+    ]);
+
+    var total = chartData.passed + chartData.failed + (chartData.pending || 0) + (chartData.notdefined || 0) + (chartData.ambiguous || 0) + (chartData.skipped || 0);
+    var title;
+
+    if (total === 1) {
+        title = total + ' ' + chartData.title.slice(0, -1)
+    } else {
+        title = total + ' ' + chartData.title;
+    }
+
+    var options = {
+        width: '100%',
+        height: 240,
+        title: title,
+        is3D: true,
+        colors: ['#5cb85c', '#d9534f', '#999', '#5bc0de', '#428bca', '#f0ad4e'],
+        fontSize: '13',
+        fontName: '"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif',
+        slices: {
+            1: {offset: 0.4},
+            2: {offset: 0.4},
+            3: {offset: 0.4},
+            4: {offset: 0.4},
+            5: {offset: 0.4},
+            6: {offset: 0.4}
+        },
+        titleTextStyle: {
+            fontSize: '13',
+            color: '#5e5e5e'
+        }
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart_' + chartData.title.toLowerCase()));
+    chart.draw(data, options);
+}
+      $('a.toggle').on('click', function() {
+
+    if ($(this).text() === 'Screenshot -') {
+        // $(this).text('Screenshot +');
+        $(this).next('a.screenshot').find('img').hide();
+    } else if($(this).text() === 'Screenshot +') {
+        // $(this).text('Screenshot -');
+        $(this).next('a.screenshot').find('img').show();
+    }
+
+    if ($(this).text().includes(' -')) {
+        $(this).text($(this).text().replace(' -', ' +'));
+    } else {
+        $(this).text($(this).text().replace(' +', ' -'));
+    }
+});
+
+    </script>
+  </body>
+</html>
