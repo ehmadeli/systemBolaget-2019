@@ -6,9 +6,14 @@
   "scripts": {
      "test": "node ./node_modules/selenium-cucumber-js/index.js && exit 1",
       "shijith": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/searchforproduct.feature & exit 0",
-      "priya": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/addtocart.feature & exit 0",
-      "pelle": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/empty-cart.feature & exit 0",
-      "petra": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/increase-quantity.feature & exit 0"
+      "priya1": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/addtocart.feature & exit 0",
+      "priya2": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/purchasewithoutreg.feature & exit 0",
+      "Emil": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/removeproduct.feature & exit 0",
+      "bahram": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/overviewofcart.feature & exit 0",
+      "shul1": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/adjustquantity.feature & exit 0",
+      "shul2": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/differentquantities.feature & exit 0",
+      "shul3": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/emptycart.feature & exit 0",
+      "shul4": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/shutbrowser.feature & exit 0"
     },
    
   "author": "",
