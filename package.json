@@ -4,8 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "node ./node_modules/selenium-cucumber-js/index.js && exit 1"
-  },
+     "test": "node ./node_modules/selenium-cucumber-js/index.js && exit 1",
+      "dennis": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/remove-from-cart.feature & exit 0",
+      "anna": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/add-to-cart.feature & exit 0",
+      "pelle": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/empty-cart.feature & exit 0",
+      "petra": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/increase-quantity.feature & exit 0"
+    },
+   
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -13,5 +18,8 @@
   },
   "devDependencies": {
     "express": "^4.16.4"
+  
   }
 }
+
+

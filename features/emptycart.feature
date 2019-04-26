@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+
 Feature:As a User, I should be able to empty the entire shopping cart.
-=======
+
 Feature: As a User, I should be able to empty the entire shopping cart.
->>>>>>> master
 
 Scenario: Succssfully empty the whole shopping cart
 Given that there are already several products in the cart
