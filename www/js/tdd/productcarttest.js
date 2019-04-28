@@ -68,6 +68,12 @@ testProducCartParameters(){
         prodCart.price[0] === 204,
         "A prodCart was created with the price  of the product but now has a diff. price"
     );
+
+    //Add the same product to the cart
+    assert.throws(
+      function() { prodCart.addProductToCart(products[0], validQuantity); },
+      "The same products was added to the cart"
+  );
  
     //Test totalSum of ProductsCart
     prodCart.addProductToCart(products[1], validQuantity);

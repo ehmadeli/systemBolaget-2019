@@ -2,19 +2,21 @@
   "products": [
     "Renat",
     "Motzenbäcker Marie",
-    "Purcari",
-    "Fighting Cock"
+    "Purcari"
+  ],
+  "prodnr": [
+    1,
+    75997,
+    75218
   ],
   "quantity": [
     1,
-    2,
-    6,
-    3
+    1,
+    4
   ],
   "price": [
     204,
-    278,
-    1086,
-    1722
+    139,
+    724
   ]
 }

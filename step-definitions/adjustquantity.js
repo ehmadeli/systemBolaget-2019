@@ -15,9 +15,11 @@ module.exports = function(){
       products.push(tmp);
   }
 
-  this.Given(/^the product is already in the shopping cart$/, function () {
-    prodCart.addProductToCart(products[0], 5);
+  prodCart.addProductToCart(products[0], 5);
     prodQuantity = prodCart.quantity[0];
+
+  this.Given(/^the product is already in the shopping cart$/, function () {
+    
     assert(prodCart.products.length > 0, 'The product cart does not have products');
   });
 

@@ -6,18 +6,20 @@ class ProductCart {
     
     constructor() {
         this.products = [];
+        this.prodnr = [];
         this.quantity = [];
         this.price = [];
     }
 
     addProductToCart(product, quantity) {
         assert(product instanceof Product, product + ' entering is not a Product');
-
+        assert(!this.prodnr.includes(product.varnummer), 'The same product was added to the cart');
         assert(typeof quantity == 'number', 'The products quantity ' + quantity + ' is not a number');
         assert(quantity > 0, 'The products quantity  is less then 0');
 
         // do not use three different arrays
         this.products.push(product.namn); // why not push the whole product
+        this.prodnr.push(product.varnummer);
         this.quantity.push(quantity);
         this.price.push(quantity * product.prisinklmoms / 1);
 
@@ -29,6 +31,7 @@ class ProductCart {
         //console.log(">>>== " + product + " ** " + product.namn); //For test only
 
         this.products.splice(this.products.indexOf(product.namn), 1);
+        this.prodnr.splice(this.products.indexOf(product.namn), 1);
         this.quantity.splice(this.products.indexOf(product.namn), 1);
         this.price.splice(this.products.indexOf(product.namn), 1);
     }
@@ -50,6 +53,7 @@ class ProductCart {
     emptyProductCart() {
         if (this.products.length > 0) {
             this.products.splice(0, this.products.length);
+            this.prodnr.splice(0, this.prodnr.length);
             this.quantity.splice(0, this.quantity.length);
             this.price.splice(0, this.price.length);
         }
