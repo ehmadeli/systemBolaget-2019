@@ -70,27 +70,12 @@ class ProductCart {
     }
 
      readProductCart(path = '../../json/productcart.json') {
-        let rawdata = fs.readFileSync(path, (err, data) => {
-            if (err) throw err;
-            console.log('The ProductCart file has been read!')});
-        return JSON.parse(rawdata);  
-        
-        }
-
-    // readProductCart(path = '../../json/productcart.json') {
-    //     fs.readFileSync(path, (err, data) => {
-    //         if (err) throw err;
-    //         let cart = JSON.parse(data);
-    //         this.products = cart.products;
-    //         this.quantity = cart.quantity;
-    //         this.price = cart.price;
-    //         console.log('The ProductCart file has been read!');
-    //         //console.log(this); // Test Only
-    //         //return true;
-    //     });
-    //}
-
-}
+        let tmp = JSON.parse(fs.readFileSync(path, 'utf8'));
+        //console.log(">>== ");
+        //console.log(tmp);
+        Object.assign(this,tmp);
+     }
+ }
 
 if (typeof module === 'object') {
     module.exports = ProductCart;

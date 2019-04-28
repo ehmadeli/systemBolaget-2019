@@ -36,10 +36,9 @@ module.exports = function(){
 
   this.When(/^I reopen my browser$/, {timeout: 30000}, function () {
     newCart.readProductCart('../systemBolaget-2019/www/json/productcart.json');
-    let str = JSON.stringify(newCart, null, 4)
-    console.log(str);
-    console.log("***");
-    
+    //let str = JSON.stringify(newCart, null, 4)
+    //console.log(str);
+        
     //assert(prodCart.readProductCart('../systemBolaget-2019/www/json/productcart.json'), "The product cart  is not readed from  the file");
     
   });
@@ -48,25 +47,21 @@ module.exports = function(){
       
      let str = JSON.stringify(oldCart, null, 4)
      console.log(str);
-     //console.log("***");
-    //   let str1 = JSON.stringify(newCart, null, 4)
-    //   console.log(str1);
+     console.log("***");
+     let str1 = JSON.stringify(newCart, null, 4)
+      console.log(str1);
 
 
     assert(Object.is(oldCart, newCart), "The product carts  is not the same");
 });
 
 
-
-  
-
 this.When(/^I refresh my browser$/, function () {
     
   });
 
   this.Then(/^I should get the same shopping cart as previous one$/, function () {
-    // Write code here that turns the phrase above into concrete actions
-    
+       
   });
 
 }
