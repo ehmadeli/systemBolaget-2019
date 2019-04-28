@@ -1,63 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-products-to-the-cart." tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\adjustquantity.feature">
+            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\differentquantities.feature">
             </property>
         </properties>
-        <testcase name="Given the product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" time="0.000522949">
+        <testcase name="Given the product is available in the shop" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-products-to-the-cart." time="0.085568076">
         </testcase>
-        <testcase name="When i press the minus button" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" time="0.000135551">
+        <testcase name="When I add 1 unit of the product to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-products-to-the-cart." time="0.000434972">
         </testcase>
-        <testcase name="Then it should decrease one product from the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" time="0.000125734">
+        <testcase name="Then it should be added 1 unit to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-products-to-the-cart." time="0.000083446">
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-increase-of-the-same-product-in-the-shopping-cart" tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-2-quantities-of-product-to-the-cart." tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\adjustquantity.feature">
+            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\differentquantities.feature">
             </property>
         </properties>
-        <testcase name="Given the product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-increase-of-the-same-product-in-the-shopping-cart" time="0.000171044">
+        <testcase name="Given the product is available in the shop" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-2-quantities-of-product-to-the-cart." time="0.092146285">
         </testcase>
-        <testcase name="When I increase the quantity for that product by one" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-increase-of-the-same-product-in-the-shopping-cart" time="0.000261286">
+        <testcase name="When I add 2 units of the product to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-2-quantities-of-product-to-the-cart." time="0.000164247">
         </testcase>
-        <testcase name="Then it should increase one product into the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-increase-of-the-same-product-in-the-shopping-cart" time="0.000337557">
+        <testcase name="Then it should be added 2 units to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-2-quantities-of-product-to-the-cart." time="0.000071362">
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;should-not-be-able-to-add-0-quantity-of-product-to-the-cart." tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\adjustquantity.feature">
+            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\differentquantities.feature">
             </property>
         </properties>
-        <testcase name="Given the product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" time="0.000148389">
+        <testcase name="Given the product is available in the shop" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;should-not-be-able-to-add-0-quantity-of-product-to-the-cart." time="0.109891441">
         </testcase>
-        <testcase name="When i decrease the quantity for that product by one" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" time="0.000265439">
+        <testcase name="When I add 0 units of the product to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;should-not-be-able-to-add-0-quantity-of-product-to-the-cart." time="0.000128377">
         </testcase>
-        <testcase name="Then it should decrease one product from the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" time="0.000119315">
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-adjust-amount-of-products-in-the-shopping-cart" tests="3" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\adjustquantity.feature">
-            </property>
-        </properties>
-        <testcase name="Given the product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-adjust-amount-of-products-in-the-shopping-cart" time="0.000202006">
-        </testcase>
-        <testcase name="When i type into textbox the amount of products" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-adjust-amount-of-products-in-the-shopping-cart" time="0.000254867">
-        </testcase>
-        <testcase name="Then it should add as many products to the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-adjust-amount-of-products-in-the-shopping-cart" time="0.000308106">
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;the-quantity-of-the-product-can-never-go-below-one-if-it-does-it-is-removed" tests="3" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\adjustquantity.feature">
-            </property>
-        </properties>
-        <testcase name="Given that there is already one product in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;the-quantity-of-the-product-can-never-go-below-one-if-it-does-it-is-removed" time="0.000492365">
-        </testcase>
-        <testcase name="When i decrease the quantity of that product by one" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;the-quantity-of-the-product-can-never-go-below-one-if-it-does-it-is-removed" time="0.000375693">
-        </testcase>
-        <testcase name="Then the product should be removed from the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;the-quantity-of-the-product-can-never-go-below-one-if-it-does-it-is-removed" time="0.00024958">
+        <testcase name="Then it should not be added to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;should-not-be-able-to-add-0-quantity-of-product-to-the-cart." time="0.000089109">
         </testcase>
     </testsuite>
 </testsuites>
