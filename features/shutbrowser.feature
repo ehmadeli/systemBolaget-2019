@@ -13,4 +13,4 @@ Then I should get the same shopping cart as previous
 Scenario: Successfully be able to reopen with the same shopping cart even if i refresh the browser
 Given that I already have products in my cart
 When I refresh my browser
-Then I should get the same shopping cart as previous
+Then I should get the same shopping cart as previous one

@@ -61,26 +61,34 @@ class ProductCart {
         }, 0);
     }
 
-    saveProductCart() {
-        fs.writeFile('../../json/productcart.json', JSON.stringify(this, null, 2), (err) => {
-            if (err) throw err;
+    saveProductCart(path = '../../json/productcart.json') {
+        fs.writeFileSync(path, JSON.stringify(this, null, 2), (err) => {
+            if (err)  throw err;
             console.log('The ProductCart file has been saved!');
-            return true;
+            //return true;
         });
     }
 
-    readProductCart() {
-        fs.readFile('../../json/productcart.json', (err, data) => {
+     readProductCart(path = '../../json/productcart.json') {
+        let rawdata = fs.readFileSync(path, (err, data) => {
             if (err) throw err;
-            let cart = JSON.parse(data);
-            this.products = cart.products;
-            this.quantity = cart.quantity;
-            this.price = cart.price;
-            console.log('The ProductCart file has been read!');
-            console.log(this); // Test Only
-            return true;
-        });
-    }
+            console.log('The ProductCart file has been read!')});
+        return JSON.parse(rawdata);  
+        
+        }
+
+    // readProductCart(path = '../../json/productcart.json') {
+    //     fs.readFileSync(path, (err, data) => {
+    //         if (err) throw err;
+    //         let cart = JSON.parse(data);
+    //         this.products = cart.products;
+    //         this.quantity = cart.quantity;
+    //         this.price = cart.price;
+    //         console.log('The ProductCart file has been read!');
+    //         //console.log(this); // Test Only
+    //         //return true;
+    //     });
+    //}
 
 }
 
