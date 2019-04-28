@@ -37,10 +37,13 @@ class ProductCart {
         assert(product instanceof Product, product + ' entering is not a Product');
         assert(typeof newQuantity == 'number', 'The products new quantity ' + newQuantity + ' is not a number');
 
-        let index = this.products.indexOf(product);
-        this.quantity[index] = newQuantity;
-        if (newQuantity == 0) {
-            deleteProductFromCart(product);
+        let index = this.products.indexOf(product.namn);
+        if(index != -1){
+            this.quantity[index] = newQuantity;
+            this.price[index] = newQuantity * product.prisinklmoms / 1;
+            if (newQuantity == 0) {
+                this.deleteProductFromCart(product);
+            }
         }
     }
 
