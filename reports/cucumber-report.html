@@ -270,7 +270,7 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">-cucumber-intro</div>
           <div class="label-container">
-            <span class="label label-success" title=scenarios>Passed: 0</span>
+            <span class="label label-success" title=scenarios>Passed: 2</span>
             <span class="label label-danger" title=scenarios>Failed: 0</span>
           </div>
         </div>
@@ -279,11 +279,7 @@ pre {
 
     <div class="container">
 
-<<<<<<< Updated upstream
-      <div class="generated-on">Fri Apr 26 2019 13:41:08 GMT+0200 (Central European Summer Time)</div>
-=======
-      <div class="generated-on">Fri Apr 26 2019 14:17:37 GMT+0200 (GMT+02:00)</div>
->>>>>>> Stashed changes
+      <div class="generated-on">Sun Apr 28 2019 13:48:12 GMT+0200 (GMT+02:00)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -307,9 +303,10 @@ pre {
                     <a data-toggle="collapse" href="#collapseFeature_cucumber_intro0">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>As a User, I must be able to make purchases without registering an account. (Payment is not made for real)
+                        <b>Feature:</b>As a User, I should be able to empty the entire shopping cart.
                         <span class="label-container">
-              
+              <span class="label label-success"
+                                                         title="2 Scenarios Passed">2</span>
               
               
               
@@ -322,7 +319,7 @@ pre {
             <div id="collapseFeature_cucumber_intro0" class="panel-collapse collapse">
                 <div class="panel-body">
                     
-                    <div class="description">Feature: As a User, I must be able to make purchases without registering an account. (Payment is not made for real)</div>
+                    <div class="description">Feature: As a User, I should be able to empty the entire shopping cart.</div>
                     
                     
                     <div class="panel panel-default">
@@ -337,14 +334,15 @@ pre {
                                    href="#collapseScenario_cucumber_intro0_0">
                                     <div>
 
-                                        <div style="padding-right: 10px">
+                                        <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Successfully come to ordering page
+                                            <b>Scenario:</b>Succssfully empty the cart with one product in the shopping cart
                                         </div>
                                         <div>
                             <span class="label-container">
-                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
                               
                               
                               
@@ -366,17 +364,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> that I have added the product in the shopping cart</span>
+                          <span> that there is already one product in the cart</span>
                             
                           
                               <span class="step-duration">
-                               0s
+                               < 1ms
                               </span>
                             
                          
@@ -385,17 +383,6 @@ pre {
                       </span>
                                 
                                 
-                                <pre class=info>
-<<<<<<< Updated upstream
-<br>Then(/^that I have added the product in the shopping cart$/, function(callback) {
-=======
-<br>Then(/^that a product is available in the shop$/, function(callback) {
->>>>>>> Stashed changes
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
-                                    
 
                                     
 
@@ -413,17 +400,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> I buy the products</span>
+                          <span> i remove the product from the shopping cart</span>
                             
                           
                               <span class="step-duration">
-                               0s
+                               < 1ms
                               </span>
                             
                          
@@ -432,13 +419,6 @@ pre {
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^I buy the products$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
-                                    
 
                                     
 
@@ -456,17 +436,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> I should come to the ordering page</span>
+                          <span> It should not contain any product</span>
                             
                           
                               <span class="step-duration">
-                               0s
+                               < 1ms
                               </span>
                             
                          
@@ -475,13 +455,6 @@ pre {
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^I should come to the ordering page$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
-                                    
 
                                     
 
@@ -494,6 +467,80 @@ pre {
                                 </p>
                                 
                                 
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">After </span>
+                          <span> </span>
+                            
+                          
+                              <span class="step-duration">
+                               15s 2ms
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_03"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_03"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_03">
+                                            <br> function timed out after 15000 milliseconds</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_03" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>function timed out after 15000 milliseconds</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
                                 
                                 
                             </div>
@@ -512,14 +559,15 @@ pre {
                                    href="#collapseScenario_cucumber_intro0_1">
                                     <div>
 
-                                        <div style="padding-right: 10px">
+                                        <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>successfully buy a product without having an account
+                                            <b>Scenario:</b>Succssfully empty the whole shopping cart with several products in the cart
                                         </div>
                                         <div>
                             <span class="label-container">
-                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
                               
                               
                               
@@ -541,17 +589,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> that I am already on the ordering page</span>
+                          <span> that there are already several products in the cart</span>
                             
                           
                               <span class="step-duration">
-                               0s
+                               < 1ms
                               </span>
                             
                          
@@ -560,13 +608,6 @@ pre {
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^that I am already on the ordering page$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
-                                    
 
                                     
 
@@ -584,17 +625,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> I fill up the ordering page</span>
+                          <span> i remove all the products from shopping cart button</span>
                             
                           
                               <span class="step-duration">
-                               0s
+                               < 1ms
                               </span>
                             
                          
@@ -603,13 +644,6 @@ pre {
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^I fill up the ordering page$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
-                                    
 
                                     
 
@@ -627,60 +661,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">And </span>
-                          <span> I buy the products by &#39;without registration&#39;</span>
-                            
-                          
-                              <span class="step-duration">
-                               0s
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-                                <pre class=info>
-<br>Then(/^I buy the products by 'without registration'$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> It should confirm me product is ordered</span>
+                          <span> It should not contain any products</span>
                             
                           
                               <span class="step-duration">
-                               0s
+                               < 1ms
                               </span>
                             
                          
@@ -689,13 +680,6 @@ pre {
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^It should confirm me product is ordered$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
-                                    
 
                                     
 
@@ -708,6 +692,80 @@ pre {
                                 </p>
                                 
                                 
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">After </span>
+                          <span> </span>
+                            
+                          
+                              <span class="step-duration">
+                               15s 
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_13"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_13"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_13">
+                                            <br> function timed out after 15000 milliseconds</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_13" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>function timed out after 15000 milliseconds</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
                                 
                                 
                             </div>
@@ -757,7 +815,7 @@ pre {
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
                                                             "failed" : 0,
-                                                            "passed" : 0,
+                                                            "passed" : 2,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
