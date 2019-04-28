@@ -26,9 +26,11 @@ class ProductCart {
     deleteProductFromCart(product) {
         assert(product instanceof Product, product + ' entering is not a Product');
 
-        this.products.splice(this.products.indexOf(product), 1);
-        this.quantity.splice(this.products.indexOf(product), 1);
-        this.price.splice(this.products.indexOf(product), 1);
+        //console.log(">>>== " + product + " ** " + product.namn); //For test only
+
+        this.products.splice(this.products.indexOf(product.namn), 1);
+        this.quantity.splice(this.products.indexOf(product.namn), 1);
+        this.price.splice(this.products.indexOf(product.namn), 1);
     }
 
     changeQuantityOfProduct(product, newQuantity) {
