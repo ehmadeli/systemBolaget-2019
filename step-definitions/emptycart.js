@@ -1,4 +1,3 @@
-//const App = require('../www/js/app.js');
 let Product = require('../www/js/product.js');
 let ProductCart = require('../www/js/productcart.js');
 let data = require('../www/json/sortiment.json');
