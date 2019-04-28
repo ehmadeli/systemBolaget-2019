@@ -1,3 +1,6 @@
+
+Feature:As a User, I should be able to empty the entire shopping cart.
+
 Feature: As a User, I should be able to empty the entire shopping cart.
 
 Scenario: Succssfully empty the cart with one product in the shopping cart

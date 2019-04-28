@@ -1,5 +1,14 @@
+
+Feature:As a user, I should be able to adjust the quantity of a product anytime to fulfill my needs.
+
 Feature: As a user, I should be able to adjust the quantity of a product anytime to fulfill my needs.
 
+
+
+    Scenario: successfully decrease of the same product in the shopping cart
+        Given the product is already in the shopping cart
+        When i press the minus button
+        Then it should decrease one product from the cart
 
     Scenario: successfully increase of the same product in the shopping cart
         Given the product is already in the shopping cart
