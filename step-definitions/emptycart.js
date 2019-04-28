@@ -49,34 +49,4 @@ this.Then(/^It should not contain any products$/, function () {
   assert(prodCart.products.length === 0 && prodCart.price.length === 0 && prodCart.quantity.length === 0 , 'The product cart contains anyproducts');
 });
 
-
-
-
-
-
-//   this.Given(/^that there are at least (\d+) coffees left in the machine$/, function (numberOfCups){
-//      machineInitialAmountsOfCups = numberOfCups;
-//      machine = new CoffeeMachine(numberOfCups / 1);
-//      assert.equal(numberOfCups, machine.coffeeLeft, 'The machine was not created with requested amount of coffee');
-//   });
-
-//   this.When(/^I insert (\d+) dollar$/,  function (amountOfMoney) {
-    
-//     machine.insertMoney(amountOfMoney / 1);
-//     assert.equal(amountOfMoney, machine.insertedMoney, 'The inserted money could not be found inside the machine...')
-//     //assert.equal(1, dollars /1, 'For now keep 1 dollar in the Gherkin scenario - because that is all the GUI can handle');
-//   });
-
-
-//   this.When(/^press the start button$/, function () {
-//     machine.pressStart();
-//   });
-
-//   this.Then(/^I should get one cup of coffee$/, function () {
-//     assert.equal(machine.output, '1 cup of coffee', 'We did not get a cup of coffee');
-//   });
-
-
-
-
 }

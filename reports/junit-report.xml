@@ -5,11 +5,11 @@
             <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\emptycart.feature">
             </property>
         </properties>
-        <testcase name="Given that there is already one product in the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" time="0.000694748">
+        <testcase name="Given that there is already one product in the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" time="0.00107535">
         </testcase>
-        <testcase name="When i remove the product from the shopping cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" time="0.000188035">
+        <testcase name="When i remove the product from the shopping cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" time="0.00029036">
         </testcase>
-        <testcase name="Then It should not contain any product" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" time="0.000100814">
+        <testcase name="Then It should not contain any product" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" time="0.000205781">
         </testcase>
     </testsuite>
     <testsuite name="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" tests="3" failures="0" skipped="0">
@@ -17,11 +17,11 @@
             <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\emptycart.feature">
             </property>
         </properties>
-        <testcase name="Given that there are already several products in the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" time="0.000395327">
+        <testcase name="Given that there are already several products in the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" time="0.000355303">
         </testcase>
-        <testcase name="When i remove all the products from shopping cart button" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" time="0.000321321">
+        <testcase name="When i remove all the products from shopping cart button" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" time="0.000370784">
         </testcase>
-        <testcase name="Then It should not contain any products" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" time="0.000237499">
+        <testcase name="Then It should not contain any products" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" time="0.000239009">
         </testcase>
     </testsuite>
 </testsuites>
