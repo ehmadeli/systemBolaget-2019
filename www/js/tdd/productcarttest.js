@@ -19,9 +19,6 @@ testProducCartParameters(){
         products.push(tmp);
     }
     
-    //Test Only
-    //console.log(products[0]);
-
     assert.throws(
         function() { prodCart.addProductToCart(undefined, validQuantity); },
         "A product cart without product was created"
@@ -37,19 +34,16 @@ testProducCartParameters(){
     );
      
     
-    /*assert.throws(
+    assert.throws(
         function() { prodCart.addProductToCart(products[0], -1); },
           "The products quantity  is less then 1"
       );
-
+      
      assert.throws(
          function() { prodCart.addProductToCart(products[0], 0); },
          "The products quantity  is less then 1"
-     );*/
+     );
     
-    // prodCart.addProductToCart(products[0], validQuantity);
-    // console.log('*** ' + prodCart.products[0]);
-
     assert.doesNotThrow(
         function() { prodCart.addProductToCart(products[0], validQuantity); },
         "The products quantity  is less then 1"
@@ -60,7 +54,7 @@ testProducCartParameters(){
     );
 
     assert(
-        prodCart.products[0] === 'Renat',
+        prodCart.products[0].namn === 'Renat',
         "A prodCart was created with the name of the product but now has a diff. name"
     );
 
@@ -88,17 +82,15 @@ testProducCartParameters(){
          "The  products cart  is not save"
      );
     
-
     //Read ProductCart to object
     assert.doesNotThrow(
         function() { prodCart.readProductCart(); },
         "The products cart  is not read"
     );
-    assert(prodCart.products[0] == 'Renat', "The first product in productCart is not the same");
+
+    assert(prodCart.products[0].namn == 'Renat', "The first product in productCart is not the same");
     assert(prodCart.quantity[2] == 4, "The 3td product quantity in productCart is not the same");
     assert(prodCart.price[1] == 139, "The second product price in productCart is not the same");
-
-
   }
   
   testProductCartNames(){
@@ -162,19 +154,6 @@ testProducCartParameters(){
     "A product with an productquantity - object was created"
   );
 
-  // Try creating a product and then
-  // Check if the quentity of the product actually matches the value
-  // we used when creating it
-//   let p = product(validproductName, 0);
-//   assert(
-//     p.validproductquantity = 0,
-//     "A product was created with the productquantity 0 but now has a diff. quantity"
-//   );
-//   let p = product(validproductName, -1);
-//   assert(
-//     p.validproductquantity =-1,
-//     "A product was created with the productquantity -1 but now has a diff. quantity"
-//   );
 }
 
 testRemoveProductFromCartNames(){
