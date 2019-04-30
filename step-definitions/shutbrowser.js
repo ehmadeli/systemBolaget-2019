@@ -12,7 +12,7 @@ module.exports = function(){
   let oldCart = new ProductCart();
   let newCart = new ProductCart();
   let app = new App();
-  app.loadAllProducts();
+  //app.loadAllProducts();
 
   
   prodCart.addProductToCart(app.products[0], 1);
