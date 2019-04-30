@@ -1,5 +1,6 @@
 const Product = require('./product.js');
 const ProductCart = require('./productcart.js');
+let data = require('../json/sortiment.json');
 
 module.exports = class App {
 
@@ -10,10 +11,11 @@ module.exports = class App {
 
     loadAllProducts(){
         this.products = [];
-        let temp = require('./sortiment.json');
-        for(let t of temp){
+        for(let t of data){
             this.products.push(new Product(t));
         }
+
+
     }
 
 

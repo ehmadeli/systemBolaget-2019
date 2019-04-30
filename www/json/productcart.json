@@ -30,10 +30,7 @@
       "koscher": 0,
       "ravarorBeskrivning": "Säd.",
       "iLager": 92,
-      "category": [
-        "Okryddad sprit",
-        "Okryddad sprit från Sverige"
-      ]
+      "category": []
     },
     {
       "nr": 7599701,
@@ -64,10 +61,7 @@
       "etiskt": 0,
       "koscher": 0,
       "iLager": 23,
-      "category": [
-        "Vitt vin",
-        "Vitt vin från Tyskland"
-      ]
+      "category": []
     },
     {
       "nr": 7521801,
@@ -98,20 +92,50 @@
       "etiskt": 0,
       "koscher": 0,
       "iLager": 0,
-      "category": [
-        "Rött vin",
-        "Rött vin från Moldavien"
-      ]
+      "category": []
+    },
+    {
+      "nr": 8587801,
+      "artikelid": 1000372,
+      "varnummer": 85878,
+      "namn": "Fighting Cock",
+      "namn2": "Kentucky Straight Bourbon",
+      "prisinklmoms": 574,
+      "volymiml": 1000,
+      "prisPerLiter": 574,
+      "saljstart": "2015-09-01",
+      "utgått": 0,
+      "varugrupp": "Whisky",
+      "typ": "Övrig",
+      "stil": {},
+      "forpackning": "Flaska",
+      "forslutning": {},
+      "ursprung": "Kentucky",
+      "ursprunglandnamn": "USA",
+      "producent": "Heaven Hill Distilleries",
+      "leverantor": "Fine Brands Sweden AB",
+      "argang": {},
+      "provadargang": {},
+      "alkoholhalt": 51.5,
+      "sortiment": "BS",
+      "sortimentText": "Övrigt sortiment",
+      "ekologisk": 0,
+      "etiskt": 0,
+      "koscher": 0,
+      "iLager": 47,
+      "category": []
     }
   ],
   "quantity": [
     1,
-    1,
-    4
+    2,
+    6,
+    3
   ],
   "price": [
     204,
-    139,
-    724
+    278,
+    1086,
+    1722
   ]
 }
