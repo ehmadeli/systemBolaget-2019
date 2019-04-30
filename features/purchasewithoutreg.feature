@@ -1,20 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Feature:
-As a User, I must be able to make purchases without 
-registering an account. (Payment is not made for real)
-=======
-=======
 
 Feature:As a User, I must be able to make purchases without registering an account. (Payment is not made for real)
-
->>>>>>> master
-=======
->>>>>>> master
-Feature: As a User, I must be able to make purchases without registering an account. (Payment is not made for real)
->>>>>>> master
-
 
 Scenario: Successfully come to ordering page  
 Given that I have added the product in the shopping cart
