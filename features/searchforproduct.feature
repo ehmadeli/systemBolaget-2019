@@ -1,7 +1,7 @@
 Feature: As a user, I should be able to search for a product so that i can find it easily.
 
     Scenario: Successfully search for products by name.
-        Given that i am searching by a partial name.
+        Given that i am searching by a partial name
         When I search the product 
         Then i should get a list of products with names that matches the name
 
