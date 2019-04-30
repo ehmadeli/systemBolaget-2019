@@ -1,7 +1,19 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+Feature:
+As a User, I should be able to shut down the browser
+and reopen it with the same shopping cart.
+=======
+=======
 
 Feature: As a User, I should be able to shut down the browser and reopen it with the same shopping cart.
 
+>>>>>>> master
+=======
+>>>>>>> master
 Feature:As a User, I should be able to shut down the browser and reopen it with the same shopping cart.
+>>>>>>> master
 
 
 Scenario: Successfully be able to reopen with the same shopping cart even if browser is shut down

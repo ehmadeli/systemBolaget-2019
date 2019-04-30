@@ -1,10 +1,21 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+Feature: 
+As a User, I should be able to remove 
+=======
+=======
 
 Feature: As a User, I should be able to remove a product from my shopping cart.
 
+<<<<<<< HEAD
+>>>>>>> master
 Feature:As a User, I should be able to remove 
+>>>>>>> master
 a product from my shopping cart.
 
 
+=======
+>>>>>>> master
 Scenario: successfully remove product from the shopping cart
 Given that product is already in the shopping cart
 When I click on the remove button in the shopping cart
