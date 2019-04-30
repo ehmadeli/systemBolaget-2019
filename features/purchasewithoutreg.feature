@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Feature:
 As a User, I must be able to make purchases without 
 registering an account. (Payment is not made for real)
@@ -8,6 +9,8 @@ registering an account. (Payment is not made for real)
 
 Feature:As a User, I must be able to make purchases without registering an account. (Payment is not made for real)
 
+>>>>>>> master
+=======
 >>>>>>> master
 Feature: As a User, I must be able to make purchases without registering an account. (Payment is not made for real)
 >>>>>>> master

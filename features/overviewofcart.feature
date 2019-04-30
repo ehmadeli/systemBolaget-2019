@@ -6,8 +6,11 @@ of the shopping cart / its contents.
 =======
 =======
 
+<<<<<<< HEAD
 Feature:As a User, I should be able to see an overview of the shopping cart / its contents.
 
+>>>>>>> master
+=======
 >>>>>>> master
 Feature: As a User, I should be able to see an overview of the shopping cart / its contents.
 >>>>>>> master

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Feature:
 As a User, I should be able to shut down the browser
 and reopen it with the same shopping cart.
@@ -8,6 +9,8 @@ and reopen it with the same shopping cart.
 
 Feature: As a User, I should be able to shut down the browser and reopen it with the same shopping cart.
 
+>>>>>>> master
+=======
 >>>>>>> master
 Feature:As a User, I should be able to shut down the browser and reopen it with the same shopping cart.
 >>>>>>> master

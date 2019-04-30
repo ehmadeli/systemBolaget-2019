@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-Feature:
-As a User, I should be able to
-empty the entire shopping cart.
-=======
-=======
-
-Feature:As a User, I should be able to empty the entire shopping cart.
-
->>>>>>> master
 Feature: As a User, I should be able to empty the entire shopping cart.
 >>>>>>> master
 
