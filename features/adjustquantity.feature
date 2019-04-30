@@ -1,6 +1,3 @@
-
-Feature:As a user, I should be able to adjust the quantity of a product anytime to fulfill my needs.
-
 Feature: As a user, I should be able to adjust the quantity of a product anytime to fulfill my needs.
 
 
