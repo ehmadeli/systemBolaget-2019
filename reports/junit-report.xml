@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" tests="4" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\shutbrowser.feature">
+            <property name="URI" value="C:\Users\Dindator\Desktop\new\systemBolaget-2019\features\purchasewithoutreg.feature">
             </property>
         </properties>
-        <testcase name="Given that I already have products in my cart" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.000475751">
+        <testcase name="Given that I have added the product in the shopping cart" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" time="0.000502187">
         </testcase>
-        <testcase name="When I close my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.003079547">
+        <testcase name="When I buy the products" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" time="0.000151894">
         </testcase>
-        <testcase name="And I reopen my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.000772152">
-        </testcase>
-        <testcase name="Then I should get the same shopping cart as previous" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.000186525">
+        <testcase name="Then I should come to the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" time="0.000156587">
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" tests="4" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\shutbrowser.feature">
+            <property name="URI" value="C:\Users\Dindator\Desktop\new\systemBolaget-2019\features\purchasewithoutreg.feature">
             </property>
         </properties>
-        <testcase name="Given that I already have products in my cart" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="0.000169534">
+        <testcase name="Given that I am already on the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.000197547">
         </testcase>
-        <testcase name="When I refresh my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="0.000203516">
+        <testcase name="When I fill up the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.000208214">
         </testcase>
-        <testcase name="Then I should get the same shopping cart as previous one" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="0.000180484">
+        <testcase name="And I buy the products by &apos;without registration&apos;" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.000216747">
+        </testcase>
+        <testcase name="Then It should confirm me product is ordered" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.015211972">
         </testcase>
     </testsuite>
 </testsuites>
