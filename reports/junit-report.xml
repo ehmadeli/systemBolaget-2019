@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\emptycart.feature">
+            <property name="URI" value="C:\Users\Dindator\Desktop\new\systemBolaget-2019\features\purchasewithoutreg.feature">
             </property>
         </properties>
-        <testcase name="Given that there is already one product in the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" time="0.00107535">
+        <testcase name="Given that I have added the product in the shopping cart" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" time="0.000502187">
         </testcase>
-        <testcase name="When i remove the product from the shopping cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" time="0.00029036">
+        <testcase name="When I buy the products" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" time="0.000151894">
         </testcase>
-        <testcase name="Then It should not contain any product" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" time="0.000205781">
+        <testcase name="Then I should come to the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" time="0.000156587">
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" tests="4" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\emptycart.feature">
+            <property name="URI" value="C:\Users\Dindator\Desktop\new\systemBolaget-2019\features\purchasewithoutreg.feature">
             </property>
         </properties>
-        <testcase name="Given that there are already several products in the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" time="0.000355303">
+        <testcase name="Given that I am already on the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.000197547">
         </testcase>
-        <testcase name="When i remove all the products from shopping cart button" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" time="0.000370784">
+        <testcase name="When I fill up the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.000208214">
         </testcase>
-        <testcase name="Then It should not contain any products" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" time="0.000239009">
+        <testcase name="And I buy the products by &apos;without registration&apos;" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.000216747">
+        </testcase>
+        <testcase name="Then It should confirm me product is ordered" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.015211972">
         </testcase>
     </testsuite>
 </testsuites>
