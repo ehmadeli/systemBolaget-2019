@@ -1,65 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-name." tests="3" failures="0" skipped="2">
+    <testsuite name="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" tests="4" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\searchforproduct.feature">
+            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\shutbrowser.feature">
             </property>
         </properties>
-        <testcase name="Given that i am searching by a partial name" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-name." time="0.025558433">
+        <testcase name="Given that I already have products in my cart" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.000475751">
         </testcase>
-        <testcase name="When I search the product" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-name.">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I close my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.003079547">
         </testcase>
-        <testcase name="Then i should get a list of products with names that matches the name" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-name.">
-            <skipped message="">
-            </skipped>
+        <testcase name="And I reopen my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.000772152">
+        </testcase>
+        <testcase name="Then I should get the same shopping cart as previous" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.000186525">
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-name2." tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\searchforproduct.feature">
+            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\shutbrowser.feature">
             </property>
         </properties>
-        <testcase name="Given that i am searching by a partial name." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-name2.">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that I already have products in my cart" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="0.000169534">
         </testcase>
-        <testcase name="When I search the product" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-name2.">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I refresh my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="0.000203516">
         </testcase>
-        <testcase name="Then i should get a list of products with names that matches the name2" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-name2.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-product-number." tests="3" failures="0" skipped="2">
-        <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\searchforproduct.feature">
-            </property>
-        </properties>
-        <testcase name="Given that i am searching by a product number." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-product-number." time="0.000329628">
-        </testcase>
-        <testcase name="When I search the product" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-product-number.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then i should get a list of products with names that matches with product number" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-product-number.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found." tests="3" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\searchforproduct.feature">
-            </property>
-        </properties>
-        <testcase name="Given that there is no product left in the shop." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found." time="0.000181616">
-        </testcase>
-        <testcase name="When I search the product with the product number" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found." time="0.000231835">
-        </testcase>
-        <testcase name="Then it displayed the message &apos;Product not found&apos;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found." time="0.000216353">
+        <testcase name="Then I should get the same shopping cart as previous one" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="0.000180484">
         </testcase>
     </testsuite>
 </testsuites>

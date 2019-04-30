@@ -270,7 +270,7 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">-cucumber-intro</div>
           <div class="label-container">
-            <span class="label label-success" title=scenarios>Passed: 1</span>
+            <span class="label label-success" title=scenarios>Passed: 2</span>
             <span class="label label-danger" title=scenarios>Failed: 0</span>
           </div>
         </div>
@@ -279,7 +279,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Tue Apr 30 2019 12:08:41 GMT+0200 (GMT+02:00)</div>
+      <div class="generated-on">Tue Apr 30 2019 14:03:46 GMT+0200 (GMT+02:00)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -303,15 +303,14 @@ pre {
                     <a data-toggle="collapse" href="#collapseFeature_cucumber_intro0">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>As a user, I should be able to search for a product so that i can find it easily.
+                        <b>Feature:</b>As a User, I should be able to shut down the browser and reopen it with the same shopping cart.
                         <span class="label-container">
               <span class="label label-success"
-                                                         title="1 Scenarios Passed">1</span>
+                                                         title="2 Scenarios Passed">2</span>
               
               
               
-              <span class="label label-warning"
-                                                          title="3 Scenarios Skipped">3</span>
+              
               
                         </span>
                     </a>
@@ -319,6 +318,8 @@ pre {
             </div>
             <div id="collapseFeature_cucumber_intro0" class="panel-collapse collapse">
                 <div class="panel-body">
+                    
+                    <div class="description">Feature:As a User, I should be able to shut down the browser and reopen it with the same shopping cart.</div>
                     
                     
                     <div class="panel panel-default">
@@ -333,19 +334,18 @@ pre {
                                    href="#collapseScenario_cucumber_intro0_0">
                                     <div>
 
-                                        <div style="padding-right: 50px">
+                                        <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Successfully search for products by name.
+                                            <b>Scenario:</b>Successfully be able to reopen with the same shopping cart even if browser is shut down
                                         </div>
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="1 Steps Passed">1</span>
+                                                               title="4 Steps Passed">4</span>
                               
                               
-                              <span class="label label-warning"
-                                                                title="1 Steps Skipped">1</span>
+                              
                               
                               
                             </span>
@@ -370,11 +370,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> that i am searching by a partial name</span>
+                          <span> that I already have products in my cart</span>
                             
                           
                               <span class="step-duration">
-                               25ms
+                               < 1ms
                               </span>
                             
                          
@@ -400,17 +400,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> I search the product</span>
+                          <span> I close my browser</span>
                             
                           
                               <span class="step-duration">
-                               0s
+                               3ms
                               </span>
                             
                          
@@ -419,13 +419,6 @@ pre {
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^I search the product$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
-                                    
 
                                     
 
@@ -443,17 +436,53 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> I reopen my browser</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> i should get a list of products with names that matches the name</span>
+                          <span> I should get the same shopping cart as previous</span>
                             
                           
                               <span class="step-duration">
-                               0s
+                               < 1ms
                               </span>
                             
                          
@@ -489,7 +518,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               14s 999ms
+                               15s 1ms
                               </span>
                             
                          
@@ -500,18 +529,18 @@ pre {
                                 
 
                                     
-                                    <a href="#error0_03"
+                                    <a href="#error0_04"
                                        data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_03"
+                                    <div id="error0_04"
                                          class="collapse">
                                         <pre class="info show-modal"
                                              data-toggle="modal"
                                              style="cursor: pointer"
-                                             data-target="#error-modal-0_03">
+                                             data-target="#error-modal-0_04">
                                             <br> function timed out after 15000 milliseconds</pre>
                                     </div>
 
-                                <div class="modal fade" id="error-modal-0_03" tabindex="-1" role="dialog"
+                                <div class="modal fade" id="error-modal-0_04" tabindex="-1" role="dialog"
                                      aria-labelledby="stacktraceModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -569,15 +598,15 @@ pre {
                                         <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Successfully search for products by name2.
+                                            <b>Scenario:</b>Successfully be able to reopen with the same shopping cart even if i refresh the browser
                                         </div>
                                         <div>
                             <span class="label-container">
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
                               
                               
                               
-                              <span class="label label-warning"
-                                                                title="1 Steps Skipped">1</span>
                               
                               
                             </span>
@@ -596,17 +625,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> that i am searching by a partial name.</span>
+                          <span> that I already have products in my cart</span>
                             
                           
                               <span class="step-duration">
-                               0s
+                               < 1ms
                               </span>
                             
                          
@@ -615,13 +644,6 @@ pre {
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^that i am searching by a partial name.$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
-                                    
 
                                     
 
@@ -639,17 +661,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> I search the product</span>
+                          <span> I refresh my browser</span>
                             
                           
                               <span class="step-duration">
-                               0s
+                               < 1ms
                               </span>
                             
                          
@@ -658,13 +680,6 @@ pre {
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^I search the product$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
-                                    
 
                                     
 
@@ -682,17 +697,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> i should get a list of products with names that matches the name2</span>
+                          <span> I should get the same shopping cart as previous one</span>
                             
                           
                               <span class="step-duration">
-                               0s
+                               < 1ms
                               </span>
                             
                          
@@ -793,484 +808,6 @@ pre {
                         </div>
                     </div>
                     
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <div class="tags">
-                                </div>
-                                
-                                <a data-toggle="collapse"
-                                   href="#collapseScenario_cucumber_intro0_2">
-                                    <div>
-
-                                        <div style="padding-right: 50px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Successfully search for products by product number.
-                                        </div>
-                                        <div>
-                            <span class="label-container">
-                              <span class="label label-success"
-                                                               title="1 Steps Passed">1</span>
-                              
-                              
-                              <span class="label label-warning"
-                                                                title="1 Steps Skipped">1</span>
-                              
-                              
-                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenario_cucumber_intro0_2"
-                             class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> that i am searching by a product number.</span>
-                            
-                          
-                              <span class="step-duration">
-                               < 1ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> I search the product</span>
-                            
-                          
-                              <span class="step-duration">
-                               0s
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-                                <pre class=info>
-<br>Then(/^I search the product$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span> i should get a list of products with names that matches with product number</span>
-                            
-                          
-                              <span class="step-duration">
-                               0s
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">After </span>
-                          <span> </span>
-                            
-                          
-                              <span class="step-duration">
-                               10s 885ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-                                    <a href="#error0_23"
-                                       data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_23"
-                                         class="collapse">
-                                        <pre class="info show-modal"
-                                             data-toggle="modal"
-                                             style="cursor: pointer"
-                                             data-target="#error-modal-0_23">
-                                            <br> Error: Timed out waiting for the WebDriver server at http://100.127.135.127:61576/
-    at onError (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\http\util.js:102:16)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\phantomjs.js:220:41)
-    at createDriver (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\index.js:657:16)
-    at new module.exports (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\phantomDriver.js:18:8)
-    at getDriverInstance (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\world.js:44:22)
-    at C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
-                                    </div>
-
-                                <div class="modal fade" id="error-modal-0_23" tabindex="-1" role="dialog"
-                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="error-modal-title">
-                                                    Error
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h5>
-                                                    <pre><br>Error: Timed out waiting for the WebDriver server at http://100.127.135.127:61576/
-    at onError (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\http\util.js:102:16)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\phantomjs.js:220:41)
-    at createDriver (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\index.js:657:16)
-    at new module.exports (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\phantomDriver.js:18:8)
-    at getDriverInstance (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\world.js:44:22)
-    at C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
-                                                </h5>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <div class="tags">
-                                </div>
-                                
-                                <a data-toggle="collapse"
-                                   href="#collapseScenario_cucumber_intro0_3">
-                                    <div>
-
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Product not found.
-                                        </div>
-                                        <div>
-                            <span class="label-container">
-                              <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
-                              
-                              
-                              
-                              
-                              
-                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenario_cucumber_intro0_3"
-                             class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> that there is no product left in the shop.</span>
-                            
-                          
-                              <span class="step-duration">
-                               < 1ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> I search the product with the product number</span>
-                            
-                          
-                              <span class="step-duration">
-                               < 1ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span> it displayed the message &#39;Product not found&#39;</span>
-                            
-                          
-                              <span class="step-duration">
-                               < 1ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">After </span>
-                          <span> </span>
-                            
-                          
-                              <span class="step-duration">
-                               15s 
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-                                    <a href="#error0_33"
-                                       data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_33"
-                                         class="collapse">
-                                        <pre class="info show-modal"
-                                             data-toggle="modal"
-                                             style="cursor: pointer"
-                                             data-target="#error-modal-0_33">
-                                            <br> function timed out after 15000 milliseconds</pre>
-                                    </div>
-
-                                <div class="modal fade" id="error-modal-0_33" tabindex="-1" role="dialog"
-                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="error-modal-title">
-                                                    Error
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h5>
-                                                    <pre><br>function timed out after 15000 milliseconds</pre>
-                                                </h5>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
         </div>
@@ -1314,10 +851,10 @@ From: Task: WebDriver.createSession()
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
                                                             "failed" : 0,
-                                                            "passed" : 1,
+                                                            "passed" : 2,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
-                                                            "skipped" : 3,
+                                                            "skipped" : 0,
                                                             "ambiguous" : 0
                                                         })
                                             });

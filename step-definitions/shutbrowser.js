@@ -1,4 +1,5 @@
 let Product = require('../www/js/product.js');
+let App = require('../www/js/app.js');
 let ProductCart = require('../www/js/productcart.js');
 let data = require('../www/json/sortiment.json');
 //let fs = require('fs');
@@ -10,17 +11,20 @@ module.exports = function(){
   let prodCart = new ProductCart();
   let oldCart = new ProductCart();
   let newCart = new ProductCart();
+  let app = new App();
   
-  for(let t of data){
-      let tmp = new Product(t);
-      tmp.category.push(tmp.varugrupp);
-      tmp.category.push(tmp.varugrupp + ' från ' + tmp.ursprunglandnamn);
-      products.push(tmp);
-  }
-  prodCart.addProductToCart(products[0], 1);
-    prodCart.addProductToCart(products[1], 2);
-    prodCart.addProductToCart(products[5], 6);
-    prodCart.addProductToCart(products[10], 3);
+  // for(let t of data){
+  //     let tmp = new Product(t);
+  //     tmp.category.push(tmp.varugrupp);
+  //     tmp.category.push(tmp.varugrupp + ' från ' + tmp.ursprunglandnamn);
+  //     products.push(tmp);
+  // }
+
+  app.loadAllProducts();
+  prodCart.addProductToCart(app.products[0], 1);
+    prodCart.addProductToCart(app.products[1], 2);
+    prodCart.addProductToCart(app.products[5], 6);
+    prodCart.addProductToCart(app.products[10], 3);
   
   this.Given(/^that I already have products in my cart$/, function () {
     assert(prodCart.products.length > 0, 'The product cart does not have products');
