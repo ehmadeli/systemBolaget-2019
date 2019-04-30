@@ -12,15 +12,9 @@ module.exports = function(){
   let oldCart = new ProductCart();
   let newCart = new ProductCart();
   let app = new App();
-  
-  // for(let t of data){
-  //     let tmp = new Product(t);
-  //     tmp.category.push(tmp.varugrupp);
-  //     tmp.category.push(tmp.varugrupp + ' från ' + tmp.ursprunglandnamn);
-  //     products.push(tmp);
-  // }
+  //app.loadAllProducts();
 
-  app.loadAllProducts();
+  
   prodCart.addProductToCart(app.products[0], 1);
     prodCart.addProductToCart(app.products[1], 2);
     prodCart.addProductToCart(app.products[5], 6);
@@ -47,13 +41,7 @@ module.exports = function(){
 
   this.Then(/^I should get the same shopping cart as previous$/, {timeout: 30000}, function () {  
       
-    //  let str = JSON.stringify(oldCart, null, 4)
-    //  console.log(str);
-    //  console.log("***");
-    //  let str1 = JSON.stringify(newCart, null, 4)
-    //   console.log(str1);
-
-      assert(JSON.stringify(oldCart) === JSON.stringify(newCart), "The product carts  is not the same");
+     assert(JSON.stringify(oldCart) === JSON.stringify(newCart), "The product carts  is not the same");
 });
 
 
