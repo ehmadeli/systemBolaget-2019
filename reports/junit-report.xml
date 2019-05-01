@@ -1,29 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn&apos;." tests="3" failures="0" skipped="2">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\new\systemBolaget-2019\features\purchasewithoutreg.feature">
+            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
             </property>
         </properties>
-        <testcase name="Given that I have added the product in the shopping cart" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" time="0.000502187">
+        <testcase name="Given that i am searching by a partial namn" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn&apos;." time="0.226019801">
         </testcase>
-        <testcase name="When I buy the products" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" time="0.000151894">
+        <testcase name="When I search the product" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn&apos;.">
+            <skipped message="">
+            </skipped>
         </testcase>
-        <testcase name="Then I should come to the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" time="0.000156587">
+        <testcase name="Then i should get a list of products with names that matches the &apos;namn&apos;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn&apos;.">
+            <skipped message="">
+            </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" tests="4" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn2&apos;." tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\new\systemBolaget-2019\features\purchasewithoutreg.feature">
+            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
             </property>
         </properties>
-        <testcase name="Given that I am already on the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.000197547">
+        <testcase name="Given that i am searching by a partial namn2" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn2&apos;.">
+            <skipped message="">
+            </skipped>
         </testcase>
-        <testcase name="When I fill up the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.000208214">
+        <testcase name="When I search the product" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn2&apos;.">
+            <skipped message="">
+            </skipped>
         </testcase>
-        <testcase name="And I buy the products by &apos;without registration&apos;" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.000216747">
+        <testcase name="Then i should get a list of products with names that matches the &apos;namn2&apos;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn2&apos;.">
+            <skipped message="">
+            </skipped>
         </testcase>
-        <testcase name="Then It should confirm me product is ordered" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.015211972">
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-product-number." tests="3" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
+            </property>
+        </properties>
+        <testcase name="Given that i am searching by a varnummer." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-product-number.">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When I search the product" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-product-number.">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then i should get a list of products with names that matches with &apos;varnummer&apos;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-product-number.">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found." tests="3" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
+            </property>
+        </properties>
+        <testcase name="Given that there is no product in the shop." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found.">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When I search the product" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found.">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then it displayed the message Product not found" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found.">
+            <skipped message="">
+            </skipped>
         </testcase>
     </testsuite>
 </testsuites>

@@ -18,6 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fuse.js": "^3.4.4",
     "selenium-cucumber-js": "^1.6.2"
   },
   "devDependencies": {

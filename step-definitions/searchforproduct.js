@@ -2,6 +2,7 @@
 let Product = require('../www/js/product.js');
 let ProductCart = require('../www/js/productcart.js');
 let data = require('../www/json/sortiment.json');
+var Fuse = require('fuse.js');
 
 
 module.exports = function(){
@@ -20,19 +21,33 @@ module.exports = function(){
       products.push(tmp);
   }
   
-  this.Given(/^that i am searching by a partial name$/, function () {
-    searchName1 = 'Renato Corino'; 
-    
-    //The first variant
-    searchResult = findObjectByKey(products, 'producent', searchName1);
-    console.log(searchResult);
-    console.log(">>== " + searchResult.length);
+  this.Given(/^that i am searching by a partial namn$/, function () {
+    //searchName1 = 'Renato Corino'; 
+   
 
+    // using fuse.js method for partial name and full name matching 
+    let options = {
+      keys: ['namn','namn2','ursprunglandnamn'],
+      threshold: 0.0,
+      caseSensitive:true
+    };
+    var fuse = new Fuse(products, options)
+    
+    let results = fuse.search('Renat');
+    
+     console.log(results);  
+      console.log(">>*** " + results.length);
+     /* //The first variant
+   searchResult = findObjectByKey(products, 'namn2', res)
+    console.log(searchResult);
+    console.log(">>== " + searchResult.length);*/
     //The second variant
-    let  result2 =  products.filter(function(prod) {
-      return prod.producent == searchName1;});
-    console.log(result2);  
-    console.log(">>*** " + result2.length);
+   /* let  result2 =  products.filter(function(prod)
+         {
+       return prod.namn2 == searchName1;
+      });*/
+
+
     
   });
 
