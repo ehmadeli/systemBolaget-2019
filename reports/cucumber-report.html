@@ -270,7 +270,7 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">-cucumber-intro</div>
           <div class="label-container">
-            <span class="label label-success" title=scenarios>Passed: 3</span>
+            <span class="label label-success" title=scenarios>Passed: 2</span>
             <span class="label label-danger" title=scenarios>Failed: 0</span>
           </div>
         </div>
@@ -279,7 +279,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Wed May 01 2019 13:05:57 GMT+0200 (GMT+02:00)</div>
+      <div class="generated-on">Wed May 01 2019 13:44:48 GMT+0200 (GMT+02:00)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -303,10 +303,10 @@ pre {
                     <a data-toggle="collapse" href="#collapseFeature_cucumber_intro0">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>As a user, I should be able to select different quantities of a product to my shopping cart to have control on my shopping.
+                        <b>Feature:</b>As a User, I should be able to remove a product from my shopping cart.
                         <span class="label-container">
               <span class="label label-success"
-                                                         title="3 Scenarios Passed">3</span>
+                                                         title="2 Scenarios Passed">2</span>
               
               
               
@@ -335,7 +335,7 @@ pre {
                                         <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>successfully add 1 quantity of products to the cart.
+                                            <b>Scenario:</b>successfully remove product from the shopping cart
                                         </div>
                                         <div>
                             <span class="label-container">
@@ -368,7 +368,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> the product is available in the shop</span>
+                          <span> that product is already in the shopping cart</span>
                             
                           
                               <span class="step-duration">
@@ -404,7 +404,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> I add 1 unit of the product to the cart</span>
+                          <span> I click on the remove button in the shopping cart</span>
                             
                           
                               <span class="step-duration">
@@ -440,7 +440,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> it should be added 1 unit to the cart</span>
+                          <span> It should be removed from the shopping cart</span>
                             
                           
                               <span class="step-duration">
@@ -480,7 +480,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               15s 2ms
+                               15s 
                               </span>
                             
                          
@@ -560,7 +560,7 @@ pre {
                                         <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>successfully add 2 quantities of product to the cart.
+                                            <b>Scenario:</b>successfully remove two/several products from the shopping cart
                                         </div>
                                         <div>
                             <span class="label-container">
@@ -593,7 +593,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> the product is available in the shop</span>
+                          <span> that there are two products in the shopping cart</span>
                             
                           
                               <span class="step-duration">
@@ -629,7 +629,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> I add 2 units of the product to the cart</span>
+                          <span> I remove the both products from the cart</span>
                             
                           
                               <span class="step-duration">
@@ -665,7 +665,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> it should be added 2 units to the cart</span>
+                          <span> the cart should not contain the products</span>
                             
                           
                               <span class="step-duration">
@@ -705,7 +705,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               15s 1ms
+                               14s 999ms
                               </span>
                             
                          
@@ -742,251 +742,6 @@ pre {
                                             <div class="modal-body">
                                                 <h5>
                                                     <pre><br>function timed out after 15000 milliseconds</pre>
-                                                </h5>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <div class="tags">
-                                </div>
-                                
-                                <a data-toggle="collapse"
-                                   href="#collapseScenario_cucumber_intro0_2">
-                                    <div>
-
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Should not be able to add 0 quantity of product to the cart.
-                                        </div>
-                                        <div>
-                            <span class="label-container">
-                              <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
-                              
-                              
-                              
-                              
-                              
-                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenario_cucumber_intro0_2"
-                             class="panel-collapse collapse">
-                            <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> the product is available in the shop</span>
-                            
-                          
-                              <span class="step-duration">
-                               < 1ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> I add 0 units of the product to the cart</span>
-                            
-                          
-                              <span class="step-duration">
-                               < 1ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span> it should not be added to the cart</span>
-                            
-                          
-                              <span class="step-duration">
-                               < 1ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">After </span>
-                          <span> </span>
-                            
-                          
-                              <span class="step-duration">
-                               10s 967ms
-                              </span>
-                            
-                         
-                            
-                          
-                      </span>
-                                
-                                
-
-                                    
-                                    <a href="#error0_23"
-                                       data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_23"
-                                         class="collapse">
-                                        <pre class="info show-modal"
-                                             data-toggle="modal"
-                                             style="cursor: pointer"
-                                             data-target="#error-modal-0_23">
-                                            <br> Error: Timed out waiting for the WebDriver server at http://192.168.1.240:56980/
-    at onError (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\http\util.js:102:16)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\phantomjs.js:220:41)
-    at createDriver (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\index.js:657:16)
-    at new module.exports (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\phantomDriver.js:18:8)
-    at getDriverInstance (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\world.js:44:22)
-    at C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
-                                    </div>
-
-                                <div class="modal fade" id="error-modal-0_23" tabindex="-1" role="dialog"
-                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="error-modal-title">
-                                                    Error
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h5>
-                                                    <pre><br>Error: Timed out waiting for the WebDriver server at http://192.168.1.240:56980/
-    at onError (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\http\util.js:102:16)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\phantomjs.js:220:41)
-    at createDriver (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-webdriver\index.js:657:16)
-    at new module.exports (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\phantomDriver.js:18:8)
-    at getDriverInstance (C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\world.js:44:22)
-    at C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
                                                 </h5>
                                             </div>
 
@@ -1058,7 +813,7 @@ From: Task: WebDriver.createSession()
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
                                                             "failed" : 0,
-                                                            "passed" : 3,
+                                                            "passed" : 2,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,

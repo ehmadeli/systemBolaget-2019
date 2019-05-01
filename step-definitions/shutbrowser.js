@@ -34,7 +34,7 @@ module.exports = function(){
 
 this.When(/^I refresh my browser$/, function () {
   // Test 
-    
+  
   });
 
   this.Then(/^I should get the same shopping cart as previous one$/, function () {
