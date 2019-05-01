@@ -1,6 +1,3 @@
-
-Feature:As a User, I should be able to see an overview of the shopping cart / its contents.
-
 Feature: As a User, I should be able to see an overview of the shopping cart / its contents.
 
 Scenario: Successfully overview the shopping cart

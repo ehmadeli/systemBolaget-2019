@@ -1,9 +1,4 @@
-
 Feature: As a User, I should be able to remove a product from my shopping cart.
-
-Feature:As a User, I should be able to remove 
-a product from my shopping cart.
-
 
 Scenario: successfully remove product from the shopping cart
 Given that product is already in the shopping cart
