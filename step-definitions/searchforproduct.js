@@ -27,16 +27,23 @@ module.exports = function(){
 
     // using fuse.js method for partial name and full name matching 
     let options = {
-      keys: ['namn','namn2','ursprunglandnamn'],
+      keys: ['namn','namn2','ursprunglandnamn','varnummer'],
       threshold: 0.0,
       caseSensitive:true
     };
     var fuse = new Fuse(products, options)
     
-    let results = fuse.search('Renat');
+    let results = fuse.search('Ren');
+    if ( results == true){
+    console.log(results); 
+    } 
+    else if(results == false){
+
+      console.log("Product not found");
+    }
     
      console.log(results);  
-      console.log(">>*** " + results.length);
+      console.log("---->> " + results.length);
      /* //The first variant
    searchResult = findObjectByKey(products, 'namn2', res)
     console.log(searchResult);
