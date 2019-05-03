@@ -28,10 +28,12 @@ module.exports = function(){
   });
 
   this.Then(/^I can see all the products in the cart and their details$/, function () {
-    assert(prodCart.products.includes(products[10]), "The product nr 11 from sortiment-file is not included all properties in the cart");
-    assert(prodCart.products.includes(products[11]), "The product nr 12 from sortiment-file is not included all properties in the cart");
-    assert(prodCart.products.includes(products[12]), "The product nr 13 from sortiment-file is not included all properties in the cart");
-
+    assert(prodCart.products.includes(products[10]), "The product nr 10 from sortiment-file is not included all properties in the cart");
+    assert(prodCart.products.includes(products[11]), "The product nr 11 from sortiment-file is not included all properties in the cart");
+    assert(prodCart.products.includes(products[12]), "The product nr 12 from sortiment-file is not included all properties in the cart");
+console.log(products[10].prisinklmoms);
+console.log(products[11].prisinklmoms);
+console.log(products[12].prisinklmoms);
   });
 
 

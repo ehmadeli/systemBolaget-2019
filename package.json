@@ -9,7 +9,7 @@
     "priya1": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/addtocart.feature & exit 0",
     "priya2": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/purchasewithoutreg.feature & exit 0",
     "Emil": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/removeproduct.feature & exit 0",
-    "bahram": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/overviewofcart.feature & exit 0",
+    "ahmad": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/overviewofcart.feature & exit 0",
     "shul1": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/adjustquantity.feature & exit 0",
     "shul2": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/differentquantities.feature & exit 0",
     "shul3": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/emptycart.feature & exit 0",
@@ -18,6 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fuse": "^0.4.0",
     "fuse.js": "^3.4.4",
     "selenium-cucumber-js": "^1.6.2"
   },
