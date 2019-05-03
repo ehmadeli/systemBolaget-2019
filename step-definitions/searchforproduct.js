@@ -21,7 +21,7 @@ module.exports = function(){
       products.push(tmp);
   }
   
-  this.Given(/^that i am searching by a partial namn$/, function () {
+  this.Given(/^that i am searching by a partial or full namn\.$/, function () {
     //searchName1 = 'Renato Corino'; 
    
 
@@ -33,7 +33,11 @@ module.exports = function(){
     };
     var fuse = new Fuse(products, options)
     
+<<<<<<< HEAD
+    let results = fuse.search('Kentucky');
+=======
     let results = fuse.search('chennai');
+>>>>>>> master
     if ( results == true){
     console.log(results); 
     } 
@@ -58,7 +62,7 @@ module.exports = function(){
     
   });
 
-      
+    /*  
   this.When(/^I search the product $/, function () {        
       
   });
@@ -96,7 +100,7 @@ this.Then(/^it displayed the message 'Product not found'$/, function () {
  
 });
 
-
+*/
 
 
 }
