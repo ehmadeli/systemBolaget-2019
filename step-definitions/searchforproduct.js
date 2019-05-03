@@ -37,6 +37,7 @@ module.exports = function(){
     
     let results = fuse.search('Nepal');
 
+    
     if ( results == true){
     console.log(results); 
     } 
