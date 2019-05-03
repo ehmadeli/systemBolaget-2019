@@ -35,7 +35,7 @@ module.exports = function(){
     };
     var fuse = new Fuse(app.products, options)
     
-    let results = fuse.search('Nepal');
+    let results = fuse.search('Redbull');
 
     
     if ( results == true){
