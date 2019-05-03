@@ -33,7 +33,7 @@ module.exports = function(){
     };
     var fuse = new Fuse(products, options)
     
-    let results = fuse.search('Ren');
+    let results = fuse.search('chennai');
     if ( results == true){
     console.log(results); 
     } 
