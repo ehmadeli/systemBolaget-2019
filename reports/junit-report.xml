@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\features\removeproduct.feature">
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\overviewofcart.feature">
             </property>
         </properties>
-        <testcase name="Given that product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" time="0.373249354">
+        <testcase name="Given that I have already products in the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart" time="0.001166904">
         </testcase>
-        <testcase name="When I click on the remove button in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" time="0.000557416">
+        <testcase name="When I enter the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart" time="0.000206064">
         </testcase>
-        <testcase name="Then It should be removed from the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" time="0.00044183">
+        <testcase name="Then I can see all the products in the cart and their details" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart" time="0.007816605">
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-total-price-of-the-products" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\features\removeproduct.feature">
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\overviewofcart.feature">
             </property>
         </properties>
-        <testcase name="Given that there are two products in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" time="0.000497229">
+        <testcase name="Given that I have already products in the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-total-price-of-the-products" time="0.00024396">
         </testcase>
-        <testcase name="When I remove the both products from the cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" time="0.000579302">
+        <testcase name="When I enter the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-total-price-of-the-products" time="0.000129085">
         </testcase>
-        <testcase name="Then the cart should not contain the products" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" time="0.000476027">
+        <testcase name="Then show the total price of products in the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-total-price-of-the-products" time="0.000588585">
         </testcase>
     </testsuite>
 </testsuites>
