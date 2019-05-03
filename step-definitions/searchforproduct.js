@@ -33,11 +33,9 @@ module.exports = function(){
     };
     var fuse = new Fuse(products, options)
     
-<<<<<<< HEAD
+
     let results = fuse.search('Kentucky');
-=======
-    let results = fuse.search('chennai');
->>>>>>> master
+
     if ( results == true){
     console.log(results); 
     } 
