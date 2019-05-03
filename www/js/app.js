@@ -6,18 +6,17 @@ let data2 = require('../json/categories.json');
 
 module.exports = class App {
 
-    constructor(){
+    constructor() {
         this.loadAllProducts();
         this.cart = new ProductCart();
         this.categories = new Category(data2);
     }
 
-    loadAllProducts(){
+    loadAllProducts() {
         this.products = [];
-        for(let t of data){
+        for (let t of data) {
             this.products.push(new Product(t));
         }
-
 
     }
 
