@@ -1,98 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<<<<<<< HEAD
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn&apos;." tests="3" failures="0" skipped="2">
+    <testsuite name="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\overviewofcart.feature">
             </property>
         </properties>
-        <testcase name="Given that i am searching by a partial namn" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn&apos;." time="0.226019801">
+        <testcase name="Given that I have already products in the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart" time="0.001936288">
         </testcase>
-        <testcase name="When I search the product" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn&apos;.">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I enter the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart" time="0.00022817">
         </testcase>
-        <testcase name="Then i should get a list of products with names that matches the &apos;namn&apos;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn&apos;.">
-            <skipped message="">
-            </skipped>
+        <testcase name="Then I can see all the products in the cart and their details" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart" time="0.007333816">
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn2&apos;." tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-total-price-of-the-products" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\overviewofcart.feature">
             </property>
         </properties>
-        <testcase name="Given that i am searching by a partial namn2" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn2&apos;.">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that I have already products in the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-total-price-of-the-products" time="0.000186325">
         </testcase>
-        <testcase name="When I search the product" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn2&apos;.">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I enter the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-total-price-of-the-products" time="0.000152377">
         </testcase>
-        <testcase name="Then i should get a list of products with names that matches the &apos;namn2&apos;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-&apos;namn2&apos;.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-product-number." tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
-            </property>
-        </properties>
-        <testcase name="Given that i am searching by a varnummer." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-product-number.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I search the product" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-product-number.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then i should get a list of products with names that matches with &apos;varnummer&apos;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-product-number.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found." tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
-            </property>
-        </properties>
-        <testcase name="Given that there is no product in the shop." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I search the product" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then it displayed the message Product not found" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;product-not-found.">
-            <skipped message="">
-            </skipped>
-=======
-    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" tests="3" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\removeproduct.feature">
-            </property>
-        </properties>
-        <testcase name="Given that product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" time="0.000468577">
-        </testcase>
-        <testcase name="When I click on the remove button in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" time="0.000285451">
-        </testcase>
-        <testcase name="Then It should be removed from the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" time="0.000152165">
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" tests="3" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\removeproduct.feature">
-            </property>
-        </properties>
-        <testcase name="Given that there are two products in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" time="0.000300554">
-        </testcase>
-        <testcase name="When I remove the both products from the cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" time="0.000299799">
-        </testcase>
-        <testcase name="Then the cart should not contain the products" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" time="0.000236366">
->>>>>>> master
+        <testcase name="Then show the total price of products in the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-total-price-of-the-products" time="0.000391995">
         </testcase>
     </testsuite>
 </testsuites>
