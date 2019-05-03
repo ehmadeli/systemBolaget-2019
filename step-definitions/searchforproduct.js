@@ -35,10 +35,6 @@ module.exports = function(){
     };
     var fuse = new Fuse(app.products, options)
     
-<<<<<<< HEAD
-    let results = fuse.search('Kentucky');
-=======
-
     let results = fuse.search('Nepal');
 
 >>>>>>> master
