@@ -6,7 +6,7 @@ module.exports = function(){
   let app = new App();
   
   app.cart.addProductToCart(app.products[0], 5);
-  prodQuantity = app.cart.quantity[0];
+  prodQuantity = app.cart.products[0].quantityInCart;
 
   this.Given(/^the product is already in the shopping cart$/, function () {
     
@@ -19,7 +19,7 @@ module.exports = function(){
   });
 
   this.Then(/^it should decrease one product from the cart$/, function () {
-    assert(app.cart.quantity[0] == prodQuantity - 1, 'The products quantity from the cart is not decresed by one');
+    assert(app.cart.products[0].quantityInCart == prodQuantity - 1, 'The products quantity from the cart is not decresed by one');
   });
 
   
@@ -28,7 +28,7 @@ module.exports = function(){
   });
 
   this.Then(/^it should increase one product into the cart$/, function () {
-    assert(app.cart.quantity[0] == prodQuantity + 1, 'The products quantity from the cart is not increased by one');
+    assert(app.cart.products[0].quantityInCart == prodQuantity + 1, 'The products quantity from the cart is not increased by one');
   });
 
   this.When(/^I increase the quantity for that product by one$/, function () {
@@ -47,7 +47,7 @@ module.exports = function(){
 
       
   this.Then(/^it should add as many products to the cart$/, function () {
-    assert(app.cart.quantity[0] == prodQuantity, 'The products quantity from the cart is not the same');
+    assert(app.cart.products[0].quantityInCart == prodQuantity, 'The products quantity from the cart is not the same');
   });
 
   this.When(/^i type the number of amount to zero in the shopping cart$/, function () {
@@ -62,7 +62,7 @@ module.exports = function(){
   this.Given(/^that there is already one product in the shopping cart$/, function () {
     app.cart.emptyProductCart();
     app.cart.addProductToCart(app.products[0], 1);
-    prodQuantity = app.cart.quantity[0];
+    prodQuantity = app.cart.products[0].quantityInCart;
     assert(app.cart.products.length == 1, 'The product cart does not have product');
   });
 

@@ -12,7 +12,6 @@ module.exports = function(){
   this.When(/^i remove the product from the shopping cart$/, function () {        
       let tmp = app.cart.products.length;
       app.cart.deleteProductFromCart(app.products[0]);
-
       assert(app.cart.products.length < tmp, "The product is not removed from cart");
   });
 
@@ -33,7 +32,7 @@ this.Given(/^that there are already several products in the cart$/, function() {
   });
 
 this.Then(/^It should not contain any products$/, function () {
-  assert(app.cart.products.length === 0 && app.cart.price.length === 0 && app.cart.quantity.length === 0 , 'The product cart contains anyproducts');
+  assert(app.cart.products.length === 0, 'The product cart contains anyproducts');
 });
 
 }

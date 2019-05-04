@@ -279,7 +279,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Fri May 03 2019 13:10:17 GMT+0200 (GMT+02:00)</div>
+      <div class="generated-on">Sat May 04 2019 23:57:46 GMT+0200 (GMT+02:00)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -303,7 +303,7 @@ pre {
                     <a data-toggle="collapse" href="#collapseFeature_cucumber_intro0">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>As a User, I should be able to remove a product from my shopping cart.
+                        <b>Feature:</b>As a User, I should be able to shut down the browser and reopen it with the same shopping cart.
                         <span class="label-container">
               <span class="label label-success"
                                                          title="2 Scenarios Passed">2</span>
@@ -335,12 +335,12 @@ pre {
                                         <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>successfully remove product from the shopping cart
+                                            <b>Scenario:</b>Successfully be able to reopen with the same shopping cart even if browser is shut down
                                         </div>
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
+                                                               title="4 Steps Passed">4</span>
                               
                               
                               
@@ -368,11 +368,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> that product is already in the shopping cart</span>
+                          <span> that I already have products in my cart</span>
                             
                           
                               <span class="step-duration">
-                               353ms
+                               1ms
                               </span>
                             
                          
@@ -404,11 +404,47 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> I click on the remove button in the shopping cart</span>
+                          <span> I close my browser</span>
                             
                           
                               <span class="step-duration">
-                               < 1ms
+                               7ms
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> I reopen my browser</span>
+                            
+                          
+                              <span class="step-duration">
+                               2ms
                               </span>
                             
                          
@@ -440,7 +476,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> It should be removed from the shopping cart</span>
+                          <span> I should get the same shopping cart as previous</span>
                             
                           
                               <span class="step-duration">
@@ -480,7 +516,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               22s 515ms
+                               15s 2ms
                               </span>
                             
                          
@@ -491,18 +527,18 @@ pre {
                                 
 
                                     
-                                    <a href="#error0_03"
+                                    <a href="#error0_04"
                                        data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_03"
+                                    <div id="error0_04"
                                          class="collapse">
                                         <pre class="info show-modal"
                                              data-toggle="modal"
                                              style="cursor: pointer"
-                                             data-target="#error-modal-0_03">
+                                             data-target="#error-modal-0_04">
                                             <br> function timed out after 15000 milliseconds</pre>
                                     </div>
 
-                                <div class="modal fade" id="error-modal-0_03" tabindex="-1" role="dialog"
+                                <div class="modal fade" id="error-modal-0_04" tabindex="-1" role="dialog"
                                      aria-labelledby="stacktraceModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -560,7 +596,7 @@ pre {
                                         <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>successfully remove two/several products from the shopping cart
+                                            <b>Scenario:</b>Successfully be able to reopen with the same shopping cart even if i refresh the browser
                                         </div>
                                         <div>
                             <span class="label-container">
@@ -593,7 +629,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> that there are two products in the shopping cart</span>
+                          <span> that I already have products in my cart</span>
                             
                           
                               <span class="step-duration">
@@ -629,7 +665,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> I remove the both products from the cart</span>
+                          <span> I refresh my browser</span>
                             
                           
                               <span class="step-duration">
@@ -665,7 +701,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> the cart should not contain the products</span>
+                          <span> I should get the same shopping cart as previous one</span>
                             
                           
                               <span class="step-duration">
@@ -705,7 +741,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               4s 362ms
+                               14s 999ms
                               </span>
                             
                          
@@ -724,21 +760,7 @@ pre {
                                              data-toggle="modal"
                                              style="cursor: pointer"
                                              data-target="#error-modal-0_13">
-                                            <br> Error: ECONNREFUSED connect ECONNREFUSED 192.168.156.102:57412
-    at ClientRequest.(anonymous) (C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\node_modules\selenium-webdriver\http\index.js:238:15)
-    at ClientRequest.emit (events.js:197:13)
-    at Socket.socketErrorListener (_http_client.js:397:9)
-    at Socket.emit (events.js:197:13)
-    at emitErrorNT (internal/streams/destroy.js:82:8)
-    at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
-    at processTicksAndRejections (internal/process/next_tick.js:76:17)
-From: Task: WebDriver.manage().window().maximize()
-    at thenableWebDriverProxy.schedule (C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at Window.maximize (C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:1691:25)
-    at new module.exports (C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\phantomDriver.js:20:30)
-    at getDriverInstance (C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\world.js:44:22)
-    at C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\world.js:207:29
-    at processTicksAndRejections (internal/process/next_tick.js:74:9)</pre>
+                                            <br> function timed out after 15000 milliseconds</pre>
                                     </div>
 
                                 <div class="modal fade" id="error-modal-0_13" tabindex="-1" role="dialog"
@@ -755,21 +777,7 @@ From: Task: WebDriver.manage().window().maximize()
                                             </div>
                                             <div class="modal-body">
                                                 <h5>
-                                                    <pre><br>Error: ECONNREFUSED connect ECONNREFUSED 192.168.156.102:57412
-    at ClientRequest.(anonymous) (C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\node_modules\selenium-webdriver\http\index.js:238:15)
-    at ClientRequest.emit (events.js:197:13)
-    at Socket.socketErrorListener (_http_client.js:397:9)
-    at Socket.emit (events.js:197:13)
-    at emitErrorNT (internal/streams/destroy.js:82:8)
-    at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
-    at processTicksAndRejections (internal/process/next_tick.js:76:17)
-From: Task: WebDriver.manage().window().maximize()
-    at thenableWebDriverProxy.schedule (C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at Window.maximize (C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:1691:25)
-    at new module.exports (C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\phantomDriver.js:20:30)
-    at getDriverInstance (C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\world.js:44:22)
-    at C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\node_modules\selenium-cucumber-js\runtime\world.js:207:29
-    at processTicksAndRejections (internal/process/next_tick.js:74:9)</pre>
+                                                    <pre><br>function timed out after 15000 milliseconds</pre>
                                                 </h5>
                                             </div>
 

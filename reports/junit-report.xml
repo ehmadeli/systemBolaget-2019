@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" tests="4" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\features\removeproduct.feature">
+            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\shutbrowser.feature">
             </property>
         </properties>
-        <testcase name="Given that product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" time="0.353398496">
+        <testcase name="Given that I already have products in my cart" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.001795397">
         </testcase>
-        <testcase name="When I click on the remove button in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" time="0.000664796">
+        <testcase name="When I close my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.007583712">
         </testcase>
-        <testcase name="Then It should be removed from the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" time="0.000399425">
+        <testcase name="And I reopen my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.002258311">
+        </testcase>
+        <testcase name="Then I should get the same shopping cart as previous" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.000660011">
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\Emilb\Desktop\SystemBolaget-2019-New\systemBolaget-2019\features\removeproduct.feature">
+            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\shutbrowser.feature">
             </property>
         </properties>
-        <testcase name="Given that there are two products in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" time="0.00059093">
+        <testcase name="Given that I already have products in my cart" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="0.000291115">
         </testcase>
-        <testcase name="When I remove the both products from the cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" time="0.000626495">
+        <testcase name="When I refresh my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="0.000322077">
         </testcase>
-        <testcase name="Then the cart should not contain the products" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" time="0.000530059">
+        <testcase name="Then I should get the same shopping cart as previous one" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="0.000382867">
         </testcase>
     </testsuite>
 </testsuites>

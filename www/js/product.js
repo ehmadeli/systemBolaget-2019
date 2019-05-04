@@ -3,7 +3,8 @@ let assert = require('assert');
 class Product {
   constructor(data) {
     Object.assign(this, data);
-    this.category = [];
+    this.priceInCart = 0;
+    this.quantityInCart = 0;
   }
 }
 

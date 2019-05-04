@@ -14,6 +14,7 @@ module.exports = class App {
 
     loadAllProducts() {
         this.products = [];
+
         for (let t of data) {
             this.products.push(new Product(t));
         }

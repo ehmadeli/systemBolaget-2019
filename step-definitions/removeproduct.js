@@ -1,4 +1,4 @@
-let Product = require('../www/js/product.js');
+//let Product = require('../www/js/product.js');
 let ProductCart = require('../www/js/productcart.js');
 let data = require('../www/json/sortiment.json');
 const App = require('../www/js/app.js');
@@ -37,7 +37,7 @@ module.exports = function () {
   });
 
   this.Then(/^the cart should not contain the products$/, function () {
-    assert(app.cart.products.length === 0 && app.cart.price.length === 0 && app.cart.quantity.length === 0, 'The product cart contains anyproducts');
+    assert(app.cart.products.length === 0, 'The product cart contains anyproducts');
   });
 
 }

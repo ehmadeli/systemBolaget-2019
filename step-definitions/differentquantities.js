@@ -32,7 +32,8 @@ this.When(/^I add (\d+) units of the product to the cart$/, function (number) {
 
 
 this.Then(/^it should be added (\d+) units to the cart$/, function (number) {
-    assert(app.cart.quantity[0] == 3, 'The product quantity is not added to the cart');
+    number = number / 1 + 1;
+    assert(app.cart.products[0].quantityInCart == number, 'The product quantity is not added to the cart');
 });
 
 this.Then(/^it should not be added to the cart$/, function () {

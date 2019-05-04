@@ -27,8 +27,8 @@ module.exports = function(){
    });
 
   this.Then(/^I should get the same shopping cart as previous$/, {timeout: 30000}, function () {  
-      
-     assert(JSON.stringify(oldCart) === JSON.stringify(newCart), "The product carts  is not the same");
+    
+    assert(JSON.stringify(oldCart) === JSON.stringify(newCart), "The product carts  is not the same");
 });
 
 

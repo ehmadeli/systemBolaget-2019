@@ -30,7 +30,8 @@
       "koscher": 0,
       "ravarorBeskrivning": "Säd.",
       "iLager": 92,
-      "category": []
+      "priceInCart": 204,
+      "quantityInCart": 1
     },
     {
       "nr": 7599701,
@@ -61,7 +62,8 @@
       "etiskt": 0,
       "koscher": 0,
       "iLager": 23,
-      "category": []
+      "priceInCart": 278,
+      "quantityInCart": 2
     },
     {
       "nr": 7521801,
@@ -92,7 +94,8 @@
       "etiskt": 0,
       "koscher": 0,
       "iLager": 0,
-      "category": []
+      "priceInCart": 1086,
+      "quantityInCart": 6
     },
     {
       "nr": 8587801,
@@ -123,19 +126,8 @@
       "etiskt": 0,
       "koscher": 0,
       "iLager": 47,
-      "category": []
+      "priceInCart": 1722,
+      "quantityInCart": 3
     }
-  ],
-  "quantity": [
-    1,
-    2,
-    6,
-    3
-  ],
-  "price": [
-    204,
-    278,
-    1086,
-    1722
   ]
 }
