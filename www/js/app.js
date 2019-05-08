@@ -4,7 +4,7 @@ const ProductCart = require('./productcart.js');
 let data = require('../json/sortiment.json');
 let data2 = require('../json/categories.json');
 
-module.exports = class App {
+class App {
 
     constructor() {
         this.loadAllProducts();
@@ -21,5 +21,8 @@ module.exports = class App {
 
     }
 
-
 }
+
+if(typeof module === 'object'){
+    module.exports = App;
+  }
