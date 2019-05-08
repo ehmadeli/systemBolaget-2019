@@ -12,7 +12,7 @@ class ProductCart {
         assert(product instanceof Product, product + ' entering is not a Product');
         assert(!this.products.includes(product), 'The same product was added to the cart');
         assert(typeof quantity == 'number', 'The products quantity ' + quantity + ' is not a number');
-        assert(quantity > 0, 'The products quantity  is less then 0');¨
+        assert(quantity > 0, 'The products quantity  is less then 0');
 
 
         // hmmmm. adding properties to a product poses some problems:
