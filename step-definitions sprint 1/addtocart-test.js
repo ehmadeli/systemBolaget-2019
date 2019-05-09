@@ -30,7 +30,7 @@ module.exports = function () {
         // with three properties {product: ProductInstance, quantity: Number, price: Number}
         // before we write such a method because then that method
         // could basically just return the single array...
-        assert(app.cart.products.includes(product), 'Not the same name of the product in the cart as the product we added.');
+        assert(app.cart.products.map( p => p.productInCart).includes(product), 'Not the same name of the product in the cart as the product we added.');
     });
 
     // Should there be an "And in the right quantity" in the scenario after Then it sould be added to the cart
@@ -49,13 +49,13 @@ module.exports = function () {
 
       this.Given(/^that there is a product that is out of stock$/, function () {
           let oldProduct = app.products[30];
-          app.products.splice(app.products.indexOf(oldProduct), 1);
-        assert(!app.cart.products.includes(oldProduct), 'The same name of the product in the cart as the product we added.');
+          app.products.splice(app.products.map( p => p.productInCart).indexOf(oldProduct), 1);
+        assert(!app.cart.products.map( p => p.productInCart).includes(oldProduct), 'The same name of the product in the cart as the product we added.');
 
       });
      
       this.When(/^I try to add that product$/, function () {
-        app.cart.products.includes(product)
+        app.cart.products.map( p => p.productInCart).includes(product)
         let randomIndex = Math.floor(app.products.length * Math.random());
         product = app.products[randomIndex];
         app.cart.addProductToCart(product, 3);    

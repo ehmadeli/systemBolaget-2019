@@ -7,13 +7,19 @@ Then It should show me ordering page
 
 Scenario: Successfully buy products from ordering page
 Given that I am already on the ordering page
-When I fill up the form with correct customer detail
-And click on buy-button in the ordering page 
+And I have filled up the form with correct customer detail
+When I click on buy-button in the ordering page 
 Then It should take my order
 
 Scenario: UnSuccessful to buy products from ordering page
 Given that I am already on the ordering page
-And I have filled up incorrect/incomplete customer detail
+And I have filled up incorrect customer detail
 When I click on buy-button in the ordering page 
-Then It should show me error information given by you is incorrect/incomplete
+Then It should show me error that information given by you is incorrect
+
+Scenario: UnSuccessful to buy products from ordering page
+Given that I am already on the ordering page
+And I have filled up incomplete customer detail
+When I click on buy-button in the ordering page 
+Then It should show me error that information given by you is incomplete
 

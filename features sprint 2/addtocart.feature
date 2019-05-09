@@ -24,7 +24,7 @@ Feature: As a user, I should be able to add the selected product into the shoppi
     Scenario: Out of products
         Given that there is a product in the shop that is out of stock
         When I click to add-to button 
-        Then it does not allow to add to cart
+        Then it does not allow me to add this product to cart
         And it shows message this product is out of stock
 
 
