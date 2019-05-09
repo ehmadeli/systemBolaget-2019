@@ -2,12 +2,13 @@ const App = require('../www/js/app.js');
 
 module.exports = function () {
   let app = new App();
-  
-  app.cart.addProductToCart(app.products[10], 1);
-  app.cart.addProductToCart(app.products[11], 2);
-  app.cart.addProductToCart(app.products[12], 3);
+
 
   this.Given(/^that I have already products in the cart$/, function () {
+
+    app.cart.addProductToCart(app.products[10], 1);
+    app.cart.addProductToCart(app.products[11], 2);
+    app.cart.addProductToCart(app.products[12], 3);
 
     assert(app.cart.products.length > 0, 'The product cart does not have products');
   });
@@ -20,6 +21,7 @@ module.exports = function () {
     assert(app.cart.products.includes(app.products[10]), "The product nr 10 from sortiment-file is not included all properties in the cart");
     assert(app.cart.products.includes(app.products[11]), "The product nr 11 from sortiment-file is not included all properties in the cart");
     assert(app.cart.products.includes(app.products[12]), "The product nr 12 from sortiment-file is not included all properties in the cart");
+
     console.log(app.products[10].priceInCart);
     console.log(app.products[11].priceInCart);
     console.log(app.products[12].priceInCart);
