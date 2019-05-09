@@ -6,13 +6,17 @@ class ProductCart {
     
     constructor() {
         this.products = [];
+        //products = [ {productInCart, quantityInCart, priceInCart}, ...]
     }
 
     addProductToCart(product, quantity) {
         assert(product instanceof Product, product + ' entering is not a Product');
-        assert(!this.products.includes(product), 'The same product was added to the cart');
         assert(typeof quantity == 'number', 'The products quantity ' + quantity + ' is not a number');
-        assert(quantity > 0, 'The products quantity  is less then 0');¨
+        assert(quantity > 0, 'The products quantity  is less then 0');
+        assert(!this.products.map( p => p.productInCart).includes(product), 'The same product was added to the cart');
+        
+        
+
 
 
         // hmmmm. adding properties to a product poses some problems:
@@ -28,25 +32,28 @@ class ProductCart {
         // It is up to you: If you do not want to change according to 3 then make sure to
         // secure your code according to step 2 instead
 
-        product.priceInCart = quantity * product.prisinklmoms / 1;
-        product.quantityInCart = quantity;
-        this.products.push(product); 
         
+        this.products.push( {
+            productInCart: product,
+            quantityInCart: quantity,
+            priceInCart: quantity * (product.prisinklmoms / 1)
+        });
+            
     }
 
     deleteProductFromCart(product) {
         assert(product instanceof Product, product + ' entering is not a Product');
-        assert(this.products.includes(product), 'The  product does not exsist in  the cart');
-        
-        this.products.splice(this.products.indexOf(product), 1);
+        assert(this.products.map( p => p.productInCart).includes(product), 'The  product does not exsist in  the cart');
+        this.products.splice(this.products.map( p => p.productInCart).indexOf(product), 1);
     }
 
     changeQuantityOfProduct(product, newQuantity) {
         assert(product instanceof Product, product + ' entering is not a Product');
         assert(typeof newQuantity == 'number', 'The products new quantity ' + newQuantity + ' is not a number');
-        assert(this.products.indexOf(product) != -1, 'The product is  in the cart')
+        assert(this.products.map( p => p.productInCart).indexOf(product) != -1, 'The product is  in the cart')
 
-        let index = this.products.indexOf(product);
+        //let index = this.products.findIndex(p => p.productInCart == product);
+        let index = this.products.map(p => p.productInCart).indexOf(product);
         this.products[index].priceInCart = newQuantity * product.prisinklmoms / 1;
         this.products[index].quantityInCart = newQuantity;
         if (newQuantity == 0) {
@@ -75,7 +82,6 @@ class ProductCart {
     }
 
      readProductCart(path = '../../json/productcart.json') {
-                   
          let tmp = JSON.parse(fs.readFileSync(path, 'utf8'));
          Object.assign(this,tmp);
      }

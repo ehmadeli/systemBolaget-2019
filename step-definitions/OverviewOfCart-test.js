@@ -17,12 +17,10 @@ module.exports = function () {
   });
 
   this.Then(/^I can see all the products in the cart and their details$/, function () {
-    assert(app.cart.products.includes(app.products[10]), "The product nr 10 from sortiment-file is not included all properties in the cart");
-    assert(app.cart.products.includes(app.products[11]), "The product nr 11 from sortiment-file is not included all properties in the cart");
-    assert(app.cart.products.includes(app.products[12]), "The product nr 12 from sortiment-file is not included all properties in the cart");
-    console.log(app.products[10].priceInCart);
-    console.log(app.products[11].priceInCart);
-    console.log(app.products[12].priceInCart);
+    assert(app.cart.products.map( p => p.productInCart).includes(app.products[10]), "The product nr 10 from sortiment-file is not included all properties in the cart");
+    assert(app.cart.products.map( p => p.productInCart).includes(app.products[11]), "The product nr 11 from sortiment-file is not included all properties in the cart");
+    assert(app.cart.products.map( p => p.productInCart).includes(app.products[12]), "The product nr 12 from sortiment-file is not included all properties in the cart");
+    
   });
 
 

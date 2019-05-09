@@ -16,7 +16,7 @@ module.exports = function(){
   });
 
   this.Then(/^It should not contain any product$/, function () {
-    assert(app.cart.products.length === 0, "The product cart contaons products");
+    assert(app.cart.products.length === 0, "The product cart contains products");
   });
 
 this.Given(/^that there are already several products in the cart$/, function() {
