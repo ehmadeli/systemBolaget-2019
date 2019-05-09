@@ -1,39 +1,281 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-products-to-the-cart." tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart." tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\differentquantities.feature">
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/addtocart.feature">
             </property>
         </properties>
-        <testcase name="Given the product is available in the shop" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-products-to-the-cart." time="0.000518796">
+        <testcase name="Given that a product is available in the shop" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart." time="0.068021956">
         </testcase>
-        <testcase name="When I add 1 unit of the product to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-products-to-the-cart." time="0.000128">
+        <testcase name="When I add the product to cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart." time="0.000097416">
         </testcase>
-        <testcase name="Then it should be added 1 unit to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-products-to-the-cart." time="0.000078159">
+        <testcase name="Then it should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart." time="0.000609416">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart." tests="4" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/addtocart.feature">
+            </property>
+        </properties>
+        <testcase name="Given that a products are available in the shop" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart." time="0.06777615">
+        </testcase>
+        <testcase name="When I add one product into the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart." time="0.000100059">
+        </testcase>
+        <testcase name="And i add one other product to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart." time="0.00009062">
+        </testcase>
+        <testcase name="Then the two different products should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart." time="0.000123469">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/addtocart.feature">
+            </property>
+        </properties>
+        <testcase name="Given that there is a product that is out of stock" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products" time="0.002726512">
+        </testcase>
+        <testcase name="When I try to add that product" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products" time="0.000122713">
+        </testcase>
+        <testcase name="Then page should say &apos;Out of stock&apos;" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products" time="0.00004682">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/adjustquantity.feature">
+            </property>
+        </properties>
+        <testcase name="Given the product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" time="0.00009062">
+        </testcase>
+        <testcase name="When i press the minus button" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" time="0.000180484">
+        </testcase>
+        <testcase name="Then it should decrease one product from the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" time="0.000064566">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-increase-of-the-same-product-in-the-shopping-cart" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/adjustquantity.feature">
+            </property>
+        </properties>
+        <testcase name="Given the product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-increase-of-the-same-product-in-the-shopping-cart" time="0.000047197">
+        </testcase>
+        <testcase name="When I increase the quantity for that product by one" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-increase-of-the-same-product-in-the-shopping-cart" time="0.000110253">
+        </testcase>
+        <testcase name="Then it should increase one product into the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-increase-of-the-same-product-in-the-shopping-cart" time="0.000095906">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/adjustquantity.feature">
+            </property>
+        </properties>
+        <testcase name="Given the product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" time="0.000047952">
+        </testcase>
+        <testcase name="When i decrease the quantity for that product by one" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" time="0.000114785">
+        </testcase>
+        <testcase name="Then it should decrease one product from the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-same-product-in-the-shopping-cart" time="0.000052483">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-adjust-amount-of-products-in-the-shopping-cart" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/adjustquantity.feature">
+            </property>
+        </properties>
+        <testcase name="Given the product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-adjust-amount-of-products-in-the-shopping-cart" time="0.000038513">
+        </testcase>
+        <testcase name="When i type into textbox the amount of products" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-adjust-amount-of-products-in-the-shopping-cart" time="0.000092508">
+        </testcase>
+        <testcase name="Then it should add as many products to the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-adjust-amount-of-products-in-the-shopping-cart" time="0.000078159">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;the-quantity-of-the-product-can-never-go-below-one-if-it-does-it-is-removed" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/adjustquantity.feature">
+            </property>
+        </properties>
+        <testcase name="Given that there is already one product in the shopping cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;the-quantity-of-the-product-can-never-go-below-one-if-it-does-it-is-removed" time="0.00015292">
+        </testcase>
+        <testcase name="When i decrease the quantity of that product by one" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;the-quantity-of-the-product-can-never-go-below-one-if-it-does-it-is-removed" time="0.000131021">
+        </testcase>
+        <testcase name="Then the product should be removed from the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;the-quantity-of-the-product-can-never-go-below-one-if-it-does-it-is-removed" time="0.000104212">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-products-to-the-cart." tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/differentquantities.feature">
+            </property>
+        </properties>
+        <testcase name="Given the product is available in the shop" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-products-to-the-cart." time="0.000104213">
+        </testcase>
+        <testcase name="When I add 1 unit of the product to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-products-to-the-cart." time="0.000089864">
+        </testcase>
+        <testcase name="Then it should be added 1 unit to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-products-to-the-cart." time="0.000084956">
         </testcase>
     </testsuite>
     <testsuite name="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-2-quantities-of-product-to-the-cart." tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\differentquantities.feature">
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/differentquantities.feature">
             </property>
         </properties>
-        <testcase name="Given the product is available in the shop" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-2-quantities-of-product-to-the-cart." time="0.000167268">
+        <testcase name="Given the product is available in the shop" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-2-quantities-of-product-to-the-cart." time="0.000050595">
         </testcase>
-        <testcase name="When I add 2 units of the product to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-2-quantities-of-product-to-the-cart." time="0.000534277">
+        <testcase name="When I add 2 units of the product to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-2-quantities-of-product-to-the-cart." time="0.00011554">
         </testcase>
-        <testcase name="Then it should be added 2 units to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-2-quantities-of-product-to-the-cart." time="0.000317168">
+        <testcase name="Then it should be added 2 units to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-2-quantities-of-product-to-the-cart." time="0.000088354">
         </testcase>
     </testsuite>
     <testsuite name="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;should-not-be-able-to-add-0-quantity-of-product-to-the-cart." tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New2\systemBolaget-2019\features\differentquantities.feature">
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/differentquantities.feature">
             </property>
         </properties>
-        <testcase name="Given the product is available in the shop" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;should-not-be-able-to-add-0-quantity-of-product-to-the-cart." time="0.000114785">
+        <testcase name="Given the product is available in the shop" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;should-not-be-able-to-add-0-quantity-of-product-to-the-cart." time="0.000044177">
         </testcase>
-        <testcase name="When I add 0 units of the product to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;should-not-be-able-to-add-0-quantity-of-product-to-the-cart." time="0.000400235">
+        <testcase name="When I add 0 units of the product to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;should-not-be-able-to-add-0-quantity-of-product-to-the-cart." time="0.000052861">
         </testcase>
-        <testcase name="Then it should not be added to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;should-not-be-able-to-add-0-quantity-of-product-to-the-cart." time="0.000240519">
+        <testcase name="Then it should not be added to the cart" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;should-not-be-able-to-add-0-quantity-of-product-to-the-cart." time="0.000116673">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/emptycart.feature">
+            </property>
+        </properties>
+        <testcase name="Given that there is already one product in the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" time="0.000185393">
+        </testcase>
+        <testcase name="When i remove the product from the shopping cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" time="0.000132153">
+        </testcase>
+        <testcase name="Then It should not contain any product" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-one-product-in-the-shopping-cart" time="0.000090619">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/emptycart.feature">
+            </property>
+        </properties>
+        <testcase name="Given that there are already several products in the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" time="0.000141215">
+        </testcase>
+        <testcase name="When i remove all the products from shopping cart button" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" time="0.000078914">
+        </testcase>
+        <testcase name="Then It should not contain any products" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-whole-shopping-cart-with-several-products-in-the-cart" time="0.000137062">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/overviewofcart.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I have already products in the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart" time="0.000090619">
+        </testcase>
+        <testcase name="When I enter the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart" time="0.000048707">
+        </testcase>
+        <testcase name="Then I can see all the products in the cart and their details" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-shopping-cart" time="0.000195209">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-total-price-of-the-products" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/overviewofcart.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I have already products in the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-total-price-of-the-products" time="0.000049085">
+        </testcase>
+        <testcase name="When I enter the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-total-price-of-the-products" time="0.000032849">
+        </testcase>
+        <testcase name="Then show the total price of products in the cart" classname="as-a-user,-i-should-be-able-to-see-an-overview-of-the-shopping-cart-/-its-contents.;successfully-overview-the-total-price-of-the-products" time="0.000163493">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/purchasewithoutreg.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I have added the product in the shopping cart" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" time="0.000090242">
+        </testcase>
+        <testcase name="When I buy the products" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" time="0.000049463">
+        </testcase>
+        <testcase name="Then I should come to the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-come-to-ordering-page" time="0.000045687">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" tests="4" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/purchasewithoutreg.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am already on the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.000057392">
+        </testcase>
+        <testcase name="When I fill up the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.000059658">
+        </testcase>
+        <testcase name="And I buy the products by &apos;without registration&apos;" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.000042289">
+        </testcase>
+        <testcase name="Then It should confirm me product is ordered" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-a-product-without-having-an-account" time="0.000071363">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/removeproduct.feature">
+            </property>
+        </properties>
+        <testcase name="Given that product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" time="0.082003776">
+        </testcase>
+        <testcase name="When I click on the remove button in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" time="0.000170288">
+        </testcase>
+        <testcase name="Then It should be removed from the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-product-from-the-shopping-cart" time="0.000074761">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/removeproduct.feature">
+            </property>
+        </properties>
+        <testcase name="Given that there are two products in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" time="0.000135174">
+        </testcase>
+        <testcase name="When I remove the both products from the cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" time="0.00007174">
+        </testcase>
+        <testcase name="Then the cart should not contain the products" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two/several-products-from-the-shopping-cart" time="0.000076272">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-namn." tests="4" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/searchforproduct.feature">
+            </property>
+        </properties>
+        <testcase name="Given that i am searching by a partial or full namn." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-namn." time="0.196416455">
+        </testcase>
+        <testcase name="When I search for the product" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-namn.">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then i should get a list of products with names that matches the properties" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-namn.">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And if no products found it should say no products found" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-namn.">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" tests="4" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/shutbrowser.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I already have products in my cart" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.000109121">
+        </testcase>
+        <testcase name="When I close my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.002693662">
+        </testcase>
+        <testcase name="And I reopen my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.000656991">
+        </testcase>
+        <testcase name="Then I should get the same shopping cart as previous" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.000185014">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/sergejs.sulziks/Documents/TH/SystemBolaget2019New3/systemBolaget-2019/features/shutbrowser.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I already have products in my cart" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="0.000049463">
+        </testcase>
+        <testcase name="When I refresh my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="0.000061545">
+        </testcase>
+        <testcase name="Then I should get the same shopping cart as previous one" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="0.000047952">
         </testcase>
     </testsuite>
 </testsuites>
