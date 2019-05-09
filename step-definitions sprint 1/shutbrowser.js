@@ -37,8 +37,4 @@ this.When(/^I refresh my browser$/, function () {
   
   });
 
-  this.Then(/^I should get the same shopping cart as previous one$/, function () {
-       
-  });
-
 }
