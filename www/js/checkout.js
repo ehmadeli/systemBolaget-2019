@@ -8,7 +8,7 @@
 2. Set Header
 3. Init Menu
 4. Init SVG
-5. Init Product Slider
+5. InitQty
 
 
 ******************************/
@@ -27,7 +27,7 @@ $(document).ready(function()
 
 	initMenu();
 	initSvg();
-	initProductSlider();
+	initQty();
 
 	setHeader();
 
@@ -152,92 +152,41 @@ $(document).ready(function()
 
 	/* 
 
-	5. Init Product Slider
+	5. Init Qty
 
 	*/
 
-	function initProductSlider()
+	function initQty()
 	{
-		var carousel = $('#carousel');
-		var prev = $('.fs_prev');
-		var next = $('.fs_next');
-		var slideCount = $('#carousel .slides > li').length;
-		carousel.flexslider(
+		if($('.product_quantity').length)
 		{
-			animation: "slide",
-			direction:'vertical',
-			reverse: false,
-			controlNav: false,
-			directionNav: false,
-			animationLoop: false,
-			slideshow: false,
-			animationSpeed: 300,
-			after: function(slider)
+			var qtys = $('.product_quantity');
+
+			qtys.each(function()
 			{
-				var i = slider.currentSlide;
-				console.log(i);
-				if(i === 0)
-				{
-					prev.addClass('disabled');
-				}
-				else
-				{
-					prev.removeClass('disabled');
-				}
+				var qty = $(this);
+				var sub = qty.find('.qty_sub');
+				var add = qty.find('.qty_add');
+				var num = qty.find('.product_num');
+				var original;
+				var newValue;
 
-				if(i < (slideCount - 3))
+				sub.on('click', function()
 				{
-					next.removeClass('disabled');
-				}
-				else
+					original = parseFloat(qty.find('.product_num').text());
+					if(original > 0)
+						{
+							newValue = original - 1;
+						}
+					num.text(newValue);
+				});
+
+				add.on('click', function()
 				{
-					next.addClass('disabled');
-				}
-			}
-		});
-
-		$('#slider').flexslider(
-		{
-			animation: "slide",
-			direction:'vertical',
-			controlNav: false,
-			directionNav: false,
-			animationLoop: false,
-			slideshow: false
-		});
-
-		var thumbs = $('#carousel .slides > li');
-		thumbs.each(function()
-		{
-			var thumb = $(this);
-			thumb.on('click', function()
-			{
-				var selectedIndex = thumbs.index(thumb);
-				$('#slider').flexslider(selectedIndex);
-			});
-		});
-
-		// Custom Navigation
-		if(prev.length)
-		{
-			prev.on('click', function()
-			{
-				if(!prev.hasClass('disabled'))
-				{
-					$('#carousel').flexslider('prev');
-				}
-			});
-		}
-
-		if(next.length)
-		{
-			var next = $('.fs_next');
-			next.on('click', function()
-			{
-				if(!next.hasClass('disabled'))
-				{
-					$('#carousel').flexslider('next');
-				}
+					original = parseFloat(qty.find('.product_num').text());
+					newValue = original + 1;
+					num.text(newValue);
+				});
 			});
 		}
 	}
