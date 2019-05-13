@@ -1,13 +1,35 @@
-let express = require('express');
+var express = require('express');
+var session = require('express-session');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var morgan = require('morgan');
+var app = express();
+var port = 3306;
 
-// Let's create a new web server called app
-let app = express();
+var passport = require('passport');
+var flash = require('connect-flash');
 
-// Tell our web server to serve files from a 
-// certain folder
-app.use(express.static('www'));
+require('./config/passport')(passport);
 
-// Start the web server at a certain port
-app.listen(3000, function(){
-  console.log('The server is listening at port 3000');
-});
+app.use(morgan('dev'));
+app.use(cookieParser());
+app.use(bodyParser.urlencoded({
+ extended: true
+}));
+
+app.set('view engine', 'ejs');
+
+app.use(session({
+ secret: 'justasecret',
+ resave:true,
+ saveUninitialized: true
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(flash());
+app.use(express.static('views'));
+require('./app/routes.js')(app, passport);
+
+app.listen(port);
+console.log("Port: " + port);
