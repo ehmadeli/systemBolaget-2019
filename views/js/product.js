@@ -1,6 +1,4 @@
-let assert = require('assert');
-
-class Product {
+;class Product {
   constructor(data) {
     Object.assign(this, data);
   }

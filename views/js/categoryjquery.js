@@ -203,4 +203,7 @@ $(document).ready(function()
     	}
     }
 
-});
+}
+
+);
+
