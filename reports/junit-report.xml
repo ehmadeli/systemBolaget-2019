@@ -1,95 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart." tests="3" failures="0" skipped="2">
+    <testsuite name="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-the-same-product-to-the-cart." tests="4" failures="0" skipped="4">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\systemBolaget-2019\features\addtocart.feature">
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\differentquantities.feature">
             </property>
         </properties>
-        <testcase name="Given that a product is available in the shop" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart." time="0.094152694">
-        </testcase>
-        <testcase name="When I click on add-to button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart.">
+        <testcase name="Given the product is available in the shop" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-the-same-product-to-the-cart.">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="Then it should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart.">
+        <testcase name="And I type 1 into text box" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-the-same-product-to-the-cart.">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When i press enter button" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-the-same-product-to-the-cart.">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then it should be added 1 unit to the cart of the same product" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-the-same-product-to-the-cart.">
             <skipped message="">
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-several-products-of-the-same-type-to-the-cart." tests="3" failures="0" skipped="2">
+    <testsuite name="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-atleast-2-quantities-of-the-same-product-to-the-cart." tests="4" failures="0" skipped="4">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\systemBolaget-2019\features\addtocart.feature">
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\differentquantities.feature">
             </property>
         </properties>
-        <testcase name="Given that a product is available in the shop" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-several-products-of-the-same-type-to-the-cart." time="0.124675199">
-        </testcase>
-        <testcase name="When I click on add-to button 3 times" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-several-products-of-the-same-type-to-the-cart.">
+        <testcase name="Given the product is available in the shop" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-atleast-2-quantities-of-the-same-product-to-the-cart.">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="Then it should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-several-products-of-the-same-type-to-the-cart.">
+        <testcase name="And I type 2 or more units in the text box" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-atleast-2-quantities-of-the-same-product-to-the-cart.">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When i press enter button" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-atleast-2-quantities-of-the-same-product-to-the-cart.">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then it should be added 2 units to the cart of the same product" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-atleast-2-quantities-of-the-same-product-to-the-cart.">
             <skipped message="">
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-of-different-types-to-the-cart." tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-different-quantities-of-the-different-products-to-the-cart." tests="4" failures="0" skipped="4">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\systemBolaget-2019\features\addtocart.feature">
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\differentquantities.feature">
             </property>
         </properties>
-        <testcase name="Given that different products are available in the shop" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-of-different-types-to-the-cart.">
+        <testcase name="Given the different products are available in the shop" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-different-quantities-of-the-different-products-to-the-cart.">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="When I click on add-to button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-of-different-types-to-the-cart.">
+        <testcase name="And I type different units into the text box for different products" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-different-quantities-of-the-different-products-to-the-cart.">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="Then this different product should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-of-different-types-to-the-cart.">
+        <testcase name="When i press enter button" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-different-quantities-of-the-different-products-to-the-cart.">
             <skipped message="">
             </skipped>
         </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart." tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\systemBolaget-2019\features\addtocart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that a different products are available in the shop" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click on add-to button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And i click again one other product&apos;s add-to cart button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then the two different products should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\systemBolaget-2019\features\addtocart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that there is a product in the shop that is out of stock" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click to add-to button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then it does not allow me to add this product to cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And it shows message this product is out of stock" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products">
+        <testcase name="Then it should be added different units to the cart of the different products" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-different-quantities-of-the-different-products-to-the-cart.">
             <skipped message="">
             </skipped>
         </testcase>
