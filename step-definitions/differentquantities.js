@@ -8,7 +8,7 @@ module.exports = function () {
 
     this.Given(/^the product is available in the shop$/, async function () {
 
-        //await helpers.loadPage('.addtocart' + .addtocart);
+        await helpers.loadPage('.addtocart' + '.addtocart');
     });
 
     this.Given(/^I type (\d+) into text box$/, async function () {
