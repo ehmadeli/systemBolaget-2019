@@ -3,6 +3,7 @@ const Category = require('./category.js');
 const ProductCart = require('./productcart.js');
 let data = require('../json/sortiment.json');
 let data2 = require('../json/categories.json');
+global.$ = require('./mockJquery.js');
 
 module.exports = class App {
 

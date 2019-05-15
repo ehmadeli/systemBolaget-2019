@@ -1,7 +1,7 @@
-//let Product = require('../www/js/product.js');
-let ProductCart = require('../www/js/productcart.js');
-let data = require('../www/json/sortiment.json');
-const App = require('../www/js/app.js');
+//let Product = require('../views/js/product.js');
+let ProductCart = require('../views/js/productcart.js');
+let data = require('../views/json/sortiment.json');
+const App = require('../views/js/app.js');
 
 module.exports = function () {
   let app;

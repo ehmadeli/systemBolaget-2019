@@ -1,4 +1,4 @@
-let App = require('../www/js/app.js');
+let App = require('../views/js/app.js');
 
 module.exports = function(){
 

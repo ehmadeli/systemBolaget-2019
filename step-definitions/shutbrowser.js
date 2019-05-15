@@ -1,5 +1,5 @@
-let App = require('../www/js/app.js');
-let ProductCart = require('../www/js/productcart.js');
+let App = require('../views/js/app.js');
+let ProductCart = require('../views/js/productcart.js');
 
 module.exports = function(){
 

@@ -1,4 +1,4 @@
-const App = require('../www/js/app.js');
+const App = require('../views/js/app.js');
 
 module.exports = function () {
 

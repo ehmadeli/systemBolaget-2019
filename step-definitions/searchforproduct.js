@@ -3,7 +3,7 @@
 //let ProductCart = require('../www/js/productcart.js');
 //let data = require('../www/json/sortiment.json');
 var Fuse = require('fuse.js');
-const App = require('../www/js/app.js');
+const App = require('../views/js/app.js');
 
 
 module.exports = function(){
