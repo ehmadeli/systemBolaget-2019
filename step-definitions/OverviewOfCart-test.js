@@ -5,7 +5,7 @@ module.exports = function () {
 
   this.Given(/^that I already have products in the cart$/, async function () {
 
-    await helpers.loadPage('.addtocart' + addtocart);
+    await helpers.loadPage('.addtocart' + '.addtocart');
   });
 
   this.When(/^I click on cart\-button$/, async function () {
@@ -24,11 +24,12 @@ module.exports = function () {
 
     this.When(/^I click on cart\-button$/, async function () {
 
-      let cartButton = await $(.header.cart);
+      let cartButton = await $('.header.cart');
       assert.notEqual(cartButton, null, 'could not find the cart button');
       await cartButton.click();
 
     });
+    
     this.Then(/^I can see the total price of products in the cart$/, async function () {
 
 
