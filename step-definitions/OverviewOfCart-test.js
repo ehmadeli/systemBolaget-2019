@@ -24,7 +24,7 @@ module.exports = function () {
 
     this.When(/^I click on cart\-button$/, async function () {
 
-      let cartButton = await $(.header.cart);
+      let cartButton = await $('.header.cart');
       assert.notEqual(cartButton, null, 'could not find the cart button');
       await cartButton.click();
 
