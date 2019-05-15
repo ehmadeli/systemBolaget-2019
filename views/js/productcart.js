@@ -1,6 +1,8 @@
-let assert = require('assert');
-let fs = require('fs');
-let Product = require('./product.js');
+if(typeof module === 'object'){
+    let assert = require('assert');
+    let fs = require('fs');
+    let Product = require('./product.js');
+}
 
 class ProductCart {
     

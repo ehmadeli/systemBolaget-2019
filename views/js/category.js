@@ -1,5 +1,3 @@
-let assert = require('assert');
-
 class Category {
  
     constructor(data){
