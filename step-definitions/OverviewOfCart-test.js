@@ -5,7 +5,7 @@ module.exports = function () {
 
   this.Given(/^that I already have products in the cart$/, async function () {
 
-    await helpers.loadPage('.addtocart' + .addtocart);
+    await helpers.loadPage('.addtocart' + addtocart);
   });
 
   this.When(/^I click on cart\-button$/, async function () {
