@@ -3,10 +3,10 @@ class GUIproductCart {
         this.cart = new ProductCart();
         this.updateListOfProducts();
         $('.emptyCart').click((e) => {
-            this.cart.empty();
+            this.cart.emptyProductCart();
         });
         $('.add').click((e) => {
-            this.cart.add();
+            this.cart.addProductToCart();
             this.updateListOfProducts();
         });
     }
