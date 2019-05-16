@@ -27,7 +27,7 @@ $(document).ready(function()
 
 	initMenu();
 	initSvg();
-	initIsotope();
+	// initIsotope();
 
 	setHeader();
 
