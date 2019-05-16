@@ -9,7 +9,7 @@ let app = new App();
 // all 18000 of them is a little to much
 function showProducts(){
    // let products be just the first 25 products
-   let products = app.products.slice(0,25);
+   let products = app.products.slice(0,50);
    let html = '';
    for(let product of products){
      html += `
