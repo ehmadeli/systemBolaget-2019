@@ -16,9 +16,10 @@ await cleanBtn.click()
   
 
   this.When(/^i click on the empty\-cart button$/, async function () {
-    // Write code here that turns the phrase above into concrete actions
-    
+    let cleanBtn = await $('.button .button_clear .trans_200');
+    await cleanBtn.click()
   });
+  
 
   this.Then(/^It should empty the cart$/, async function () {
     // Write code here that turns the phrase above into concrete actions
