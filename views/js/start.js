@@ -14,7 +14,7 @@ function showProducts(){
    for(let product of products){
      html += `
         <div class="col-xl-4 col-md-6 grid-item new">
-        <div class="product">
+        <div class="product" product-id="${product.artikelid}">
             <div class="product_image"><img src="images/product_1.jpg" alt=""></div>
             <div class="product_content">
                 <div class="product_info d-flex flex-row align-items-start justify-content-start">
