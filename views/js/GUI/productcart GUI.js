@@ -15,9 +15,9 @@ class productCartGUI {
 
     updateListOfProducts() {
 let html='';
+console.log("fytfgd");
         for(let x of app.cart.products){
 
-            console.log("fytfgd");
             
             html += `<tr>
                    <th scope="row">${x.productInCart.namn}</th>
@@ -31,6 +31,8 @@ let html='';
             
             }
             $('.cart-items').html(html);
+
+            window.localStorage.setItem('productcart', JSON.stringify(productGUI));
 
 
         // let rows = this.cart.overviewOfCart();
