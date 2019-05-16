@@ -6,7 +6,7 @@ module.exports = function () {
     let product;
 
     this.Given(/^that a product is available in the shop$/, function(){
-        app = new App();
+        //app = new App();
         // if I don't mind that a product might be out of stock
         // the maybe just choose a random product
         let randomIndex = Math.floor(app.products.length * Math.random());
