@@ -4,23 +4,46 @@ let {$, sleep} = require('./funcs');
 module.exports = function(){
 
     this.Given(/^the product is already in the shopping cart$/, async function(){
-        //await helpers.loadPage('http://localhost:3306/cart.html');
+        await helpers.loadPage('http://localhost:3306/cart.html');
     });
 
     this.When(/^i click on the minus-button$/, async function(){
-        //  let minusBtn = await $('.qty_sub');
-        //  await minusBtn.click();
+      let minusBtn = await $('.qty_sub');
+          
+ 
+      //Click på minus button
+      await minusBtn.click();
+      await sleep(5000);
+      qProduct = await $('.product_num');
+      text = await qProduct.getText();
+      console.log("==>> " +  text);
+
+      
     });
 
     this.Then(/^it should decrease one product from the cart$/, async function(){
+      let qProduct = await $('.product_text.product_num');
+      //let qProduct = await driver.findElement(by.css(".product_text.product_num"));
+      //let qProduct = await driver.findElement(by.xpath('/html/body/div[2]/div/div[3]/div/div[1]/div/div/div[2]/ul/li/div[3]/div/span'));
       
+      let text = await qProduct.getText();
+      console.log("=>> " + text);
+      assert.equal((text / 1), 0, "This is not zero numbers of product");
     });
 
 
 //Scenario: successfully increase of the same product in the shopping cart
 this.When(/^I click on the plus-button for a product$/, async function(){
-  // let minusBtn = await $('.qty_sub');
-  // await minusBtn.click();
+  let plusBtn = await $('.qty_add');
+  await plusBtn.click();
+
+  //Click 2-times på plus button
+  // await plusBtn.click();
+  // await plusBtn.click();
+  // text = await qProduct.getText();
+  // console.log("===>> " +  text);
+  assert.equal((text / 1), 1, "This is not one numbers of product");
+
 });
 
 this.Then(/^it should increase one product into the cart$/, async function(){
