@@ -1,37 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
             </property>
         </properties>
-        <testcase name="Given that i am searching by a partial or full name." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties.">
+        <testcase name="Given that I have added the product/products in the shopping cart" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="When I search for names or partial names that exist" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties.">
+        <testcase name="When I click on &apos;buy-without-account&apos; button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="Then i should get a list of products with names that matches the properties" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties.">
+        <testcase name="Then It should show me ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account">
             <skipped message="">
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;unsuccessfully-search-for-products-by-properties." tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-from-ordering-page" tests="4" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
             </property>
         </properties>
-        <testcase name="Given that i am searching by a partial or full name." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;unsuccessfully-search-for-products-by-properties.">
+        <testcase name="Given that I am already on the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-from-ordering-page" time="0.000278304">
+        </testcase>
+        <testcase name="And I have filled up the form with correct customer detail" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-from-ordering-page">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="When I search for names or partial names that does not exist" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;unsuccessfully-search-for-products-by-properties.">
+        <testcase name="When I click on buy-button in the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-from-ordering-page">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="Then i should get no products found back" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;unsuccessfully-search-for-products-by-properties.">
+        <testcase name="Then It should take my order" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-from-ordering-page">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);unsuccessful-to-buy-products-from-ordering-page" tests="4" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am already on the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);unsuccessful-to-buy-products-from-ordering-page" time="0.000077768">
+        </testcase>
+        <testcase name="And I have filled up incorrect customer detail" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);unsuccessful-to-buy-products-from-ordering-page">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When I click on buy-button in the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);unsuccessful-to-buy-products-from-ordering-page">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then It should show me error that information given by you is incorrect" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);unsuccessful-to-buy-products-from-ordering-page">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);unsuccessful-to-buy-products-from-ordering-page" tests="4" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\DellXPS\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am already on the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);unsuccessful-to-buy-products-from-ordering-page" time="0.00005645">
+        </testcase>
+        <testcase name="And I have filled up incomplete customer detail" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);unsuccessful-to-buy-products-from-ordering-page">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When I click on buy-button in the ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);unsuccessful-to-buy-products-from-ordering-page">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then It should show me error that information given by you is incomplete" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);unsuccessful-to-buy-products-from-ordering-page">
             <skipped message="">
             </skipped>
         </testcase>
