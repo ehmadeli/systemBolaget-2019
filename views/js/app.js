@@ -13,7 +13,8 @@ class App {
     constructor() {
         this.loadAllProducts();
         this.loadCategories();
-
+        console.log('kjhgfd');
+        
 
 
     }
