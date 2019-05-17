@@ -13,6 +13,9 @@ class App {
     constructor() {
         this.loadAllProducts();
         this.loadCategories();
+
+
+
     }
 
     async loadAllProducts() {
@@ -38,14 +41,17 @@ class App {
 
     async loadCategories(){
         let data;
+        this.cart = new ProductCart();
         if(onBackend){
             data = require('../json/categories.json');
         }
         else {
 
             data = await $.getJSON('/json/categories.json');
+            new productGUI();
+            new productCartGUI();
+            
         }
-        this.cart = new ProductCart();
         this.categories = new Category(data);
     }
 

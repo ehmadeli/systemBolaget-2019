@@ -7,8 +7,13 @@ module.exports = function(){
   //let newCart = new ProductCart();
  // let app = new App();
     
+
  // app.cart.addProductToCart(app.products[0], 1);
    // app.cart.addProductToCart(app.products[1], 2);
+
+  //app.cart.addProductToCart(app.products[0], 1);
+    //app.cart.addProductToCart(app.products[1], 2);
+
     //app.cart.addProductToCart(app.products[5], 6);
     //app.cart.addProductToCart(app.products[10], 3);
   
