@@ -8,21 +8,22 @@ module.exports = function(){
     });
 
     this.When(/^i click on the minus-button$/, async function(){
+      let qProduct = await $('.product_text.product_num');
       let minusBtn = await $('.qty_sub');
           
  
       //Click på minus button
       await minusBtn.click();
-      await sleep(5000);
-      qProduct = await $('.product_num');
-      text = await qProduct.getText();
-      console.log("==>> " +  text);
+      // await sleep(5000);
+      // qProduct = await $('.product_text.product_num');
+      // text = await qProduct.getText();
+      // console.log("==>> " +  text);
 
       
     });
 
     this.Then(/^it should decrease one product from the cart$/, async function(){
-      let qProduct = await $('.product_text.product_num');
+      qProduct = await $('.product_text.product_num');
       //let qProduct = await driver.findElement(by.css(".product_text.product_num"));
       //let qProduct = await driver.findElement(by.xpath('/html/body/div[2]/div/div[3]/div/div[1]/div/div/div[2]/ul/li/div[3]/div/span'));
       
@@ -36,7 +37,8 @@ module.exports = function(){
 this.When(/^I click on the plus-button for a product$/, async function(){
   let plusBtn = await $('.qty_add');
   await plusBtn.click();
-
+  text = await qProduct.getText();
+  
   //Click 2-times på plus button
   // await plusBtn.click();
   // await plusBtn.click();
