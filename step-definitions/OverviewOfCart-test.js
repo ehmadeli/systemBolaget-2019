@@ -1,7 +1,7 @@
 const App = require('../views/js/app.js');
 
 module.exports = function () {
-  let app = new App();
+ // let app = new App();
 
   this.Given(/^that I already have products in the cart$/, async function () {
 

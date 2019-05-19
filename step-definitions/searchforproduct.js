@@ -9,7 +9,7 @@ const App = require('../views/js/app.js');
 module.exports = function(){
 
  // let products = [];
-  let app = new App();
+ // let app = new App();
  // let prodCart = new ProductCart();
   this.Given(/^that i am searching by a partial or full namn\.$/, function () {
    

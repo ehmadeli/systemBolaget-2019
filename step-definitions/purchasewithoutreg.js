@@ -2,8 +2,8 @@ const App = require('../views/js/app.js');
 
 module.exports = function () {
 
-    let app = new App();
-    let product;
+   // let app = new App();
+    //let product;
 
 
     this.Given(/^that I have added the product in the shopping cart$/, function () {
