@@ -8,6 +8,8 @@
     "shijith": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/searchforproduct.feature & exit 0",
     "priya1": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/addtocart.feature & exit 0",
     "priya2": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/purchasewithoutaccount.feature & exit 0",
+    "priya3": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/login.feature & exit 0",
+    "priya4": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/Registrationform.feature & exit 0",
     "Emil1": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/removeproduct.feature & exit 0",
     "Emil2": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/emptycart.feature & exit 0",
     "ahmad1": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/overviewofcart.feature & exit 0",
