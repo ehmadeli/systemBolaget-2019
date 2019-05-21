@@ -13,20 +13,25 @@ function showProducts(){
    let html = '';
    for(let product of products){
      html += `
-        <div class="col-xl-4 col-md-6 grid-item new">
+        <div class="col-xl-4 col-md-6 grid-item new" id="searchFilterDiv">
         <div class="product" product-id="${product.artikelid}">
-            <div class="product_image"><img src="images/product_1.jpg" alt=""></div>
+            
             <div class="product_content">
+            <div class="product_image"><img src="/images/home.jpg" alt=""></div>
                 <div class="product_info d-flex flex-row align-items-start justify-content-start">
                     <div>
                         <div>
-                            <div class="product_name"><a href="product.html">${product.namn}</a></div>
+                            <div class="product_name"><a href="product.html">${
+                              product.namn
+                            }</a></div>
                             <div class="product_category">In <a href="category.html">Category</a></div>
                         </div>
                     </div>
                     <div class="ml-auto text-right">
                         <div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
-                        <div class="product_price text-right">${product.prisinklmoms} Sek</div>
+                        <div class="product_price text-right">${
+                          product.prisinklmoms
+                        } Sek</div>
                     </div>
                 </div>
                 <div class="product_buttons">
@@ -42,7 +47,7 @@ function showProducts(){
             </div>
         </div>
     </div> 
-    ` ;
+    `;
    }
    $('.product-listing').html(html);
 }
