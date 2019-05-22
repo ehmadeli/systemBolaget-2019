@@ -1,62 +1,45 @@
 class productCartGUI {
     constructor() {
-        
+
         console.log('aaa');
- //       this.cart = new ProductCart();
         this.updateListOfProducts();
         $('.emptyCart').click((e) => {
             this.cart.emptyProductCart();
         });
-        $('.add').click((e) => {
-            this.cart.addProductToCart();
-            this.updateListOfProducts();
-        });
     }
 
     updateListOfProducts() {
-let html='';
-console.log("fytfgd");
-        for(let x of app.cart.products){
+
+        let html = `
 
             
+                <ul class="cart_bar_list item_list d-flex flex-row align-items-center justify-content-end">
+                    <li class="mr-auto">Product</li>
+                    <li>Price</li>
+                    <li>Quantity</li>
+                    <li>Total</li>
+                </ul>
+
+
+    `;
+
+
+        for (let x of app.cart.products) {
+
+
             html += `<tr>
-                   <th scope="row">${x.productInCart.namn}</th>
-                   <td >${x.productInCart.prisinklmoms}</td>
-                   minus button
-                   <td >${x.quantityInCart}</td>
-                   plus-button
-                   <td >${x.priceInCart}</td>
-                   
-                 </tr>`;
-            
-            }
-            $('.cart-items').html(html);
+                <td scope="row">${x.productInCart.namn}</th>
 
-            window.localStorage.setItem('productcart', JSON.stringify(productGUI));
+                <td >${x.productInCart.prisinklmoms}</td>
 
+                <td >${x.quantityInCart}</td>
 
-        // let rows = this.cart.overviewOfCart();
-        // let html = `<table class="cart-items table">
-        //     <thead>
-        //         <tr>
-        //             <th scope='col'>Produckt</th>
-        //             <th scope='col'>Antal</th>
-        //             <th scope='col'>Summa</th>
-        //             <th scope='col'></th>
-        //         </tr>
-        //     </thead>
-        //     <tbody>`
-        //         for(let row of rows){
-        //             html += `<tr>
-        //                 <td>${rows.product.namn}</td>
-        //                 <td><input type='number' value='${row.quantity}'></input></td>
-        //                 <td>${row.rowSum}</td>
-        //                 <td><button class=' btn btn-primary'></button>Ta bort</td>
-        //             </tr>`
-        //         };
-                    
-        //             html +=`</tbody></table>`;
-        // $('.cart-items').html(html);
+                <td >${x.priceInCart}</td>
+                
+            </tr>`;
+        }
+
+        $('.cart_items tbody').html(html);
     }
 
 }
