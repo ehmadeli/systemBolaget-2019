@@ -7,6 +7,11 @@ class productCartGUI {
         $('.button_clear').click((e) => {
             app.cart.emptyProductCart();
         });
+
+        $('.remove_item').click((e) => {
+            app.cart.deleteProductFromCart(product);
+        });
+
     }
 
     updateListOfProducts() {
@@ -25,7 +30,10 @@ class productCartGUI {
                 <!-- Cart Item -->
                 <li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
                     <div class="product d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
-                        <div><div class="product_number">1</div></div>
+                    
+                    
+
+                    <div><div class="product_number">1</div></div>
                         <div><div class="product_image"><img src="images/heine.png" alt=""></div></div>
                         <div class="product_name_container">
                             <div class="product_name"><a href="#">${x.productInCart.namn}</a></div>
@@ -42,8 +50,11 @@ class productCartGUI {
                         </div>
                     </div>
                     <div class="product_total product_text"><span>Total: </span>${x.priceInCart}</div>
+
+                    <button type="button" class="remove_item btn btn-secondary">Remove Item</button>
                 </li>
             </ul>
+            
         </div> `;
         }
 
