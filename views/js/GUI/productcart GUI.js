@@ -20,8 +20,40 @@ class productCartGUI {
             app.cart.deleteProductFromCart(product);
             this.updateListOfProducts();
         });
+
+        $(document).on('click', '.qty_add', (e) => {
+
+            let parent = $(e.target).closest('.cart_item');
+            // let productId = parent.attr('product-ad') / 1;
+            let productId = parent.find('[idart]').attr('idart');
+            let product = app.products.find(p => p.artikelid == productId);
+
+            //let newuantity = (app.cart.products.quantityInCart) +1;
+            let oldQ = parent.find('.product_text.product_num').text() / 1;
+
+            app.cart.changeQuantityOfProduct(product, oldQ + 1);
+            this.updateListOfProducts();
+
+
+        });
+
+        $(document).on('click', '.qty_sub', (e) => {
         
-        }
+            let parent = $(e.target).closest('.cart_item');
+            // let productId = parent.attr('product-ad') / 1;
+            let productId = parent.find('[idart]').attr('idart');
+            let product = app.products.find(p => p.artikelid == productId);
+
+            //let newuantity = (app.cart.products.quantityInCart) +1;
+            let oldQ = parent.find('.product_text.product_num').text() / 1;
+
+            app.cart.changeQuantityOfProduct(product, oldQ - 1);
+            this.updateListOfProducts();
+
+        });
+
+
+    }
 
     updateListOfProducts() {
 
@@ -55,9 +87,9 @@ class productCartGUI {
                     <div class="product_price product_text ml-5"><span>Price: </span>${x.productInCart.prisinklmoms}</div>
                     <div class="product_quantity_container">
                         <div class="product_quantity ml-lg-auto mr-lg-auto text-center">
-                            <span class="product_text product_num ">${x.quantityInCart}</span>
-                            <div class="qty_sub qty_button trans_200 text-center "><span>-</span></div>
-                            <div class="qty_add qty_button trans_200 text-center"><span>+</span></div>
+                            <span class="product_text product_num "><input type="hidden" idart=${x.productInCart.artikelid}>${x.quantityInCart}</span>
+                            <div class="qty_sub qty_button trans_200 text-center "><input type="hidden" idart=${x.productInCart.artikelid}><span>-</span></div>
+                            <div class="qty_add qty_button trans_200 text-center"><input type="hidden" idart=${x.productInCart.artikelid}><span>+</span></div>
                         </div>
                     </div>
                     <div class="product_total product_text ml-5"><span>Total: </span>${x.priceInCart}</div>
