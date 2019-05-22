@@ -5,9 +5,9 @@
             <property name="URI" value="C:\Users\Emilb\Desktop\systemBolaget-2019\features\removeproduct.feature">
             </property>
         </properties>
-        <testcase name="Given that product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-a-product-from-the-shopping-cart" time="3.351812867">
+        <testcase name="Given that product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-a-product-from-the-shopping-cart" time="0.333359323">
             <failure message="TypeError: Cannot read property &apos;sendKeys&apos; of null">TypeError: Cannot read property &apos;sendKeys&apos; of null
-    at createWorld.&lt;anonymous&gt; (C:\Users\Emilb\Desktop\systemBolaget-2019\step-definitions\removeproduct.js:7:21)
+    at createWorld.&lt;anonymous&gt; (C:\Users\Emilb\Desktop\systemBolaget-2019\step-definitions\removeproduct.js:14:21)
     at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
         </testcase>
         <testcase name="When I click on the remove button in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-a-product-from-the-shopping-cart">
@@ -33,6 +33,24 @@
             </skipped>
         </testcase>
         <testcase name="Then products should be removed from the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-products-with-2-units-from-the-shopping-cart">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two-products-from-the-shopping-cart" tests="3" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\Emilb\Desktop\systemBolaget-2019\features\removeproduct.feature">
+            </property>
+        </properties>
+        <testcase name="Given that there are two different products in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two-products-from-the-shopping-cart">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When I click on remove-button for each product" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two-products-from-the-shopping-cart">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then the shopping cart should not contain any products" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two-products-from-the-shopping-cart">
             <skipped message="">
             </skipped>
         </testcase>
