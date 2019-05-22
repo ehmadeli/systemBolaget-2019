@@ -38,7 +38,7 @@ class productCartGUI {
         });
 
         $(document).on('click', '.qty_sub', (e) => {
-        
+
             let parent = $(e.target).closest('.cart_item');
             // let productId = parent.attr('product-ad') / 1;
             let productId = parent.find('[idart]').attr('idart');
@@ -63,7 +63,6 @@ class productCartGUI {
 
         for (let x of app.cart.products) {
 
-
             html += `
             <div class="cart_items">
             <ul class="cart_items_list">
@@ -73,10 +72,6 @@ class productCartGUI {
                 <li class="cart_item item_list d-flex flex-lg-row  flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
                
                 <div class="product d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
-                    
-                    
-
-                    <div><div class="product_number">1</div></div>
                         <div><div class="product_image ml-5"><img src="images/heine.png" alt=""></div></div>
                         <div class="product_name_container">
                             <div class="product_name ml-5"><a href="#">${x.productInCart.namn}</a></div>
@@ -97,10 +92,9 @@ class productCartGUI {
                     <button type="button" class="remove_item btn btn-secondary ml-5"><input type="hidden" idart=${x.productInCart.artikelid}>Remove Item</button>
                 </li>
             </ul>
-            
         </div> `;
-        }
 
+        }
         $('.cart_items tbody').html(html);
     }
 
