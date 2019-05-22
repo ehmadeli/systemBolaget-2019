@@ -1,2 +1,11 @@
 [0503/114144.952:ERROR:process_reader_win.cc(123)] NtOpenThread: {Åtkomst nekad} En process har begärt åtkomst till ett objekt, men har inte de rättigheter som krävs. (0xc0000022)
 [0503/114144.958:ERROR:exception_snapshot_win.cc(98)] thread ID 4608 not found in process
+[0521/160608.975:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0521/160608.977:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0521/160608.977:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0521/160608.977:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0521/160608.977:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0521/160608.977:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0521/160608.978:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0521/160608.978:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0521/160608.979:ERROR:exception_snapshot_win.cc(98)] thread ID 3240 not found in process
