@@ -12,12 +12,13 @@ class productCartGUI {
 
             let parent = $(e.target).closest('.product');
             // let productId = parent.attr('product-ad') / 1;
-            let productId = $(e.target).attr('idart') / 1;
+            let productId = $(e.target).find('input').attr('idart') / 1;
             let product = app.products.find(p => p.artikelid == productId);
 
             console.log(product)
 
             app.cart.deleteProductFromCart(product);
+            this.updateListOfProducts();
         });
         
         }
