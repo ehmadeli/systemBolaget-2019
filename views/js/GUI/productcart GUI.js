@@ -6,6 +6,7 @@ class productCartGUI {
 
         $('.button_clear').click((e) => {
             app.cart.emptyProductCart();
+            app.cart.saveProductCart();
         });
 
         $(document).on('click', '.remove_item', (e) => {
@@ -19,6 +20,7 @@ class productCartGUI {
 
             app.cart.deleteProductFromCart(product);
             this.updateListOfProducts();
+            app.cart.saveProductCart();
         });
 
         $(document).on('click', '.qty_add', (e) => {
@@ -33,6 +35,7 @@ class productCartGUI {
 
             app.cart.changeQuantityOfProduct(product, oldQ + 1);
             this.updateListOfProducts();
+            app.cart.saveProductCart();
 
 
         });
@@ -49,7 +52,7 @@ class productCartGUI {
 
             app.cart.changeQuantityOfProduct(product, oldQ - 1);
             this.updateListOfProducts();
-
+            app.cart.saveProductCart();
         });
 
 
@@ -102,6 +105,7 @@ class productCartGUI {
         }
 
         $('.cart_items tbody').html(html);
+        
     }
 
 }
