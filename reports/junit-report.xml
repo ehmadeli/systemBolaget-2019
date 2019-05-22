@@ -13,7 +13,7 @@
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="Then it should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart.">
+        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart.">
             <skipped message="">
             </skipped>
         </testcase>
@@ -31,7 +31,7 @@
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="Then it should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart.">
+        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart.">
             <skipped message="">
             </skipped>
         </testcase>
@@ -49,7 +49,7 @@
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="Then this different product should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart.">
+        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart.">
             <skipped message="">
             </skipped>
         </testcase>
@@ -71,7 +71,7 @@
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="Then the two different products should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart.">
+        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart.">
             <skipped message="">
             </skipped>
         </testcase>
@@ -93,7 +93,7 @@
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="And it shows message this product is out of stock" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products">
+        <testcase name="And I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products">
             <skipped message="">
             </skipped>
         </testcase>
