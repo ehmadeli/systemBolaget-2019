@@ -1,127 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<<<<<<< HEAD
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-one-product-to-the-cart" tests="3" failures="0" skipped="1">
-=======
-<<<<<<< HEAD
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-a-product-from-the-shopping-cart" tests="3" failures="1" skipped="2">
         <properties>
-            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
+            <property name="URI" value="C:\Users\Emilb\Desktop\systemBolaget-2019\features\removeproduct.feature">
             </property>
         </properties>
-        <testcase name="Given that i am searching by a partial or full name." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties.">
+        <testcase name="Given that product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-a-product-from-the-shopping-cart" time="49.403559528">
+            <failure message="function timed out after 15000 milliseconds">function timed out after 15000 milliseconds</failure>
+        </testcase>
+        <testcase name="When I click on the remove button in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-a-product-from-the-shopping-cart">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="When I search for names or partial names that exist" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then i should get a list of products with names that matches the properties" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties.">
-=======
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart." tests="4" failures="0" skipped="4">
->>>>>>> master
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\systemBolaget-2019\features\addtocart.feature">
-            </property>
-        </properties>
-<<<<<<< HEAD
-        <testcase name="Given that the products are available in the store" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-one-product-to-the-cart">
-=======
-        <testcase name="Given that I am on the web page localhost:3306" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And product is available in the shop" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click on add-to button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then it should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-a-product-to-the-cart.">
->>>>>>> master
+        <testcase name="Then It should be removed from the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-a-product-from-the-shopping-cart">
             <skipped message="">
             </skipped>
         </testcase>
     </testsuite>
-<<<<<<< HEAD
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;unsuccessfully-search-for-products-by-properties." tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-several-different-products-from-the-shopping-cart" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
+            <property name="URI" value="C:\Users\Emilb\Desktop\systemBolaget-2019\features\removeproduct.feature">
             </property>
         </properties>
-        <testcase name="Given that i am searching by a partial or full name." classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;unsuccessfully-search-for-products-by-properties.">
+        <testcase name="Given that there are several different products in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-several-different-products-from-the-shopping-cart">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="When I search for names or partial names that does not exist" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;unsuccessfully-search-for-products-by-properties.">
+        <testcase name="When I click on remove-button for each product" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-several-different-products-from-the-shopping-cart">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="Then i should get no products found back" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;unsuccessfully-search-for-products-by-properties.">
-=======
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-several-products-of-the-same-type-to-the-cart." tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\systemBolaget-2019\features\addtocart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the web page localhost:3306" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-several-products-of-the-same-type-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And several product is available in the shop" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-several-products-of-the-same-type-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click on add-to button 3 times" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-several-products-of-the-same-type-to-the-cart.">
-            <skipped message="">
-            </skipped>
->>>>>>> master
-        </testcase>
-        <testcase name="When I add one product to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-one-product-to-the-cart">
-        </testcase>
-        <testcase name="Then i should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-one-product-to-the-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart" tests="4" failures="0" skipped="2">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\systemBolaget-2019\features\addtocart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the products are available in the store" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart">
-        </testcase>
-        <testcase name="When I add one product to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart">
-        </testcase>
-        <testcase name="And I add one other product to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then I should see the products in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-at-least-two-different-products-to-the-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products" tests="3" failures="0" skipped="2">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\systemBolaget-2019\features\addtocart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the products are available in the store" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products">
-        </testcase>
-        <testcase name="Given I add one product that is out of stock to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products">
-            <skipped message="">
-            </skipped>
-        </testcase>
-<<<<<<< HEAD
-        <testcase name="Then the page should show a message" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products">
-=======
-        <testcase name="And it shows message this product is out of stock" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;out-of-products">
->>>>>>> master
->>>>>>> master
+        <testcase name="Then products should be removed from the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-several-different-products-from-the-shopping-cart">
             <skipped message="">
             </skipped>
         </testcase>
