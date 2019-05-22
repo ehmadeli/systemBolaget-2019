@@ -5,7 +5,7 @@
             <property name="URI" value="C:\Users\Emilb\Desktop\systemBolaget-2019\features\removeproduct.feature">
             </property>
         </properties>
-        <testcase name="Given that product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-a-product-from-the-shopping-cart" time="3.41692041">
+        <testcase name="Given that product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-a-product-from-the-shopping-cart" time="3.351812867">
             <failure message="TypeError: Cannot read property &apos;sendKeys&apos; of null">TypeError: Cannot read property &apos;sendKeys&apos; of null
     at createWorld.&lt;anonymous&gt; (C:\Users\Emilb\Desktop\systemBolaget-2019\step-definitions\removeproduct.js:7:21)
     at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>

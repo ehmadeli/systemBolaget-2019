@@ -10,3 +10,9 @@ Given that there are 2 units in the shopping cart
 When I click on remove-button for each product
 Then products should be removed from the shopping cart
 
+Scenario: successfully remove two products from the shopping cart
+Given that there are two different products in the shopping cart
+When I click on remove-button for each product
+Then the shopping cart should not contain any products 
+
+
