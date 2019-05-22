@@ -21,7 +21,7 @@ function showProducts(){
                 <div class="product_info d-flex flex-row align-items-start justify-content-start">
                     <div>
                         <div>
-                            <div class="product_name"><a href="product.html">${
+                            <div class="product_name" ><a href="product.html" id="productName">${
                               product.namn
                             }</a></div>
                             <div class="product_category">In <a href="category.html">Category</a></div>
