@@ -29,7 +29,6 @@ this.When(/^I search for "([^"]*)"$/,async  function (searchPhrase) {
 this.Then(/^i should get a list of products with names that matches$/,async function () {
   // Write code here that turns the phrase above into concrete actions
   let searchResultsBody = await $('.product_name a');
-  
   await searchResultsBody[0].click();
   await sleep(2000);
 });
