@@ -1,59 +1,41 @@
-let {$, sleep} = require('./funcs.js');
- 
-module.exports = function(){
- 
-  this.Given(/^that the products are available in the store$/, async function (callback) {
-    await helpers.loadPage('http://localhost:3303/login');
-  
-  });
+let { $, sleep } = require('./funcs.js');
 
-  this.When(/^I add one product to the cart$/,  async function () {
-    
-     
-    
-        
-    
-    
-  });
+module.exports = function () {
 
-  this.Then(/^i should see the product in the cart$/,async function (callback) {
-     
-    
-  });
+    this.Given(/^that the products are available in the store$/, async function () {
+        await helpers.loadPage('http://localhost/%27' + portnumber + '/categories.html')
 
-  this.Given(/^that the products are available in the store$/, async function (callback) {
-  
-    
-  });
-
-  this.When(/^I add one product to the cart$/,  async function (callback) {
-    
-  
-  });
-
-  this.When(/^I add one other product to the cart$/,  async function (callback) {
-    
-    
-  });
+    });
 
 
-  this.Then(/^I should see the products in the cart$/, async function (callback) {
-    
 
-  });
+    this.When(/^I click on add\-to button$/, async function () {
+        let add = await $('.search #search');
+        let add = await $('.search .searchbutton');
+        await add.click();
 
-  this.Given(/^that the products are available in the store$/,  async function (callback) {
-    
-  });
 
-  this.Given(/^I add one product that is out of stock to the cart$/, async function (callback) {
-    
-  });
 
-  this.Then(/^the page should show a message$/,  async function (callback) {
-    
+    });
 
-  });
+    this.Then(/^it should be added to the cart$/, async function () {
+
+
+    });
+
+    this.When(/^I click on add\-to button (\d+) times$/, async function () {
+
+
+    });
+
+    this.Then(/^it should be added to the cart$/, async function () {
+
+
+    });
+    this.When(/^I click on add\-to button$/, async function () {
+
+
+    });
 
 
 
