@@ -96,6 +96,8 @@ class productCartGUI {
 
         }
         $('.cart_items tbody').html(html);
+        $('.total tbody').html('Total sum of Products:     '+ app.cart.totalSumOfProductsCart());
+
     }
 
 }

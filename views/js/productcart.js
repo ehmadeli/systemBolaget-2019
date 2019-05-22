@@ -91,6 +91,8 @@ class ProductCart {
         return this.products.reduce((a, b) => {
             return a + b.priceInCart;
         }, 0);
+        
+        this.save();
 
     }
 
