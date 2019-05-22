@@ -1,62 +1,64 @@
 class productCartGUI {
     constructor() {
-        
+
         console.log('aaa');
- //       this.cart = new ProductCart();
         this.updateListOfProducts();
-        $('.emptyCart').click((e) => {
-            this.cart.emptyProductCart();
+
+        $('.button_clear').click((e) => {
+            app.cart.emptyProductCart();
         });
-        $('.add').click((e) => {
-            this.cart.addProductToCart();
-            this.updateListOfProducts();
+
+        $('.remove_item').click((e) => {
+            app.cart.deleteProductFromCart(product);
         });
+
     }
 
     updateListOfProducts() {
-let html='';
-console.log("fytfgd");
-        for(let x of app.cart.products){
 
-            
-            html += `<tr>
-                   <th scope="row">${x.productInCart.namn}</th>
-                   <td >${x.productInCart.prisinklmoms}</td>
-                   minus button
-                   <td >${x.quantityInCart}</td>
-                   plus-button
-                   <td >${x.priceInCart}</td>
-                   
-                 </tr>`;
-            
-            }
-            $('.cart-items').html(html);
-
-            window.localStorage.setItem('productcart', JSON.stringify(productGUI));
+        let html = ` `;
 
 
-        // let rows = this.cart.overviewOfCart();
-        // let html = `<table class="cart-items table">
-        //     <thead>
-        //         <tr>
-        //             <th scope='col'>Produckt</th>
-        //             <th scope='col'>Antal</th>
-        //             <th scope='col'>Summa</th>
-        //             <th scope='col'></th>
-        //         </tr>
-        //     </thead>
-        //     <tbody>`
-        //         for(let row of rows){
-        //             html += `<tr>
-        //                 <td>${rows.product.namn}</td>
-        //                 <td><input type='number' value='${row.quantity}'></input></td>
-        //                 <td>${row.rowSum}</td>
-        //                 <td><button class=' btn btn-primary'></button>Ta bort</td>
-        //             </tr>`
-        //         };
+
+        for (let x of app.cart.products) {
+
+
+            html += `
+            <div class="cart_items">
+            <ul class="cart_items_list">
+
+                <!-- Cart Item -->
+                <li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
+                    <div class="product d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
                     
-        //             html +=`</tbody></table>`;
-        // $('.cart-items').html(html);
+                    
+
+                    <div><div class="product_number">1</div></div>
+                        <div><div class="product_image"><img src="images/heine.png" alt=""></div></div>
+                        <div class="product_name_container">
+                            <div class="product_name"><a href="#">${x.productInCart.namn}</a></div>
+                            <div class="product_text"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="product_price product_text"><span>Price: </span>${x.productInCart.prisinklmoms}</div>
+                    <div class="product_quantity_container">
+                        <div class="product_quantity ml-lg-auto mr-lg-auto text-center">
+                            <span class="product_text product_num">${x.quantityInCart}</span>
+                            <div class="qty_sub qty_button trans_200 text-center"><span>-</span></div>
+                            <div class="qty_add qty_button trans_200 text-center"><span>+</span></div>
+                        </div>
+                    </div>
+                    <div class="product_total product_text"><span>Total: </span>${x.priceInCart}</div>
+
+                    <button type="button" class="remove_item btn btn-secondary">Remove Item</button>
+                </li>
+            </ul>
+            
+        </div> `;
+        }
+
+        $('.cart_items tbody').html(html);
     }
 
 }

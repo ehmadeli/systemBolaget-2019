@@ -4,7 +4,7 @@ let {$, sleep} = require('./funcs');
 module.exports = function(){
 
     this.Given(/^the product is already in the shopping cart$/, async function(){
-        await helpers.loadPage('http://localhost:3306/cart.html');
+        await helpers.loadPage('http://localhost:3306/login');
     });
 
     this.When(/^i click on the minus-button$/, async function(){

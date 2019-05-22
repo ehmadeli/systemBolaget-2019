@@ -2,7 +2,7 @@
 <testsuites>
     <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
+            <property name="URI" value="C:/Users/DellXPS/Desktop/systemBolaget-2019/features/addtocart.feature">
             </property>
         </properties>
         <testcase name="Given that i am on the page localhost:3306" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="7.7668846">

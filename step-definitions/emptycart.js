@@ -22,7 +22,7 @@ await cleanBtn.click()
   });
   
 
-  this.Then(/^It should empty the cart$/, async function () {
+  this.Then( /^It should empty the cart$/, async function () {
    let cartItems = await $('.cart-page .emptycart');
    assert(cartItems.length == 0, "cart is not empty");
     
