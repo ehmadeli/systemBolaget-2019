@@ -5,8 +5,8 @@ Given that product is already in the shopping cart
 When I click on the remove button in the shopping cart
 Then It should be removed from the shopping cart
 
-Scenario: successfully remove several different products from the shopping cart
-Given that there are several different products in the shopping cart
+Scenario: successfully remove products with 2 units from the shopping cart
+Given that there are 2 units in the shopping cart
 When I click on remove-button for each product
 Then products should be removed from the shopping cart
 
