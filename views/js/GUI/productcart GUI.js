@@ -3,8 +3,9 @@ class productCartGUI {
 
         console.log('aaa');
         this.updateListOfProducts();
-        $('.emptyCart').click((e) => {
-            this.cart.emptyProductCart();
+
+        $('.button_clear').click((e) => {
+            app.cart.emptyProductCart();
         });
     }
 
