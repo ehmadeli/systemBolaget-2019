@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
+<<<<<<< HEAD
     <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy-the-product;successfully-add-one-product-to-the-cart" tests="3" failures="0" skipped="1">
         <properties>
             <property name="URI" value="C:/Users/DellXPS/Desktop/systemBolaget-2019/features/addtocart.feature">
@@ -78,10 +79,28 @@
     at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
         </testcase>
         <testcase name="Then it should increase one product into the cart" classname="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-increase-of-the-same-product-in-the-shopping-cart">
+=======
+    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-a-product-from-the-shopping-cart" tests="3" failures="1" skipped="2">
+        <properties>
+            <property name="URI" value="C:\Users\Emilb\Desktop\systemBolaget-2019\features\removeproduct.feature">
+            </property>
+        </properties>
+        <testcase name="Given that product is already in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-a-product-from-the-shopping-cart" time="0.333359323">
+            <failure message="TypeError: Cannot read property &apos;sendKeys&apos; of null">TypeError: Cannot read property &apos;sendKeys&apos; of null
+    at createWorld.&lt;anonymous&gt; (C:\Users\Emilb\Desktop\systemBolaget-2019\step-definitions\removeproduct.js:14:21)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
+        </testcase>
+        <testcase name="When I click on the remove button in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-a-product-from-the-shopping-cart">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then It should be removed from the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-a-product-from-the-shopping-cart">
+>>>>>>> master
             <skipped message="">
             </skipped>
         </testcase>
     </testsuite>
+<<<<<<< HEAD
     <testsuite name="as-a-user,-i-should-be-able-to-adjust-the-quantity-of-a-product-anytime-to-fulfill-my-needs.;successfully-decrease-of-the-different-product-in-the-shopping-cart" tests="3" failures="1" skipped="1">
         <properties>
             <property name="URI" value="C:/Users/DellXPS/Desktop/systemBolaget-2019/features/adjustquantity.feature">
@@ -183,10 +202,27 @@
         <testcase name="When i press enter button" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-the-same-product-to-the-cart.">
         </testcase>
         <testcase name="Then it should be added 1 unit to the cart of the same product" classname="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-1-quantity-of-the-same-product-to-the-cart.">
+=======
+    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-products-with-2-units-from-the-shopping-cart" tests="3" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\Emilb\Desktop\systemBolaget-2019\features\removeproduct.feature">
+            </property>
+        </properties>
+        <testcase name="Given that there are 2 units in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-products-with-2-units-from-the-shopping-cart">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When I click on remove-button for each product" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-products-with-2-units-from-the-shopping-cart">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then products should be removed from the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-products-with-2-units-from-the-shopping-cart">
+>>>>>>> master
             <skipped message="">
             </skipped>
         </testcase>
     </testsuite>
+<<<<<<< HEAD
     <testsuite name="as-a-user,-i-should-be-able-to-select-different-quantities-of-a-product-to-my-shopping-cart-to-have-control-on-my-shopping.;successfully-add-atleast-2-quantities-of-the-same-product-to-the-cart." tests="4" failures="0" skipped="2">
         <properties>
             <property name="URI" value="C:/Users/DellXPS/Desktop/systemBolaget-2019/features/differentquantities.feature">
@@ -703,6 +739,22 @@ From: Task: WebDriver.navigate().to(.addtocart.addtocart)
             </skipped>
         </testcase>
         <testcase name="Then I should get the same shopping cart as previous" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser">
+=======
+    <testsuite name="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two-products-from-the-shopping-cart" tests="3" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\Emilb\Desktop\systemBolaget-2019\features\removeproduct.feature">
+            </property>
+        </properties>
+        <testcase name="Given that there are two different products in the shopping cart" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two-products-from-the-shopping-cart">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When I click on remove-button for each product" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two-products-from-the-shopping-cart">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then the shopping cart should not contain any products" classname="as-a-user,-i-should-be-able-to-remove-a-product-from-my-shopping-cart.;successfully-remove-two-products-from-the-shopping-cart">
+>>>>>>> master
             <skipped message="">
             </skipped>
         </testcase>
