@@ -20,7 +20,7 @@ module.exports = function () {
 
     let add = await $('.search-page .add');
     assert.notEqual(add, null, 'could not find the add button');
-    if (Array.isArray(add === true){
+    if (Array.isArray(add === true)){
       add = add[0];
     }
     await add.click()
@@ -88,7 +88,7 @@ module.exports = function () {
     assert((await cartItems.getText()).incluides
     (this.addedProduct2), "Det finns tydligen något kvar")
 });
-  });
+  //});
 
 
   this.Given(/^that there are two different products in the shopping cart$/, async function () {
@@ -102,7 +102,7 @@ module.exports = function () {
 
     let add = await $('.search-page .add');
     assert.notEqual(add, null, 'could not find the add button');
-    if (Array.isArray(add === true){
+    if (Array.isArray(add === true)){
       add = add[0];
     }
     await add.click()
@@ -164,7 +164,7 @@ module.exports = function () {
 
     let add = await $('.search-page .add');
     assert.notEqual(add, null, 'could not find the add button');
-    if (Array.isArray(add === true){
+    if (Array.isArray(add === true)){
       add = add[0];
     }
     await add.click();

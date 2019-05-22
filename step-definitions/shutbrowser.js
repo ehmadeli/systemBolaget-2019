@@ -1,10 +1,11 @@
-let App = require('../views/js/app.js');
-let ProductCart = require('../views/js/productcart.js');
+// let App = require('../views/js/app.js');
+// let ProductCart = require('../views/js/productcart.js');
+let {$, sleep} = require('./funcs');
 
 module.exports = function(){
 
    
-  this.Given(/^that I already have products in my cart$/, function () {
+  this.Given(/^that I already have products in my cart$/, async function () {
     await helpers.loadPage('http://localhost:3306/categories.html');
   await sleep(3000);
   let p1 = await driver.findElement(by.xpath('/html/body/div[2]/div/div[3]/div[1]/div[2]/div[1]/div/div/div[3]/div/div[2]'));
@@ -19,13 +20,13 @@ module.exports = function(){
   await sleep(3000);
   });
     
-  this.When(/^I close my browser$/, {timeout: 30000}, function () {  
+  this.When(/^I click on close-button in my browser$/, async function () {  
     // oldCart = Object.assign(app.cart);  
     // oldCart.saveProductCart('../systemBolaget-2019/www/json/productcart.json');
-    await.driver.close();
+    //await driver.close();
   });
 
-  this.When(/^I reopen my browser$/, {timeout: 30000}, function () {
+  this.When(/^I reopen my browser$/, async function () {
     // newCart.readProductCart('../systemBolaget-2019/www/json/productcart.json');
     await helpers.loadPage('http://localhost:3306/cart.html');
    });
@@ -36,12 +37,12 @@ module.exports = function(){
 });
 
 
-this.When(/^I refresh my browser$/, function () {
+this.When(/^I click the refresh-button in my browser$/, async function () {
   // Test 
   
   });
 
-  this.Then(/^I should get the same shopping cart as previous one$/, function () {
+  this.Then(/^I should get the same shopping cart as previous one$/, async function () {
        
   });
 

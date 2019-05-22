@@ -35,8 +35,8 @@ Feature:As a user, I should be able to adjust the quantity of a product anytime 
         When i click on minus-button once 
         Then the product should be removed from the cart
 
-    Scenario: The quantity of the product can never be below one if it does it is removed
-        Given that there is already atleast two units of a product in the shopping cart
-        When i type zero into the textbox 
-        Then the product should be removed from the cart
+    # Scenario: The quantity of the product can never be below one if it does it is removed
+    #     Given that there is already atleast two units of a product in the shopping cart
+    #     When i type zero into the textbox 
+    #     Then the product should be removed from the cart
 
