@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." tests="3" failures="1" skipped="0">
         <properties>
             <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
             </property>
         </properties>
-        <testcase name="Given that i am on the page localhost:3306" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="3.4555421">
+        <testcase name="Given that i am on the page localhost:3306" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="3.599087999">
         </testcase>
-        <testcase name="When I search for &quot;Renat&quot;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="5.1366768">
+        <testcase name="When I search for &quot;canella&quot;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="5.2451005">
         </testcase>
-        <testcase name="Then i should get a list of products with names that matches" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="2.463089901">
+        <testcase name="Then i should get a list of products with names that matches" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="0.070476801">
+            <failure message="ElementNotVisibleError: element not interactable">ElementNotVisibleError: element not interactable
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+    at Object.checkLegacyResponse (C:\Users\shiji\Desktop\systemBolaget-2019\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\shiji\Desktop\systemBolaget-2019\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at doSend.then.response (C:\Users\shiji\Desktop\systemBolaget-2019\node_modules\selenium-webdriver\lib\http.js:441:30)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+From: Task: WebElement.click()
+    at thenableWebDriverProxy.schedule (C:\Users\shiji\Desktop\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at WebElement.schedule_ (C:\Users\shiji\Desktop\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:2015:25)
+    at WebElement.click (C:\Users\shiji\Desktop\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:2096:17)
+    at createWorld.&lt;anonymous&gt; (C:\Users\shiji\Desktop\systemBolaget-2019\step-definitions\searchforproduct.js:32:30)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
         </testcase>
     </testsuite>
 </testsuites>

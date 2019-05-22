@@ -30,6 +30,7 @@ this.Then(/^i should get a list of products with names that matches$/,async func
   // Write code here that turns the phrase above into concrete actions
   let searchResultsBody = await $('.product_name a');
   await searchResultsBody[0].click();
+
   await sleep(2000);
 });
 
