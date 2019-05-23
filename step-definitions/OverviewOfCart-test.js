@@ -4,7 +4,7 @@ module.exports = function () {
 
 
   this.Given(/^that I am on the page$/, async function () {
-    await helpers.loadPage('https://localhost:3306/categories.html');
+    await helpers.loadPage('http://localhost:3306/cart.html');
     await sleep(5000);
   });
 
@@ -16,12 +16,16 @@ module.exports = function () {
     await searchBox.sendKeys("Renat");
 
   //  await searchButton.click();
-    let add = await $('.product-list .product_button');
+    let add = await $('.product-listing .product_cart');
     if (add.length > 0)
       add = add[0];
 
     assert.notEqual(add, 'could not find the add button');
     await add.click();
+
+    await helpers.loadPage('http://localhost:3306/cart.html');
+    await sleep(5000);
+    
     let firstProduct = await $('.cart_item td:first-child');
     this.addProduct = await firstProduct.getText();
     await sleep(3000);
@@ -65,6 +69,10 @@ module.exports = function () {
       }
 
       await add.click();
+
+      await helpers.loadPage('http://localhost:3306/cart.html');
+      await sleep(5000);
+
       let firstProduct = await $('.cart_item td:first-child');
       this.addedProduct1 = await firstProduct.getText();
 
