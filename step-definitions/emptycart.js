@@ -3,10 +3,7 @@ let {$, sleep} = require('./funcs');
 
 module.exports = function(){
 
-
-
-
-   
+  
   this.Given(/^empty the cart with one product in the shopping cart$/, async function () {
     let cleanBtn = await $('.button .button_clear .trans_200');
 ///let searchBar = await $(' .search #search');

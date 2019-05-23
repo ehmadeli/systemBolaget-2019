@@ -8,18 +8,19 @@
     "shijith": "node node_modules/selenium-cucumber-js/index.js -b chrome -f ./features/searchforproduct.feature & exit 0",
     "priya1": "node node_modules/selenium-cucumber-js/index.js -b chrome -f ./features/addtocart.feature & exit 0",
     "priya2": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/purchasewithoutaccount.feature & exit 0",
-    "priya3": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/login.feature & exit 0",
+    "priya3": "node node_modules/selenium-cucumber-js/index.js -b chrome -f ./features/login.feature & exit 0",
     "priya4": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/Registrationform.feature & exit 0",
     "Emil1": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/removeproduct.feature & exit 0",
     "Emil2": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/emptycart.feature & exit 0",
     "ahmad1": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/overviewofcart.feature & exit 0",
     "ahmad2": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/differentquantities.feature & exit 0",
-    "shul1": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/adjustquantity.feature & exit 0",
-    "shul2": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/shutbrowser.feature & exit 0"
+    "shul1": "node node_modules/selenium-cucumber-js/index.js -b chrome -f ./features/adjustquantity.feature & exit 0",
+    "shul2": "node node_modules/selenium-cucumber-js/index.js -b chrome -f ./features/shutbrowser.feature & exit 0"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",

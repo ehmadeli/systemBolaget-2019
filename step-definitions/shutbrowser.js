@@ -1,49 +1,45 @@
-let App = require('../views/js/app.js');
-let ProductCart = require('../views/js/productcart.js');
+let {$, sleep} = require('./funcs');
 
 module.exports = function(){
 
-  //let oldCart;  
-  //let newCart = new ProductCart();
- // let app = new App();
-    
-
- // app.cart.addProductToCart(app.products[0], 1);
-   // app.cart.addProductToCart(app.products[1], 2);
-
-  //app.cart.addProductToCart(app.products[0], 1);
-    //app.cart.addProductToCart(app.products[1], 2);
-
-    //app.cart.addProductToCart(app.products[5], 6);
-    //app.cart.addProductToCart(app.products[10], 3);
-  
-  this.Given(/^that I already have products in my cart$/, function () {
-    assert(app.cart.products.length > 0, 'The product cart does not have products');
+   
+  this.Given(/^that I already have products in my cart$/, async function () {
+    await helpers.loadPage('http://localhost:3306/categories.html');
+    // await helpers.loadPage('http://localhost:' + portnumber + '/categories.html')
+     await sleep(3000);
+     let p1 = (await $('.product_cart'))[2];
+     await p1.click();
+     p1 = (await $('.product_cart'))[4];
+     await p1.click();
+     p1 = (await $('.product_cart'))[6];
+     await p1.click();
+     await sleep(3000);
+     
+     let cart = await driver.findElement(by.css('.cart'));
+     await cart.click();
+     await sleep(3000);
   });
     
-  this.When(/^I close my browser$/, {timeout: 30000}, function () {  
-    oldCart = Object.assign(app.cart);  
-    oldCart.saveProductCart('../systemBolaget-2019/www/json/productcart.json');
+  this.When(/^I click the refresh-button in my browser$/, async function () {  
     
+    await driver.navigate().refresh();
   });
 
-  this.When(/^I reopen my browser$/, {timeout: 30000}, function () {
-    newCart.readProductCart('../systemBolaget-2019/www/json/productcart.json');
+  this.When(/^I refresh my browser$/, async function () {  
+    
+    await driver.navigate().refresh();
+  });
+
+  this.When(/^I reopen my browser$/, async function () {
+    
+    await helpers.loadPage('http://localhost:3306/cart.html');
    });
 
-  this.Then(/^I should get the same shopping cart as previous$/, {timeout: 30000}, function () {  
+  this.Then(/^I should get the same shopping cart as previous$/, async function () {  
     
-    assert(JSON.stringify(oldCart) === JSON.stringify(newCart), "The product carts  is not the same");
+    
 });
 
 
-this.When(/^I refresh my browser$/, function () {
-  // Test 
-  
-  });
-
-  this.Then(/^I should get the same shopping cart as previous one$/, function () {
-       
-  });
 
 }

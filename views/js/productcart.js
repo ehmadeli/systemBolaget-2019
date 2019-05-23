@@ -2,6 +2,8 @@ if (typeof module === 'object') {
     let assert = require('assert');
     let fs = require('fs');
     let Product = require('./product.js');
+} else {
+    assert = chai;
 }
 
 class ProductCart {
@@ -64,12 +66,13 @@ class ProductCart {
     changeQuantityOfProduct(product, newQuantity) {
         assert(product instanceof Product, product + ' entering is not a Product');
         assert(typeof newQuantity == 'number', 'The products new quantity ' + newQuantity + ' is not a number');
-        assert(this.products.map(p => p.productInCart).indexOf(product) != -1, 'The product is  in the cart')
+        //assert(this.products.map(p => p.productInCart).indexOf(product) != -1, 'The product is  in the cart')
 
         //let index = this.products.findIndex(p => p.productInCart == product);
-        let index = this.products.map(p => p.productInCart).indexOf(product);
-        this.products[index].priceInCart = newQuantity * product.prisinklmoms / 1;
-        this.products[index].quantityInCart = newQuantity;
+        let productInCart = this.products.find(p => p.productInCart.artikelid == product.artikelid);
+
+        productInCart.priceInCart = newQuantity * product.prisinklmoms / 1;
+        productInCart.quantityInCart = newQuantity;
         if (newQuantity == 0) {
             this.deleteProductFromCart(product);
         }
@@ -88,6 +91,8 @@ class ProductCart {
         return this.products.reduce((a, b) => {
             return a + b.priceInCart;
         }, 0);
+        
+        this.save();
 
     }
 

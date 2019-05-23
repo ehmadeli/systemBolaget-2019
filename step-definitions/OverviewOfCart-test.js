@@ -1,53 +1,45 @@
-const App = require('../views/js/app.js');
+let { $, sleep } = require('./funcs.js');
 
 module.exports = function () {
- // let app = new App();
 
-  this.Given(/^that I already have products in the cart$/, async function () {
+this.Given(/^that I am on the http:\/\/localhost:(\d+)$/, function () {
 
-    await helpers.loadPage('.addtocart' + '.addtocart');
-  });
-
-  this.When(/^I click on cart\-button$/, async function () {
+});
 
 
+this.Given(/^I searched for the products$/, function () {
+ 
+});
 
-    this.Then(/^I can see all the products in the cart and their details$/, async function () {
+this.Given(/^added to the cart$/, function () {
 
+});
 
-    });
+this.When(/^I click on cart\-button to overview it$/, function () {
+  
+});
 
-    this.Given(/^that I already have products in the cart$/, async function () {
+this.Then(/^I can see all the products in the cart and their details$/, function () {
 
+});
 
-    });
+this.Given(/^that I am on the http:\/\/localhost:(\d+)$/, function () {
 
-    this.When(/^I click on cart\-button$/, async function () {
+});
 
-      let cartButton = await $('.header.cart');
-      assert.notEqual(cartButton, null, 'could not find the cart button');
-      await cartButton.click();
+this.Given(/^I searched for the products$/, function () {
+  
+});
 
-    });
-    
-    this.Then(/^I can see the total price of products in the cart$/, async function () {
+this.Given(/^added (\d+) products to the cart$/, function () {
+  
+});
 
+this.When(/^I click on cart\-button$/, function () {
+  
+});
 
-    });
-    this.Given(/^that I already have products in the cart$/, async function () {
+this.Then(/^I can see the total price of products in the cart$/, function () {
 
-
-    });
-    this.When(/^I change the quantities of the products$/, async function () {
-
-
-    });
-    this.Then(/^I can see new total price of products in the cart$/, async function () {
-
-
-    });
-
-  });
-
-
+});
 }
