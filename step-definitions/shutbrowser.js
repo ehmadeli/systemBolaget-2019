@@ -43,6 +43,7 @@ module.exports = function(){
       await sleep(3000);
       let p = (await $('.product_name_container')).length;
       
+      
     assert(p / 1 == 3, "The products quantity  is not the same");
 });
 
