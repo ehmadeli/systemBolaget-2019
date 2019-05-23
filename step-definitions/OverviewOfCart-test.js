@@ -51,3 +51,24 @@ module.exports = function () {
 
 
 }
+
+
+
+let {$, sleep}= require('./func.js');
+module.exports=function{
+
+  this.Given(/^that I searched and added products to the cart$/, async function () {
+
+    let searchBox= await $('#search');
+  });
+
+
+}
+
+
+
+
+
+
+
+

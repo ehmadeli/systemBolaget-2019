@@ -99,7 +99,7 @@ class productCartGUI {
 
         }
         $('.cart_items tbody').html(html);
-        $('.total tbody').html('Total sum of Products:     '+ app.cart.totalSumOfProductsCart());
+        $('.total tbody').html('Total sum of '+ app.cart.products.length +'  products: '+ app.cart.totalSumOfProductsCart());
 
     }
 
