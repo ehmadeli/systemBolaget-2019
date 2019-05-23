@@ -8,14 +8,16 @@ module.exports = function(){
   this.Given(/^that I already have products in my cart$/, async function () {
     await helpers.loadPage('http://localhost:3306/categories.html');
   await sleep(3000);
-  let p1 = await driver.findElement(by.xpath('/html/body/div[2]/div/div[3]/div[1]/div[2]/div[1]/div/div/div[3]/div/div[2]'));
-  let p2 = await driver.findElement(by.xpath('/html/body/div[2]/div/div[3]/div[1]/div[2]/div[2]/div/div/div[3]/div/div[2]'));
+  let p1 = await driver.findElement(by.css('.product_cart'))[0];
+  let p2 = await driver.findElement(by.css('.product_cart'))[2];
   
+
   await p1.click();
   await p2.click();
   await sleep(3000);
   
-  let cart = await driver.findElement(by.xpath('/html/body/div[2]/header/div[2]/div[3]/div[3]/a'));
+  //let cart = await driver.findElement(by.xpath('/html/body/div[2]/header/div[2]/div[3]/div[3]/a'));
+  let cart = await driver.findElement(by.css('.cart'));
   await cart.click();
   await sleep(3000);
   });
