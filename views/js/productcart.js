@@ -57,9 +57,8 @@ class ProductCart {
 
     deleteProductFromCart(product) {
         assert(product instanceof Product, product + ' entering is not a Product');
-        //assert(this.products.map(p => p.productInCart).includes(product), 'The  product does not exsist in  the cart');
-        this.products.splice(this.products.map(p => p.productInCart).indexOf(product), 1);
-
+        this.products.splice(this.products.map(p => p.productInCart).findIndex(p => p.artikelid == product.artikelid), 1);
+        // this.products.splice(this.products.map(p => p.productInCart).indexOf(product), 1);
         this.save();
     }
 
