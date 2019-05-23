@@ -12,8 +12,8 @@
     "priya4": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/Registrationform.feature & exit 0",
     "Emil1": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/removeproduct.feature & exit 0",
     "Emil2": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/emptycart.feature & exit 0",
-    "ahmad1": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/overviewofcart.feature & exit 0",
-    "ahmad2": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/differentquantities.feature & exit 0",
+    "ahmad1": "node node_modules/selenium-cucumber-js/index.js -b chrome -f ./features/overviewofcart.feature & exit 0",
+    "ahmad2": "node node_modules/selenium-cucumber-js/index.js -b chrome -f ./features/differentquantities.feature & exit 0",
     "shul1": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/adjustquantity.feature & exit 0",
     "shul2": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/shutbrowser.feature & exit 0"
   },
