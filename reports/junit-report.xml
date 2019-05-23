@@ -1,127 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<<<<<<< HEAD
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." tests="3" failures="1" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." tests="3" failures="0" skipped="0">
         <properties>
             <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
             </property>
         </properties>
-        <testcase name="Given that i am on the page localhost:3306" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="3.599087999">
+        <testcase name="Given that i am on the page localhost:3306" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="3.611271299">
         </testcase>
-        <testcase name="When I search for &quot;canella&quot;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="5.2451005">
+        <testcase name="When I search for &quot;pale&quot;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="5.2110316">
         </testcase>
-        <testcase name="Then i should get a list of products with names that matches" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="0.070476801">
-            <failure message="ElementNotVisibleError: element not interactable">ElementNotVisibleError: element not interactable
-  (Session info: chrome=74.0.3729.157)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
-    at Object.checkLegacyResponse (C:\Users\shiji\Desktop\systemBolaget-2019\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\shiji\Desktop\systemBolaget-2019\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at doSend.then.response (C:\Users\shiji\Desktop\systemBolaget-2019\node_modules\selenium-webdriver\lib\http.js:441:30)
-    at processTicksAndRejections (internal/process/next_tick.js:81:5)
-From: Task: WebElement.click()
-    at thenableWebDriverProxy.schedule (C:\Users\shiji\Desktop\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at WebElement.schedule_ (C:\Users\shiji\Desktop\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:2015:25)
-    at WebElement.click (C:\Users\shiji\Desktop\systemBolaget-2019\node_modules\selenium-webdriver\lib\webdriver.js:2096:17)
-    at createWorld.&lt;anonymous&gt; (C:\Users\shiji\Desktop\systemBolaget-2019\step-definitions\searchforproduct.js:32:30)
-    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
-=======
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart." tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the web page localhost:3306" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click on add-to button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then it should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="Then i should get a list of products with names that matches" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="2.5568552">
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart." tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
+            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that i am on the page localhost:3306" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="3.608341601">
         </testcase>
-        <testcase name="When I click on add-to button 3 times" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I search for &quot;vin&quot;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="5.1735214">
         </testcase>
-        <testcase name="Then it should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart." tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the web page localhost:3306" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click on add-to button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then this different product should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart." tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the web page localhost:3306" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click on add-to button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And i click again one other product&apos;s add-to cart button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then the two different products should be added to the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart.">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the web page localhost:3306" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click to add-to button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then it does not allow me to add this product to cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And it shows message this product is out of stock" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products">
-            <skipped message="">
-            </skipped>
->>>>>>> master
+        <testcase name="Then i should get a list of products with names that matches" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="2.574136899">
         </testcase>
     </testsuite>
 </testsuites>

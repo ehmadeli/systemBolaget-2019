@@ -13,7 +13,7 @@ function showProducts(){
    let html = '';
    for(let product of products){
      html += `
-        <div class="col-xl-4 col-md-6 grid-item new" id="searchFilterDiv">
+        <div class="col-xl-4 col-md-6 grid-item new" id="searchFilterDiv" >
         <div class="product" product-id="${product.artikelid}">
             
             <div class="product_content">
