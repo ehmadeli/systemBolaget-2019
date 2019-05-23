@@ -75,7 +75,7 @@ module.exports = function () {
   let firstProduct = await $('.cart-item td:first-child');
   this.addProduct = await firstProduct.getText();
   await sleep(100);
-});
+};
 
 this.when(/^that I press on the cart to the see the overview $/, async function () {
 
@@ -154,7 +154,7 @@ this.Then(/^show the total price of products in the cart$/, async function () {
 });
 
 
-}
+
 
 
 

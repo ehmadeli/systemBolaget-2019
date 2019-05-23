@@ -1,93 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart." tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart." tests="3" failures="1" skipped="0">
         <properties>
             <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that I am on the web page localhost:3306/categories.html" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart." time="1.555714987">
         </testcase>
-        <testcase name="When I click on add-to button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart." time="9.429739094">
         </testcase>
-        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart." time="0.028323413">
+            <failure message="TypeError: Cannot read property &apos;getText&apos; of null">TypeError: Cannot read property &apos;getText&apos; of null
+    at createWorld.&lt;anonymous&gt; (C:\Users\Dindator\Desktop\systemBolaget-2019\step-definitions\addtocart-test.js:38:35)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart." tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart." tests="3" failures="1" skipped="0">
         <properties>
             <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that I am on the web page localhost:3306/categories.html" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart." time="1.48853632">
         </testcase>
-        <testcase name="When I click on add-to button 3 times" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart." time="9.420797866">
         </testcase>
-        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart." time="0.027825493">
+            <failure message="TypeError: Cannot read property &apos;getText&apos; of null">TypeError: Cannot read property &apos;getText&apos; of null
+    at createWorld.&lt;anonymous&gt; (C:\Users\Dindator\Desktop\systemBolaget-2019\step-definitions\addtocart-test.js:38:35)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart." tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart." tests="3" failures="1" skipped="0">
         <properties>
             <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that I am on the web page localhost:3306/categories.html" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart." time="1.433399467">
         </testcase>
-        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart." time="9.285870933">
         </testcase>
-        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart." time="0.03428352">
+            <failure message="TypeError: Cannot read property &apos;getText&apos; of null">TypeError: Cannot read property &apos;getText&apos; of null
+    at createWorld.&lt;anonymous&gt; (C:\Users\Dindator\Desktop\systemBolaget-2019\step-definitions\addtocart-test.js:38:35)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart." tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart." tests="3" failures="0" skipped="1">
         <properties>
             <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that I am on the web page localhost:3306/categories.html" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart." time="1.40085504">
         </testcase>
-        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart." time="9.2782976">
         </testcase>
         <testcase name="Then I should see the products in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart.">
             <skipped message="">
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products" tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products" tests="3" failures="1" skipped="0">
         <properties>
             <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that I am on the web page localhost:3306/categories.html" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products" time="1.417878187">
         </testcase>
-        <testcase name="When I click to add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products" time="9.263885227">
         </testcase>
-        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products">
-            <skipped message="">
-            </skipped>
+        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products" time="0.029536853">
+            <failure message="TypeError: Cannot read property &apos;getText&apos; of null">TypeError: Cannot read property &apos;getText&apos; of null
+    at createWorld.&lt;anonymous&gt; (C:\Users\Dindator\Desktop\systemBolaget-2019\step-definitions\addtocart-test.js:38:35)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
         </testcase>
     </testsuite>
 </testsuites>

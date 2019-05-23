@@ -13,3 +13,20 @@
 [0522/192258.202:ERROR:exception_snapshot_win.cc(98)] thread ID 8456 not found in process
 [0523/084159.963:ERROR:process_reader_win.cc(123)] NtOpenThread: {Åtkomst nekad} En process har begärt åtkomst till ett objekt, men har inte de rättigheter som krävs. (0xc0000022)
 [0523/084159.964:ERROR:exception_snapshot_win.cc(98)] thread ID 10404 not found in process
+[0523/131801.128:ERROR:process_reader_win.cc(123)] NtOpenThread: {Åtkomst nekad} En process har begärt åtkomst till ett objekt, men har inte de rättigheter som krävs. (0xc0000022)
+[0523/131801.132:ERROR:exception_snapshot_win.cc(98)] thread ID 17112 not found in process
+[0523/140217.749:ERROR:process_reader_win.cc(151)] SuspendThread: Åtkomst nekad. (0x5)
+[0523/140217.750:ERROR:process_reader_win.cc(151)] SuspendThread: Åtkomst nekad. (0x5)
+[0523/140217.750:ERROR:process_reader_win.cc(151)] SuspendThread: Åtkomst nekad. (0x5)
+[0523/140217.750:ERROR:process_reader_win.cc(151)] SuspendThread: Åtkomst nekad. (0x5)
+[0523/140217.750:ERROR:process_reader_win.cc(123)] NtOpenThread: {Åtkomst nekad} En process har begärt åtkomst till ett objekt, men har inte de rättigheter som krävs. (0xc0000022)
+[0523/140217.750:ERROR:exception_snapshot_win.cc(98)] thread ID 22220 not found in process
+[0523/140217.832:ERROR:process_reader_win.cc(151)] SuspendThread: Åtkomst nekad. (0x5)
+[0523/140217.833:ERROR:process_reader_win.cc(151)] SuspendThread: Åtkomst nekad. (0x5)
+[0523/140217.833:ERROR:process_reader_win.cc(151)] SuspendThread: Åtkomst nekad. (0x5)
+[0523/140217.833:ERROR:process_reader_win.cc(151)] SuspendThread: Åtkomst nekad. (0x5)
+[0523/140217.833:ERROR:process_reader_win.cc(151)] SuspendThread: Åtkomst nekad. (0x5)
+[0523/140217.833:ERROR:process_reader_win.cc(151)] SuspendThread: Åtkomst nekad. (0x5)
+[0523/140217.833:ERROR:process_reader_win.cc(151)] SuspendThread: Åtkomst nekad. (0x5)
+[0523/140217.833:ERROR:process_reader_win.cc(123)] NtOpenThread: {Åtkomst nekad} En process har begärt åtkomst till ett objekt, men har inte de rättigheter som krävs. (0xc0000022)
+[0523/140217.833:ERROR:exception_snapshot_win.cc(98)] thread ID 22196 not found in process
