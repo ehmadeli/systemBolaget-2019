@@ -15,9 +15,9 @@ module.exports = function(){
      await p1.click();
      await sleep(3000);
      
-     let cart = await driver.findElement(by.css('.cart'));
-     await cart.click();
-     await sleep(3000);
+    //  let cart = await driver.findElement(by.css('.cart'));
+    //  await cart.click();
+    //  await sleep(3000);
   });
     
   this.When(/^I click the refresh-button in my browser$/, async function () {  
@@ -37,7 +37,13 @@ module.exports = function(){
 
   this.Then(/^I should get the same shopping cart as previous$/, async function () {  
     
-    
+      let cart = await driver.findElement(by.css('.cart'));
+      await cart.click();
+
+      await sleep(3000);
+      let p = (await $('.product_name_container')).length;
+      
+    assert(p / 1 == 3, "The products quantity  is not the same");
 });
 
 
