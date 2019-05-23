@@ -4,7 +4,7 @@ module.exports = function () {
 
 
   this.Given(/^that I am on the page$/, async function () {
-    await helpers.loadPage('http://localhost:3306/cart.html');
+    await helpers.loadPage('http://localhost:3306/categories.html');
     await sleep(5000);
   });
 
@@ -61,7 +61,7 @@ module.exports = function () {
      // assert.notEqual(searchButton, null, 'could not find the search button');
      // await searchButton.click();
 
-      let add = await $('.product-listing .product_button');
+      let add = await $('.product-listing .product_cart');
       assert.notEqual(add, null, 'could not find the addbutton');
 
       if (Array.isArray(add) == true) {
@@ -79,12 +79,15 @@ module.exports = function () {
       await searchBox.clear();
       await searchBox.sendKeys('Canella');
   //    await searchButton.click();
-      add = await $('.product-listing .product_button');
+      add = await $('.product-listing .product_cart');
 
       assert.notEqual(add, null, 'could not find the add button');
       if (Array.isArray(add) === true) {
         add = add[0];
       }
+
+      await helpers.loadPage('http://localhost:3306/cart.html');
+      await sleep(5000);
 
       await add.click();
       let searchProduct = await $('.cart_item td:first-child');
@@ -93,12 +96,15 @@ module.exports = function () {
       await searchBox.clear();
       await searchBox.sendkeys('Svarta Trannan');
   //    await searchButton.click();
-      add = await $('.product-listing .product_button');
+      add = await $('.product-listing .product_cart');
 
       assert.notEqual(add, null, 'could not find the add Button');
       if (Array.isArray(add) === true) {
         add = add[0];
       }
+
+      await helpers.loadPage('http://localhost:3306/cart.html');
+      await sleep(5000);
 
       await add.click();
       let thirdProduct = await $('.cart_item td:first-child');
@@ -120,6 +126,9 @@ module.exports = function () {
     });
 
     this.Then(/^I can see the total price of products in the cart$/,async function () {
+      await helpers.loadPage('http://localhost:3306/cart.html');
+      await sleep(5000);
+
       let ProductTotalPrice = await $('.cart_item td:first-child');
       assert((await productTotalPrice[0].getText()).includes
         (this.addedProduct1), 'The cart do not contain 3 products');
