@@ -6,7 +6,7 @@ class productGUI {
             let productId = parent.attr('product-id') / 1;
             let product = app.products.find(p => p.artikelid == productId);
 
-            console.log(product)
+            //console.log(product)
 
             app.cart.addProductToCart(product, 1);
         });

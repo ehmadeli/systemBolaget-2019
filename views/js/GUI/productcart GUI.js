@@ -1,7 +1,7 @@
 class productCartGUI {
     constructor() {
 
-        console.log('aaa');
+        //console.log('aaa');
         this.updateListOfProducts();
 
         $('.button_clear').click((e) => {
@@ -13,10 +13,8 @@ class productCartGUI {
 
             let parent = $(e.target).closest('.product');
             // let productId = parent.attr('product-ad') / 1;
-            let productId = $(e.target).find('input').attr('idart') / 1;
-            let product = app.products.find(p => p.artikelid == productId);
-
-            console.log(product)
+            let productId = $(e.target).find('input').attr('idart');
+            let product = app.products.find(p => p.artikelid == productId / 1);
 
             app.cart.deleteProductFromCart(product);
             this.updateListOfProducts();

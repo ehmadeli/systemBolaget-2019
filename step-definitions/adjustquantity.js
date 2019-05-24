@@ -12,7 +12,6 @@ module.exports = function(){
        await p1.click();
        await sleep(3000);
        
-       //let cart = await driver.findElement(by.xpath('/html/body/div[2]/header/div[2]/div[3]/div[3]/a'));
        let cart = await driver.findElement(by.css('.cart'));
        await cart.click();
        await sleep(3000);
@@ -52,15 +51,12 @@ this.When(/^I click on the plus-button for a product$/, async function(){
   await sleep(3000);
   qProduct = await $('.product_text.product_num');
   text = await qProduct.getText();
-    
 
 });
 
 this.Then(/^it should increase one product into the cart$/, async function(){
   assert.equal((text / 1), 2, "This is not one numbers of product");
 });
-
-
 
 //Scenario: successfully decrease of the different product in the shopping cart
 this.Given(/^the different products are already in the shopping cart$/, async function(){
@@ -70,13 +66,10 @@ this.Given(/^the different products are already in the shopping cart$/, async fu
   let p1 = (await $('.product_cart'))[0];
   let p2 = (await $('.product_cart'))[1];
   
-
-
   await p1.click();
   await p2.click();
   await sleep(3000);
   
-  //let cart = await driver.findElement(by.xpath('/html/body/div[2]/header/div[2]/div[3]/div[3]/a'));
   let cart = await driver.findElement(by.css('.cart'));
   await cart.click();
   await sleep(3000);
@@ -136,19 +129,6 @@ this.When(/^i click on the minus-button on products$/, async function(){
     assert.equal((text1 / 1), 2, "This is not one numbers of product");
     assert.equal((text2 / 1), 2, "This is not one numbers of product");
   });
-
-//Scenario: successfully increase of the different product in the shopping cart
-
-//Scenario: successfully adjust amount of same product in the shopping cart
-
-
-
-
-this.Then(/^it should add as many products to the cart$/, async function(){
-
-});
-
-
 
 
 //Scenario: The quantity of the product can never go below one if it does it is removed
