@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart." tests="3" failures="1" skipped="1">
+    <testsuite name="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" tests="4" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
+            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New7\systemBolaget-2019\features\shutbrowser.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306/categories.html" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart." time="1.438778454">
+        <testcase name="Given that I already have 3 products in my cart" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="3.40839453">
         </testcase>
-        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart." time="6.21771776">
-            <failure message="TypeError: Cannot read property &apos;click&apos; of undefined">TypeError: Cannot read property &apos;click&apos; of undefined
-    at createWorld.&lt;anonymous&gt; (C:\Users\Dindator\Desktop\systemBolaget-2019\step-definitions\addtocart-test.js:20:18)
-    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
+        <testcase name="When I click the refresh-button in my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.163465725">
         </testcase>
-        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="And I reopen my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="0.310444379">
+        </testcase>
+        <testcase name="Then I should get the same shopping cart as previous" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-browser-is-shut-down" time="3.580484203">
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart." tests="3" failures="1" skipped="1">
+    <testsuite name="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
+            <property name="URI" value="C:\Users\sergejs.sulziks\Documents\TH\SystemBolaget2019New7\systemBolaget-2019\features\shutbrowser.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306/categories.html" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart." time="1.440820053">
+        <testcase name="Given that I already have 3 products in my cart" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="3.500710418">
         </testcase>
-        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart." time="6.207698774">
-            <failure message="TypeError: Cannot read property &apos;click&apos; of undefined">TypeError: Cannot read property &apos;click&apos; of undefined
-    at createWorld.&lt;anonymous&gt; (C:\Users\Dindator\Desktop\systemBolaget-2019\step-definitions\addtocart-test.js:20:18)
-    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
+        <testcase name="When I click the refresh-button in my browser" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="0.008273553">
         </testcase>
-        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart.">
-            <skipped message="">
-            </skipped>
+        <testcase name="Then I should get the same shopping cart as previous" classname="as-a-user,-i-should-be-able-to-shut-down-the-browser-and-reopen-it-with-the-same-shopping-cart.;successfully-be-able-to-reopen-with-the-same-shopping-cart-even-if-i-refresh-the-browser" time="3.486107855">
         </testcase>
     </testsuite>
     <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart." tests="3" failures="1" skipped="1">
