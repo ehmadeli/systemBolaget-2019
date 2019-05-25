@@ -24,7 +24,9 @@ class ProductCart {
         assert(product instanceof Product, product + ' entering is not a Product');
         assert(typeof quantity == 'number', 'The products quantity ' + quantity + ' is not a number');
         assert(quantity > 0, 'The products quantity  is less then 0');
-        assert(!this.products.map(p => p.productInCart).includes(product), 'The same product was added to the cart');
+        //assert(!this.products.map(p => p.productInCart).includes(product), 'The same product was added to the cart');
+        assert(!this.products.map(p => p.productInCart).find(p => p.artikelid == product.artikelid), 'The same product was added to the cart');
+
 
         // hmmmm. adding properties to a product poses some problems:
         // 1) we must assume that each user has his own copy of the list of all products
@@ -57,9 +59,8 @@ class ProductCart {
 
     deleteProductFromCart(product) {
         assert(product instanceof Product, product + ' entering is not a Product');
-        //assert(this.products.map(p => p.productInCart).includes(product), 'The  product does not exsist in  the cart');
-        this.products.splice(this.products.map(p => p.productInCart).indexOf(product), 1);
-
+        this.products.splice(this.products.map(p => p.productInCart).findIndex(p => p.artikelid == product.artikelid), 1);
+        // this.products.splice(this.products.map(p => p.productInCart).indexOf(product), 1);
         this.save();
     }
 
