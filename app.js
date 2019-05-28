@@ -3,6 +3,8 @@ var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
+const ejsLint = require('ejs-lint');
+ejsLint.lint()
 var app = express();
 var port = 3306;
 

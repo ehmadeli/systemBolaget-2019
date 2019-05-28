@@ -1,86 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart." tests="3" failures="1" skipped="1">
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" tests="4" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
+            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306/categories.html" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart." time="1.438778454">
+        <testcase name="Given that I am on the web page localhost:3306/cart.html" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" time="1.501693013">
         </testcase>
-        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart." time="6.21771776">
-            <failure message="TypeError: Cannot read property &apos;click&apos; of undefined">TypeError: Cannot read property &apos;click&apos; of undefined
-    at createWorld.&lt;anonymous&gt; (C:\Users\Dindator\Desktop\systemBolaget-2019\step-definitions\addtocart-test.js:20:18)
+        <testcase name="When I click on checkout button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" time="0.359764054">
+        </testcase>
+        <testcase name="And I filled the form with customer detail" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" time="9.379630934">
+        </testcase>
+        <testcase name="Then It should show me ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" time="6.055187626">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" tests="6" failures="1" skipped="4">
+        <properties>
+            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am on the web page localhost:3306/cart.html" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="1.48995712">
+        </testcase>
+        <testcase name="And there is one product in the cart" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="1.21877504">
+            <failure message="ReferenceError: addButton is not defined">ReferenceError: addButton is not defined
+    at createWorld.&lt;anonymous&gt; (C:\Users\Dindator\Desktop\systemBolaget-2019\step-definitions\purchasewithoutreg.js:112:3)
     at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
         </testcase>
-        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-to-the-cart.">
+        <testcase name="When I click on checkout button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And I filled the form with customer detail" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And I click on order button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then It should show me ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product">
             <skipped message="">
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart." tests="3" failures="1" skipped="1">
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products" tests="6" failures="0" skipped="5">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
+            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306/categories.html" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart." time="1.440820053">
+        <testcase name="Given that I am on the web page localhost:3306/cart.html" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products" time="1.39520256">
         </testcase>
-        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart." time="6.207698774">
-            <failure message="TypeError: Cannot read property &apos;click&apos; of undefined">TypeError: Cannot read property &apos;click&apos; of undefined
-    at createWorld.&lt;anonymous&gt; (C:\Users\Dindator\Desktop\systemBolaget-2019\step-definitions\addtocart-test.js:20:18)
-    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
-        </testcase>
-        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-several-products-of-the-same-type-to-the-cart.">
+        <testcase name="And there is two product in the cart" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products">
             <skipped message="">
             </skipped>
         </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart." tests="3" failures="1" skipped="1">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the web page localhost:3306/categories.html" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart." time="1.433875627">
-        </testcase>
-        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart." time="6.223927893">
-            <failure message="TypeError: Cannot read property &apos;click&apos; of undefined">TypeError: Cannot read property &apos;click&apos; of undefined
-    at createWorld.&lt;anonymous&gt; (C:\Users\Dindator\Desktop\systemBolaget-2019\step-definitions\addtocart-test.js:20:18)
-    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
-        </testcase>
-        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-a-product-of-different-types-to-the-cart.">
+        <testcase name="When I click on checkout button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products">
             <skipped message="">
             </skipped>
         </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart." tests="3" failures="1" skipped="1">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the web page localhost:3306/categories.html" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart." time="1.39814912">
-        </testcase>
-        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart." time="6.209889707">
-            <failure message="TypeError: Cannot read property &apos;click&apos; of undefined">TypeError: Cannot read property &apos;click&apos; of undefined
-    at createWorld.&lt;anonymous&gt; (C:\Users\Dindator\Desktop\systemBolaget-2019\step-definitions\addtocart-test.js:20:18)
-    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
-        </testcase>
-        <testcase name="Then I should see the products in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;successfully-add-at-least-two-different-products-to-the-cart.">
+        <testcase name="And I filled the form with customer detail" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products">
             <skipped message="">
             </skipped>
         </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products" tests="3" failures="1" skipped="1">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\addtocart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the web page localhost:3306/categories.html" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products" time="1.439240533">
+        <testcase name="And I click on order button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products">
+            <skipped message="">
+            </skipped>
         </testcase>
-        <testcase name="When I click on add button" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products" time="6.21767808">
-            <failure message="TypeError: Cannot read property &apos;click&apos; of undefined">TypeError: Cannot read property &apos;click&apos; of undefined
-    at createWorld.&lt;anonymous&gt; (C:\Users\Dindator\Desktop\systemBolaget-2019\step-definitions\addtocart-test.js:20:18)
-    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
-        </testcase>
-        <testcase name="Then I should see the product in the cart" classname="as-a-user,-i-should-be-able-to-add-the-selected-product-into-the-shopping-cart-to-be-able-to-buy.;out-of-products">
+        <testcase name="Then It should show me ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products">
             <skipped message="">
             </skipped>
         </testcase>

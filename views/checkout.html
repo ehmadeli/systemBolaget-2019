@@ -81,7 +81,7 @@
 					</form>
 				</div>
 				<!-- User -->
-				<div class="user"><a href="#"><div><img src="images/user.svg" alt="https://www.flaticon.com/authors/freepik"><div>1</div></div></a></div>
+				<div class="user"><a href="login"><div><img src="images/user.svg" alt="https://www.flaticon.com/authors/freepik"></div></div>
 				<!-- Cart -->
 				<div class="cart"><a href="cart.html"><div><img src="images/cart.svg" alt="https://www.flaticon.com/authors/freepik"></div></a></div>
 				<!-- Phone -->
@@ -128,15 +128,18 @@
 										<div class="col-lg-6">
 											<!-- Name -->
 											<input type="text" id="checkout_name" class="checkout_input" placeholder="First Name" required="required">
+											<p id="demo"></p>
 										</div>
 										<div class="col-lg-6">
 											<!-- Last Name -->
 											<input type="text" id="checkout_last_name" class="checkout_input" placeholder="Last Name" required="required">
+											<p id="demo1"></p>
 										</div>
 									</div>
 									<div>
 										<!-- Company -->
 										<input type="text" id="checkout_company" placeholder="Company" class="checkout_input">
+										
 									</div>
 									<div>
 										<!-- Country -->
@@ -147,15 +150,18 @@
 											<option>UK</option>
 											<option>Italy</option>
 										</select>
+										<p id="demo2"></p>
 									</div>
 									<div>
 										<!-- Address -->
 										<input type="text" id="checkout_address" class="checkout_input" placeholder="Address Line 1" required="required">
+										<p id="demo3"></p>
 										<input type="text" id="checkout_address_2" class="checkout_input checkout_address_2" placeholder="Address Line 2" required="required">
 									</div>
 									<div>
 										<!-- Zipcode -->
 										<input type="text" id="checkout_zipcode" class="checkout_input" placeholder="Zip Code" required="required">
+										<p id="demo4"></p>
 									</div>
 									<div>
 										<!-- City / Town -->
@@ -166,6 +172,7 @@
 											<option>City</option>
 											<option>City</option>
 										</select>
+										
 									</div>
 									<div>
 										<!-- Province -->
@@ -176,40 +183,19 @@
 											<option>Province</option>
 											<option>Province</option>
 										</select>
+										
 									</div>
 									<div>
 										<!-- Phone no -->
 										<input type="phone" id="checkout_phone" class="checkout_input" placeholder="Phone No." required="required">
+										<p id="demo5"></p>
 									</div>
 									<div>
 										<!-- Email -->
 										<input type="phone" id="checkout_email" class="checkout_input" placeholder="Email" required="required">
+										<p id="demo6"></p>
 									</div>
-									<div class="checkout_extra">
-										<ul>
-											<li class="billing_info d-flex flex-row align-items-center justify-content-start">
-												<label class="checkbox_container">
-													<input type="checkbox" id="cb_1" name="billing_checkbox" class="billing_checkbox">
-													<span class="checkbox_mark"></span>
-													<span class="checkbox_text">Terms and conditions</span>
-												</label>
-											</li>
-											<li class="billing_info d-flex flex-row align-items-center justify-content-start">
-												<label class="checkbox_container">
-													<input type="checkbox" id="cb_2" name="billing_checkbox" class="billing_checkbox">
-													<span class="checkbox_mark"></span>
-													<span class="checkbox_text">Create an account</span>
-												</label>
-											</li>
-											<li class="billing_info d-flex flex-row align-items-center justify-content-start">
-												<label class="checkbox_container">
-													<input type="checkbox" id="cb_3" name="billing_checkbox" class="billing_checkbox">
-													<span class="checkbox_mark"></span>
-													<span class="checkbox_text">Subscribe to our newsletter</span>
-												</label>
-											</li>
-										</ul>
-									</div>
+							
 								</form>
 							</div>
 						</div>
@@ -263,7 +249,7 @@
 								<div class="cart_text">
 									<p>Delivary day depends on the type of shippment chosen.</p>
 								</div>
-								<div class="checkout_button trans_200"><a href="checkout.html">place order</a></div>
+								<div id="myElement" class="checkout_button trans_200">place order</div>
 							</div>
 						</div>
 					</div>
@@ -375,4 +361,84 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="js/checkout.js"></script>
 </body>
+
 </html>
+<script>
+let ok = false;
+
+function myFunction1() {
+
+	document.location.href = 'http://localhost:3306/purchasedcomplete.html'
+}
+function doFirst()
+  {
+	  let button = document.getElementById("myElement");
+	  button.addEventListener("click",main,false);
+
+  }
+
+  function main(){
+let text ='Please fill out this field.';
+	if(document.getElementById("checkout_name").value == ""){
+	 ok = false;
+	 console.log("name="+ok);
+	 document.getElementById("demo").innerHTML = text;
+	 document.getElementById("demo").style.borderColor="red";
+	 return false
+}
+if(document.getElementById("checkout_last_name").value == ""){
+	 ok = false;
+	 console.log("userkonto="+ok);
+	 document.getElementById("demo1").innerHTML = text;
+	 document.getElementById("demo1").style.borderColor="red"
+	 return false
+}
+if(document.getElementById("checkout_country").value == ""){
+	 ok = false;
+	 console.log("userkonto="+ok);
+	 document.getElementById("demo2").innerHTML = text;
+	 document.getElementById("demo2").style.borderColor="red"
+	 return false
+}
+if(document.getElementById("checkout_address").value == ""){
+	 ok = false;
+	 console.log("userkonto="+ok);
+	 document.getElementById("demo3").innerHTML = text;
+	 document.getElementById("demo3").style.borderColor="red"
+	 return false
+}
+if(document.getElementById("checkout_zipcode").value == ""){
+	 ok = false;
+	 console.log("userkonto="+ok);
+	 document.getElementById("demo4").innerHTML = text;
+	 document.getElementById("demo4").style.borderColor="red"
+	 return false
+}
+
+if(document.getElementById("checkout_phone").value == ""){
+	 ok = false;
+	 console.log("userkonto="+ok);
+	 document.getElementById("demo5").innerHTML = text;
+	 document.getElementById("demo5").style.borderColor="red"
+	 return false
+}
+if(document.getElementById("checkout_email").value == ""){
+	 ok = false;
+	 console.log("userkonto="+ok);
+	 document.getElementById("demo6").innerHTML = text;
+	 document.getElementById("demo6").style.borderColor="red"
+	 return false
+}
+else{
+ok = true;
+console.log(ok);
+}
+
+if(ok){
+window.location = "purchasedcomplete.html";
+
+}
+  }
+  window.addEventListener("load",doFirst,false); 
+	</script>
+	

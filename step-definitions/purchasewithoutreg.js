@@ -1,122 +1,158 @@
-const App = require('../views/js/app.js');
+let { $, sleep } = require('./funcs.js');
 
 module.exports = function () {
 
-   // let app = new App();
-    //let product;
+  this.Given(/^that I am on the web page localhost:(\d+)\/cart\.html$/, async function (portNumber) {
+    await helpers.loadPage('http://localhost:' + portNumber + '/cart.html');
+    await sleep(1000);
+  });
+ 
 
+  this.When(/^I click on checkout button$/, async function () {
+    let button = await $('.checkout_button');
+    assert(button != null, 'Could not find checkout button');
+    await button.click();
+   
+  });
 
-    this.Given(/^that I have added the product in the shopping cart$/, function () {
-        app.cart.addProductToCart(app.products[0], 3); 
-    
-      });
-      this.Then(/^It should confirm me product is ordered$/, function () {
+  this.When(/^I filled the form with customer detail$/, async function () {
+    let checkout = await $('.checkout_button');
+    await checkout.click();
+    await sleep(1000);
+    let firstname = await $('#checkout_name');
+    assert(firstname != null, 'Could not find the first name');
+    await firstname.sendKeys('priya');
 
-        
-    
-      });
+    let lastname = await $('#checkout_last_name');
+    assert(lastname != null, 'Could not find the last name');
+    await lastname.sendKeys('Panth');
 
-      this.When(/^I buy the products$/, function () {
-        
-      });
+    let company = await $('#checkout_company');
+    assert(company != null, 'Could not find the companyname');
+    await company.sendKeys('systemBolaget');
 
-      this.Then(/^I should come to the ordering page$/, function () {
-       
-      });
+    let country = await $('#checkout_country');
+    assert(country != null, 'Could not find the country');
+    await country.sendKeys('stockhlom');
+    await sleep(1000);
+    let addressline1 = await $('#checkout_address');
+    assert(addressline1 != null, 'Could not find the address');
+    await addressline1.sendKeys('systemBolaget');
+    await sleep(1000);
+    let address2 = await $('#checkout_address_2');
+    assert(address2 != null, 'Could not find the addressline2');
+    await address2.sendKeys('granövägen');
+    await sleep(1000);
+    let Zipcode = await $('#checkout_zipcode');
+    assert(Zipcode != null, 'Could not find the Zipcode');
+    await Zipcode.sendKeys('12345');
+    await sleep(1000);
+    let city = await $('#checkout_city');
+    assert(city != null, 'Could not find the city');
+    await city.sendKeys('stockhlom');
+    await sleep(1000);
+    let province = await $('#checkout_province');
+    assert(province != null, 'Could not find the province');
+    await province.sendKeys('');
+    await sleep(1000);
+    let phoneno = await $('#checkout_phone');
+    assert(phoneno != null, 'Could not find the phoneno');
+    await phoneno.sendKeys('systemBolagetco');
+    await sleep(1000);
+    let email = await $('#checkout_email');
+    assert(email != null, 'Could not find the emailadd');
+    await email.sendKeys('panthpriya12');
 
-      this.Given(/^that I am already on the ordering page$/, function () {
-       
-      });
+  });
 
-      this.When(/^I fill up the ordering page$/, function () {
-       
-      });
+    this.Then(/^It should show me ordering page$/, async function () {
+    let firstname = await $('#checkout_name');
+    await firstname.sendKeys('priya');
+    await sleep(1000);
+    let lastname = await $('#checkout_last_name');
+    assert(lastname != null, 'Could not find the last name');
+    await lastname.sendKeys('Panth');
+    await sleep(1000);
+    let addressline1 = await $('#checkout_address');
+    assert(addressline1 != null, 'Could not find the address');
+    await addressline1.sendKeys('systemBolaget');
+    await sleep(1000);
+    let address2 = await $('#checkout_address_2');
+    assert(address2 != null, 'Could not find the addressline2');
+    await address2.sendKeys('granövägen');
+    await sleep(1000);
+    let Zipcode = await $('#checkout_zipcode');
+    assert(Zipcode != null, 'Could not find the Zipcode');
+    await Zipcode.sendKeys('12345');
+    await sleep(1000);
+    let email = await $('#checkout_email');
+    assert(email != null, 'Could not find the emailadd');
+    await email.sendKeys('panthpriya12');
+    console.log('priya');
+    let button1 = await $('#myElement');
+    assert(button1 != null, 'Could not find chechout button');
+    await button1.click();
+  });
 
- this.When(/^I buy the products by 'without registration'$/, function () {
+  this.When(/^I click on order button$/, async function () {
+    let button = await $('#myElement');
+    assert(button != null, 'Could not find checkout button');
+    await button.click();
+
+  });
+
+  this.Given(/^there is one product in the cart$/, async function () {
+    await helpers.loadPage('http://localhost:3306/categories.html');
+    await(2000);
+    let searchBar = await $('#myInput');
+    await searchBar.sendKeys("Renat");
+    let add = await $('.product-listing .product_cart');
+    assert(add != null, 'Could not find the add button');
+if (Array.isArray(add)===true){
+  addButton = addButton[0];
+}
+
+    console.log("HOW MANY", add.length)
+    await add.click();
+
+    let cart = await $('.cart');
+    assert(cart != null, 'Could not find the cart');
+    await cart.click();
+    await sleep(1000);
       
-      });
+    });
 
-
-
-    // this.Given(/^that a product is available in the shop$/, function(){
-    //     app = new App();
-    //     // if I don't mind that a product might be out of stock
-    //     // the maybe just choose a random product
-    //     let randomIndex = Math.floor(app.products.length * Math.random());
-    //     product = app.products[randomIndex];
-    // });
-
-    // this.When(/^I add the product to cart$/, function () {
-    //     // should we randmoize and test that correct quantity
-    //     // is stored as well - for now I just go with 3 - the same quantity each time
-    //     app.cart.addProductToCart(product, 3);
-    // });
-
-    // this.Then(/^it should be added to the cart$/, function(){
-    //     // the cart has no method you can call to get what is in it???
-    //     // how could i test this then?
-    //     // should I look directly at the three(!) different arrays
-    //     // the separately holds the product, the quantity of a product and price per row?
-    //     // (a rather shaky solution)
-    //     // or should there be a method like "overview" or "getContent"
-    //     // and should we first change to using one array with small objects
-    //     // with three properties {product: ProductInstance, quantity: Number, price: Number}
-    //     // before we write such a method because then that method
-    //     // could basically just return the single array...
-    //     assert(app.cart.products.includes(product), 'Not the same name of the product in the cart as the product we added.');
-    // });
-
-    // // Should there be an "And in the right quantity" in the scenario after Then it sould be added to the cart
-    // // that would result in another this.Then step where could check that the cart
-    // // stores the correct quantity that you added too...
-
-
-    // this.Then(/^the two different products should be added to the cart$/, function () {
-
-    //    app.cart.addProductToCart(app.products[0], 3);
-       
-    //    app.cart.addProductToCart(app.products[1], 1);
-    // });
+    /*this.Given(/^ there is two product in the cart$/, async function () {
+      let searchBar = await $('#myInput');
+      await searchBar.sendKeys("Renat");
+      let add = await $('.product-listing .product_cart');
+      assert(add != null, 'Could not find the add button');
+      let add1 = await $('.product-listing .product_cart');
+      assert(add1 != null, 'Could not find the add1 button');
+       if (Array.isArray(add)===true){
+   let addButton = add[0];
+    addButton=add1[1];
+  }
+      console.log("HOW MANY", add.length)
+      await add.click();
+  
+      let cart = await $('.cart');
+      assert(cart != null, 'Could not find the cart');
+      await cart.click();
+      await sleep(1000);
         
-      
+    
+    });
 
-    //   this.Given(/^that there is a product that is out of stock$/, function () {
-    //       let oldProduct = app.products[30];
-    //       app.products.splice(app.products.indexOf(oldProduct), 1);
-    //     assert(!app.cart.products.includes(oldProduct), 'The same name of the product in the cart as the product we added.');
+   
 
-    //   });
-     
-    //   this.When(/^I try to add that product$/, function () {
-    //     app.cart.products.includes(product)
-    //     let randomIndex = Math.floor(app.products.length * Math.random());
-    //     product = app.products[randomIndex];
-    //     app.cart.addProductToCart(product, 3);    
-        
-    //   });
 
-    //   this.Then(/^that a products are available in the shop$/, function() {
-    //     app = new App();
-    //     // if I don't mind that a product might be out of stock
-    //     // the maybe just choose a random product
-    //     let randomIndex = Math.floor(app.products.length * Math.random());
-    //     product = app.products[randomIndex];
-        
-    //   });
+  
 
-    //   this.Then(/^page should say 'Out of stock'$/, function () {
-        
-    //     // web page we test in next sprint.
-    //   });
 
-    //   this.When(/^I add one product into the cart$/, function () {
-    //     app.cart.addProductToCart(app.products[2], 1);
-        
-    //   });
 
-    //   this.When(/^i add one other product to the cart$/, function () {
-    //     app.cart.addProductToCart(app.products[3], 1);
-    //   });
 
+
+*/
 
 }

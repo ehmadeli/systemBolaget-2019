@@ -170,6 +170,7 @@ $(document).ready(function()
 				var num = qty.find('.product_num');
 				var original;
 				var newValue;
+				var stock = 10;
 
 				sub.on('click', function()
 				{
@@ -177,6 +178,13 @@ $(document).ready(function()
 					if(original > 0)
 						{
 							newValue = original - 1;
+							stock-1;
+							console.log("subclick: "+stock);
+							
+						}
+						if(stock == 0)
+						{
+							console.log("the item is out of stock");
 						}
 					num.text(newValue);
 				});
@@ -185,6 +193,8 @@ $(document).ready(function()
 				{
 					original = parseFloat(qty.find('.product_num').text());
 					newValue = original + 1;
+					stock+1;
+					console.log("addclick: "+stock);
 					num.text(newValue);
 				});
 			});
