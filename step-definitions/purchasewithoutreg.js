@@ -109,17 +109,14 @@ module.exports = function () {
     let add = await $('.product-listing .product_cart');
     assert(add != null, 'Could not find the add button');
 if (Array.isArray(add)===true){
-  addButton = addButton[0];
+  add = add[0];
 }
-
     console.log("HOW MANY", add.length)
     await add.click();
-
     let cart = await $('.cart');
     assert(cart != null, 'Could not find the cart');
     await cart.click();
     await sleep(1000);
-      
     });
 
     /*this.Given(/^ there is two product in the cart$/, async function () {

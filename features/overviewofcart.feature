@@ -9,6 +9,6 @@ Then I can see all the products in the cart and their details
 
 Scenario: Successfully overview the total price of the products
 Given that I am on the page
-And I searched for the products and added 3 products into the cart
+And I searched for the products and added products into the cart
 When I click on cart-button 
 Then I can see the total price of products in the cart

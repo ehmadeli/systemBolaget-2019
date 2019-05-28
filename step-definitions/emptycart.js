@@ -1,45 +1,51 @@
-
 let {$, sleep} = require('./funcs');
 
 module.exports = function(){
 
+  this.BeforeScenario(async function()  {
+    await helpers.loadPage('http://localhost:3306/categories.html'); 
+});
+
+
+this.Given(/^that there is (\d+) products in the cart$/, async function (numberOfProductsInCart) {
   
-  this.Given(/^empty the cart with one product in the shopping cart$/, async function () {
-    let cleanBtn = await $('.button .button_clear .trans_200');
-///let searchBar = await $(' .search #search');
-//await searchBar.sendKeys('öl')
-await cleanBtn.click()
-  });
-    
+  // never forget to convert string to number
+  numberOfProductsInCart = numberOfProductsInCart / 1;
+
+  let searchBar = await $('#myInput');
+  await searchBar.sendKeys("Renat");
+  await sleep(3000);
   
 
-  this.When(/^i click on the empty\-cart button$/, async function () {
-    let cleanBtn = await $('.button .button_clear .trans_200');
-    await cleanBtn.click()
-  });
-  
-
-  this.Then( /^It should empty the cart$/, async function () {
-   let cartItems = await $('.cart-page .emptycart');
-   assert(cartItems.length == 0, "cart is not empty");
-    
-  });
-
-
-  this.Given(/^that there are already several different products in the cart$/, async function () {
-    // Write code here that turns the phrase above into concrete actions
-    
-  });
-
-  
-  this.When(/^i click on the empty\-cart button$/, async function (callback) {
-    // Write code here that turns the phrase above into concrete actions
-    
-  });
-
-  this.Then(/^It should empty the cart$/, async function () {
-    // Write code here that turns the phrase above into concrete actions
-   
-  });
-
+  let add = await $('.product-listing .product_cart');
+  if (!add.length>0) {
+    add = add[0];
   }
+
+  for (let i = 0; i < numberOfProductsInCart; i++) {
+    await add[i].click();
+  }
+  
+});
+
+
+
+  
+this.When(/^i click on the empty\-cart button$/, async function () {
+  await helpers.loadPage('http://localhost:3306/cart.html');
+  await sleep(2000);
+  let emptyCartButton = await $('.button_clear');
+  assert.notEqual(emptyCartButton, null, 'could not find the emptycart button');
+  await emptyCartButton.click();
+});
+
+
+this.Then(/^It should empty the cart$/, async function () {
+  let cartItems = await $('.button_clear');
+  assert(cartItems === null, "cart is not empty");
+});
+
+}
+
+
+
