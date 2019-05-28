@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-1-product-in-the-shopping-cart" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
+            <property name="URI" value="C:\Users\Emilb\Desktop\systemBolaget-2019\features\emptycart.feature">
             </property>
         </properties>
-        <testcase name="Given that i am on the page localhost:3306" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="3.8785156">
+        <testcase name="Given that there is 1 products in the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-1-product-in-the-shopping-cart" time="3.676324928">
         </testcase>
-        <testcase name="When I search for &quot;pale&quot;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="5.2153486">
+        <testcase name="When i click on the empty-cart button" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-1-product-in-the-shopping-cart" time="4.586919901">
         </testcase>
-        <testcase name="Then i should get a list of products with names that matches" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="2.7826246">
+        <testcase name="Then It should empty the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-1-product-in-the-shopping-cart" time="0.074839665">
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." tests="3" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-3-product-in-the-shopping-cart" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\shiji\Desktop\systemBolaget-2019\features\searchforproduct.feature">
+            <property name="URI" value="C:\Users\Emilb\Desktop\systemBolaget-2019\features\emptycart.feature">
             </property>
         </properties>
-        <testcase name="Given that i am on the page localhost:3306" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="3.6612301">
+        <testcase name="Given that there is 3 products in the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-3-product-in-the-shopping-cart" time="4.039272306">
         </testcase>
-        <testcase name="When I search for &quot;vin&quot;" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="5.1782832">
+        <testcase name="When i click on the empty-cart button" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-3-product-in-the-shopping-cart" time="4.476037533">
         </testcase>
-        <testcase name="Then i should get a list of products with names that matches" classname="as-a-user,-i-should-be-able-to-search-for-a-product-so-that-i-can-find-it-easily.;successfully-search-for-products-by-properties." time="2.624515601">
+        <testcase name="Then It should empty the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-3-product-in-the-shopping-cart" time="0.047172592">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-10-product-in-the-shopping-cart" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:\Users\Emilb\Desktop\systemBolaget-2019\features\emptycart.feature">
+            </property>
+        </properties>
+        <testcase name="Given that there is 10 products in the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-10-product-in-the-shopping-cart" time="6.34152065">
+        </testcase>
+        <testcase name="When i click on the empty-cart button" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-10-product-in-the-shopping-cart" time="5.621811519">
+        </testcase>
+        <testcase name="Then It should empty the cart" classname="as-a-user,-i-should-be-able-to-empty-the-entire-shopping-cart.;succssfully-empty-the-cart-with-10-product-in-the-shopping-cart" time="0.065998266">
         </testcase>
     </testsuite>
 </testsuites>
