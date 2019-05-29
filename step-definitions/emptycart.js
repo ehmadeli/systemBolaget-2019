@@ -1,9 +1,11 @@
 let {$, sleep} = require('./funcs');
 
+
 module.exports = function(){
 
   this.BeforeScenario(async function()  {
     await helpers.loadPage('http://localhost:3306/categories.html'); 
+    await sleep(3000);
 });
 
 
@@ -12,17 +14,23 @@ this.Given(/^that there is (\d+) products in the cart$/, async function (numberO
   // never forget to convert string to number
   numberOfProductsInCart = numberOfProductsInCart / 1;
 
-  let searchBar = await $('#myInput');
+  /*let searchBar = await $('#myInput');
   await searchBar.sendKeys("Renat");
-  await sleep(3000);
+  await sleep(3000);*/
   
 
-  let add = await $('.product-listing .product_cart');
-  if (!add.length>0) {
-    add = add[0];
+  let add;
+  // continue to try to get the add buttons as long as we fail
+  // (dangerous could continue forever if they never show in the browser)
+  while(!add){
+    add = await $('.product-listing .product_cart');
+    await sleep(100);
   }
 
+  //console.log("==> " + add.length);
   for (let i = 0; i < numberOfProductsInCart; i++) {
+    console.log("==>> " + add[i]);
+    //await sleep(3000);
     await add[i].click();
   }
   
