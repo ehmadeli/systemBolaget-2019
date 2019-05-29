@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="as-a-user,-i-should-be-able-to-login-my-account;succssfully-login" tests="5" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\login.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am on the login page" classname="as-a-user,-i-should-be-able-to-login-my-account;succssfully-login" time="1.158214176">
+        </testcase>
+        <testcase name="And I  entered correct username" classname="as-a-user,-i-should-be-able-to-login-my-account;succssfully-login" time="0.09931362">
+        </testcase>
+        <testcase name="And I entered correct password" classname="as-a-user,-i-should-be-able-to-login-my-account;succssfully-login" time="0.081857811">
+        </testcase>
+        <testcase name="When I click on sign in button" classname="as-a-user,-i-should-be-able-to-login-my-account;succssfully-login" time="0.641547487">
+        </testcase>
+        <testcase name="Then it should be login Succssfully" classname="as-a-user,-i-should-be-able-to-login-my-account;succssfully-login" time="1.679530257">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user,-i-should-be-able-to-login-my-account;unsuccssfully-login" tests="5" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\login.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am on the login page" classname="as-a-user,-i-should-be-able-to-login-my-account;unsuccssfully-login" time="1.134987693">
+        </testcase>
+        <testcase name="Given I entered wrong username" classname="as-a-user,-i-should-be-able-to-login-my-account;unsuccssfully-login" time="0.109409847">
+        </testcase>
+        <testcase name="Given I entered wrong password" classname="as-a-user,-i-should-be-able-to-login-my-account;unsuccssfully-login" time="0.100271488">
+        </testcase>
+        <testcase name="When I click on sign in button" classname="as-a-user,-i-should-be-able-to-login-my-account;unsuccssfully-login" time="0.173807583">
+        </testcase>
+        <testcase name="Then it should be login unSuccssfully" classname="as-a-user,-i-should-be-able-to-login-my-account;unsuccssfully-login" time="1.123304691">
+        </testcase>
+    </testsuite>
+</testsuites>
