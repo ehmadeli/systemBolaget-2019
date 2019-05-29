@@ -13,7 +13,7 @@ module.exports = function () {
 
     this.Given(/^that a product is already in the shopping cart$/, async function () {
       let searchBox = await $('#myInput');
-      await searchBox.sendKeys("Renat");
+      await searchBox.sendKeys("Motzenbäcker Marie");
   
       await sleep(3000);
   
@@ -40,18 +40,18 @@ module.exports = function () {
       }
   
       await removeButton.click();
-  
+      await sleep(3000);
   
     });
   
   
     this.Then(/^product should be removed from the shopping cart$/, async function () {
      
-   //   await helpers.loadPage('http://localhost:3306/cart.html');
-     // await sleep(3000);
+      await helpers.loadPage('http://localhost:3306/cart.html');
+     await sleep(3000);
 
       let cartItem = await $('.cart_items .product_name a');
-      assert(cartItem == null, "det finns tydligen något kvar")
+      assert(cartItem == null, "There is an item left in the cart");
          
     }); 
 
@@ -121,14 +121,14 @@ module.exports = function () {
       if (Array.isArray(add === true)){
         add = add[0];
       }
-      await add.click()
+      await add.click();
 
       let firstProduct = await $('.cart_items li:first-child');
       this.addedProduct1 = await firstProduct.getText();
 
 
-       searchBar = await $('#myInput');
       await searchBox.clear();
+      searchBar = await $('#myInput');
       assert.notEqual(searchBar, null, 'could not find the searchbar');
       await searchBar.sendKeys('Josés');
 
@@ -243,8 +243,8 @@ module.exports = function () {
 
 
       let cartItem = await $('.cart_items .product_name a');
-      assert.notEqual(cartItem, null, "det finns tydligen något kvar")
-      assert(Array.isArray(cartItem) == false, 'det vartydligen en array');
+      assert.notEqual(cartItem, null, "There is a product left in the cart")
+      assert(Array.isArray(cartItem) == false, 'This is an array');
       console.log(await cartItem.getText());
 
       assert((await cartItem.getText()).includes(this.addedProduct2), "Det finns tydligen något kvar");
