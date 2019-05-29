@@ -1,66 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" tests="4" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;successfully--register-the-account" tests="4" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
+            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\Registrationform.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306/cart.html" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" time="1.403325014">
+        <testcase name="Given that I am in registration page" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;successfully--register-the-account" time="0.116688213">
         </testcase>
-        <testcase name="When I click on checkout button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" time="0.320290134">
+        <testcase name="When i input my name  in textbox" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;successfully--register-the-account" time="0.119381334">
         </testcase>
-        <testcase name="And I filled the form with customer detail" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" time="9.577915733">
+        <testcase name="When I  input  my password on textbox" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;successfully--register-the-account" time="0.07506304">
         </testcase>
-        <testcase name="Then It should show me ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" time="5.863419734">
+        <testcase name="Then it should be signup Successfully" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;successfully--register-the-account" time="1.156340053">
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" tests="6" failures="1" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;unsuccessfully-register-the-account-." tests="4" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
+            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\Registrationform.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306/cart.html" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="1.381916587">
+        <testcase name="Given that I am in registration page" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;unsuccessfully-register-the-account-." time="0.1335744">
         </testcase>
-        <testcase name="And there is one product in the cart" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="2.772503466">
+        <testcase name="When i input same username  in textbox" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;unsuccessfully-register-the-account-." time="0.11231104">
         </testcase>
-        <testcase name="When I click on checkout button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="0.3164608">
+        <testcase name="When i input same password  in textbox" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;unsuccessfully-register-the-account-." time="0.092041387">
         </testcase>
-        <testcase name="And I filled the form with customer detail" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="9.26601472">
-        </testcase>
-        <testcase name="And I click on order button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="0.247588694">
-        </testcase>
-        <testcase name="Then It should show me ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="0.017069653">
-            <failure message="TypeError: Cannot read property &apos;sendKeys&apos; of null">TypeError: Cannot read property &apos;sendKeys&apos; of null
-    at createWorld.&lt;anonymous&gt; (C:\Users\Dindator\Desktop\systemBolaget-2019\step-definitions\purchasewithoutreg.js:70:21)
-    at processTicksAndRejections (internal/process/next_tick.js:81:5)</failure>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products" tests="6" failures="0" skipped="5">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the web page localhost:3306/cart.html" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products" time="1.412843093">
-        </testcase>
-        <testcase name="And there is two product in the cart" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I click on checkout button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And I filled the form with customer detail" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And I click on order button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then It should show me ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-two-products">
-            <skipped message="">
-            </skipped>
+        <testcase name="Then It should be signup unSuccessfully" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;unsuccessfully-register-the-account-." time="1.665790294">
         </testcase>
     </testsuite>
 </testsuites>

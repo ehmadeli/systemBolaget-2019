@@ -95,3 +95,9 @@
 [0528/094736.021:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
 [0528/094736.023:ERROR:exception_snapshot_win.cc(98)] thread ID 18500 not found in process
 >>>>>>> master
+[0528/204330.164:ERROR:process_reader_win.cc(123)] NtOpenThread: {Åtkomst nekad} En process har begärt åtkomst till ett objekt, men har inte de rättigheter som krävs. (0xc0000022)
+[0528/204330.165:ERROR:exception_snapshot_win.cc(98)] thread ID 21880 not found in process
+[0529/011335.623:ERROR:process_reader_win.cc(123)] NtOpenThread: {Åtkomst nekad} En process har begärt åtkomst till ett objekt, men har inte de rättigheter som krävs. (0xc0000022)
+[0529/011335.628:ERROR:exception_snapshot_win.cc(98)] thread ID 31212 not found in process
+[0529/011335.793:ERROR:process_reader_win.cc(123)] NtOpenThread: {Åtkomst nekad} En process har begärt åtkomst till ett objekt, men har inte de rättigheter som krävs. (0xc0000022)
+[0529/011335.794:ERROR:exception_snapshot_win.cc(98)] thread ID 10884 not found in process

@@ -8,15 +8,15 @@ Then It should show me ordering page
 
 Scenario: Successfully buy one product
 Given that I am on the web page localhost:3306/cart.html
-And  there is one product in the cart
+When  there is one product in the cart
 When I click on checkout button 
 And I filled the form with customer detail
 And I click on order button 
 Then It should show me ordering page
 
-Scenario: Successfully buy two products
+Scenario: Successfully buy differtent products
 Given that I am on the web page localhost:3306/cart.html
-And  there is two product in the cart
+When  there are two products in the  cart
 When I click on checkout button 
 And I filled the form with customer detail
 And I click on order button 

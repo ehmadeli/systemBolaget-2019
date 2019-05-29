@@ -119,27 +119,33 @@ if (Array.isArray(add)===true){
     await sleep(1000);
     });
 
-    /*this.Given(/^ there is two product in the cart$/, async function () {
-      let searchBar = await $('#myInput');
-      await searchBar.sendKeys("Renat");
-      let add = await $('.product-listing .product_cart');
-      assert(add != null, 'Could not find the add button');
-      let add1 = await $('.product-listing .product_cart');
-      assert(add1 != null, 'Could not find the add1 button');
-       if (Array.isArray(add)===true){
-   let addButton = add[0];
-    addButton=add1[1];
-  }
-      console.log("HOW MANY", add.length)
-      await add.click();
-  
-      let cart = await $('.cart');
-      assert(cart != null, 'Could not find the cart');
-      await cart.click();
-      await sleep(1000);
-        
+    this.When(/^there are two products in the  cart$/, async function () {
+      let searchButton = await $('#myInput');
+        await searchButton.click();
+        await sleep(1000);
+        let add = await $('.product_cart');
+        assert(add != null, 'Could not find the product button');
+        console.log("HOW MANY ???", add.length)
+        await add[0].click();
+        let add1 = await $('.product_cart');
+        assert(add1 != null, 'Could not find the add button');
+        console.log("HOW MANY ???", add.length)
+        await add[1].click();
+    })
     
-    });
+      
+  }
+    
+    
+    
+    
+    
+      
+
+  
+      
+    
+    
 
    
 
@@ -150,6 +156,6 @@ if (Array.isArray(add)===true){
 
 
 
-*/
 
-}
+
+
