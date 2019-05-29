@@ -1,5 +1,5 @@
 let {$, sleep} = require('./funcs');
-
+let s = 300;
 
 module.exports = function(){
 
@@ -7,14 +7,14 @@ module.exports = function(){
       
        await helpers.loadPage('http://localhost:3306/categories.html');
       // await helpers.loadPage('http://localhost:' + portnumber + '/categories.html')
-       await sleep(3000);
+       await sleep(3 * s);
        let p1 = (await $('.product_cart'))[2];
        await p1.click();
-       await sleep(3000);
+       await sleep(3 * s);
        
        let cart = await driver.findElement(by.css('.cart'));
        await cart.click();
-       await sleep(3000);
+       await sleep(3 * s);
        
     });
 
@@ -22,7 +22,7 @@ module.exports = function(){
     // add one more product
     let plusBtn = await $('.qty_add.qty_button.trans_200.text-center');
         await plusBtn.click();
-        await sleep(3000);
+        await sleep(3 * s);
 	 
       let pName = await $('.product_name a');
       let qProduct = await $('.product_text.product_num');
@@ -31,7 +31,7 @@ module.exports = function(){
  
       //Click på minus button
       await minusBtn.click();
-      await sleep(3000);
+      await sleep(3 * s);
       qProduct = await $('.product_text.product_num');
        text = await qProduct.getText();
       
@@ -48,7 +48,7 @@ module.exports = function(){
 this.When(/^I click on the plus-button for a product$/, async function(){
   let plusBtn = await $('.qty_add');
   await plusBtn.click();
-  await sleep(3000);
+  await sleep(3 * s);
   qProduct = await $('.product_text.product_num');
   text = await qProduct.getText();
 
@@ -61,40 +61,40 @@ this.Then(/^it should increase one product into the cart$/, async function(){
 //Scenario: successfully decrease of the different product in the shopping cart
 this.Given(/^the different products are already in the shopping cart$/, async function(){
   await helpers.loadPage('http://localhost:3306/categories.html');
-  await sleep(3000);
+  await sleep(3 * s);
   
   let p1 = (await $('.product_cart'))[0];
   let p2 = (await $('.product_cart'))[1];
   
   await p1.click();
   await p2.click();
-  await sleep(3000);
+  await sleep(3 * s);
   
   let cart = await driver.findElement(by.css('.cart'));
   await cart.click();
-  await sleep(3000);
+  await sleep(3 * s);
 });
 
 this.When(/^i click on the minus-button on products$/, async function(){
   // add one more product
   let plusBtn1 = (await $('.qty_add'))[0];
   await plusBtn1.click();
-  await sleep(2000);
+  await sleep(2 * s);
   
   let plusBtn2 = (await $('.qty_add'))[1];
   await plusBtn2.click();
-  await sleep(2000); 
+  await sleep(2 * s); 
   
    
     //Click på minus buttons
     let minusBtn1 = (await $('.qty_sub'))[0];
     await minusBtn1.click();
     
-    await sleep(3000);   
+    await sleep(3 * s);   
     
     let minusBtn2 = (await $('.qty_sub'))[1];
     await minusBtn2.click();
-    await sleep(3000);
+    await sleep(3 * s);
     
   });
 
@@ -102,11 +102,11 @@ this.When(/^i click on the minus-button on products$/, async function(){
     // add one more product
     let plusBtn1 = (await $('.qty_add'))[0];
     await plusBtn1.click();
-    await sleep(2000);
+    await sleep(2 * s);
     
     let plusBtn2 = (await $('.qty_add'))[1];
     await plusBtn2.click();
-    await sleep(2000); 
+    await sleep(2 * s); 
     
   });
 
@@ -135,13 +135,13 @@ this.When(/^i click on the minus-button on products$/, async function(){
 this.Given(/^that there is already one product in the shopping cart$/, async function(){
   await helpers.loadPage('http://localhost:3306/categories.html');
       // await helpers.loadPage('http://localhost:' + portnumber + '/categories.html')
-       await sleep(3000);
+       await sleep(3 * s);
        let p1 = (await $('.product_cart'))[5];
        await p1.click();
-       await sleep(3000);
+       await sleep(3 * s);
        let cart = await driver.findElement(by.css('.cart'));
        await cart.click();
-       await sleep(3000);
+       await sleep(3 * s);
 });
 
 this.When(/^i click on minus-button once$/, async function(){
@@ -150,7 +150,7 @@ this.When(/^i click on minus-button once$/, async function(){
  
   //Click på minus button
   await minusBtn.click();
-  await sleep(3000);
+  await sleep(3 * s);
 });
 
 this.Then(/^the product should be removed from the cart$/, async function(){
