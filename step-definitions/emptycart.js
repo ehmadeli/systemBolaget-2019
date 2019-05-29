@@ -29,7 +29,7 @@ this.Given(/^that there is (\d+) products in the cart$/, async function (numberO
 
   //console.log("==> " + add.length);
   for (let i = 0; i < numberOfProductsInCart; i++) {
-    console.log("==>> " + add[i]);
+    //console.log("==>> " + add[i]);
     //await sleep(3000);
     await add[i].click();
   }
@@ -49,7 +49,8 @@ this.When(/^i click on the empty\-cart button$/, async function () {
 
 
 this.Then(/^It should empty the cart$/, async function () {
-  let cartItems = await $('.button_clear');
+  let cartItems = await $('.remove_button');
+  console.log("==>> " + cartItems);
   assert(cartItems === null, "cart is not empty");
 });
 
