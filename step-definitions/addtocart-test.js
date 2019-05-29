@@ -12,7 +12,7 @@ module.exports = function () {
         await sleep(1000);
         let add = await $('.product_cart');
         assert(add != null, 'Could not find the add button');
-        console.log("HOW MANY ???", add.length)
+        
         await add[0].click();
         await sleep(1000);
         let cart = await $('.cart');
@@ -20,8 +20,6 @@ module.exports = function () {
         await cart.click();
         await sleep(1000);
 
-
-        await sleep(3000);
 
 
 
@@ -33,7 +31,7 @@ module.exports = function () {
         await searchButton.click();
         let add = await $('.product_button');
         assert(add != null, 'Could not find the add button');
-        console.log("HOW MANY", add.length)
+        
         await add.click();
         let cart = await $('.cart');
         assert(cart != null, 'Could not find the cart');
@@ -53,11 +51,11 @@ module.exports = function () {
         await sleep(1000);
         let add = await $('.product_cart');
         assert(add != null, 'Could not find the product button');
-        console.log("HOW MANY ???", add.length)
+        
         await add[0].click();
         let add1 = await $('.product_cart');
         assert(add1 != null, 'Could not find the add button');
-        console.log("HOW MANY ???", add.length)
+        
         await add[1].click();
 
     });

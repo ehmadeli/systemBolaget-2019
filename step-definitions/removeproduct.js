@@ -142,9 +142,10 @@ module.exports = function () {
     await add.click()
 
     helpers.loadPage('http://localhost:3306/cart.html');
+    await sleep(3000);
 
     let secondProduct = await $('.cart_items li:nth-child(2)');
-    this.addedProduct2 = await secondProduct.getText();
+    let addedProduct2 = await secondProduct.getText();
 
   });
 
