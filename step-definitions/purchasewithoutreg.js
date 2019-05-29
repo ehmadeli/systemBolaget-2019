@@ -67,24 +67,17 @@ module.exports = function () {
 
   });
 
+  
   this.Given(/^there is one product in the cart$/, async function () {
-    await helpers.loadPage('http://localhost:3306/categories.html');
-    await(2000);
-    let searchBar = await $('#myInput');
-    await searchBar.sendKeys("Renat");
-    let add = await $('.product-listing .product_cart');
-    assert(add != null, 'Could not find the add button');
-if (Array.isArray(add)===true){
-  add = add[0];
-}
-    console.log("HOW MANY", add.length)
-    await add.click();
-    let cart = await $('.cart');
-    assert(cart != null, 'Could not find the cart');
-    await cart.click();
-    await sleep(1000);
-    });
-    
+     helpers.loadPage("http://localhost:3306/categories.html");
+     let searchButton = await $('#myInput');
+     await searchButton.click();
+     await sleep(1000);
+     let add = await $('.product_cart');
+     assert(add != null, 'Could not find the add button');
+     await add[0].click();
+    })
+
     this.Given(/^there are two products in the cart$/, async function () {
       helpers.loadPage("http://localhost:3306/categories.html");
       let searchButton = await $('#myInput');

@@ -39,13 +39,13 @@ this.When(/^I  entered correct username$/, async function () {
 this.Given(/^I entered wrong username$/, async function () {
   let username = await $('#name');
   assert(username != null, 'Could not find the username');
-  await username.sendKeys('priyapanth1');
+  await username.sendKeys('priyapanth2');
   
 });
 this.Given(/^I entered wrong password$/, async function () {
   let password  = await $('#pass');
   assert(password != null,'Could not find the password');
-  await password.sendKeys('panth1');
+  await password.sendKeys('panth2');
 });
 
     
@@ -54,6 +54,7 @@ this.Then(/^it should be login unSuccssfully$/,async function () {
         assert(login != null, 'Could not find the sign button');
         await login.click();
         await sleep(1000);
+
     });
   
  

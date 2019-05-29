@@ -1,53 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" tests="4" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-login-my-account;succssfully-login" tests="5" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
+            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\login.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306/cart.html" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" time="1.38984192">
+        <testcase name="Given that I am on the login page" classname="as-a-user,-i-should-be-able-to-login-my-account;succssfully-login" time="1.158214176">
         </testcase>
-        <testcase name="When I click on checkout button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" time="0.442509227">
+        <testcase name="And I  entered correct username" classname="as-a-user,-i-should-be-able-to-login-my-account;succssfully-login" time="0.09931362">
         </testcase>
-        <testcase name="And I filled the form with customer detail" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" time="6.977574827">
+        <testcase name="And I entered correct password" classname="as-a-user,-i-should-be-able-to-login-my-account;succssfully-login" time="0.081857811">
         </testcase>
-        <testcase name="Then It should show me ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-products-without-having-an-account" time="1.227815253">
+        <testcase name="When I click on sign in button" classname="as-a-user,-i-should-be-able-to-login-my-account;succssfully-login" time="0.641547487">
+        </testcase>
+        <testcase name="Then it should be login Succssfully" classname="as-a-user,-i-should-be-able-to-login-my-account;succssfully-login" time="1.679530257">
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" tests="6" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-should-be-able-to-login-my-account;unsuccssfully-login" tests="5" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
+            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\login.feature">
             </property>
         </properties>
-        <testcase name="Given that I am on the web page localhost:3306/cart.html" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="1.417471147">
+        <testcase name="Given that I am on the login page" classname="as-a-user,-i-should-be-able-to-login-my-account;unsuccssfully-login" time="1.134987693">
         </testcase>
-        <testcase name="When there is one product in the cart" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="2.782303573">
+        <testcase name="Given I entered wrong username" classname="as-a-user,-i-should-be-able-to-login-my-account;unsuccssfully-login" time="0.109409847">
         </testcase>
-        <testcase name="When I click on checkout button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="0.295158187">
+        <testcase name="Given I entered wrong password" classname="as-a-user,-i-should-be-able-to-login-my-account;unsuccssfully-login" time="0.100271488">
         </testcase>
-        <testcase name="And I filled the form with customer detail" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="6.989724587">
+        <testcase name="When I click on sign in button" classname="as-a-user,-i-should-be-able-to-login-my-account;unsuccssfully-login" time="0.173807583">
         </testcase>
-        <testcase name="And I click on order button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="0.262267733">
-        </testcase>
-        <testcase name="Then It should show me ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-one-product" time="1.21470336">
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" tests="6" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
-            </property>
-        </properties>
-        <testcase name="Given there are two products in the cart" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" time="1.641199787">
-        </testcase>
-        <testcase name="And that I am on the web page localhost:3306/cart.html" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" time="1.378003627">
-        </testcase>
-        <testcase name="When I click on checkout button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" time="0.30764544">
-        </testcase>
-        <testcase name="And I filled the form with customer detail" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" time="6.986375253">
-        </testcase>
-        <testcase name="And I click on order button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" time="0.30204032">
-        </testcase>
-        <testcase name="Then It should show me ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" time="1.2558912">
+        <testcase name="Then it should be login unSuccssfully" classname="as-a-user,-i-should-be-able-to-login-my-account;unsuccssfully-login" time="1.123304691">
         </testcase>
     </testsuite>
 </testsuites>

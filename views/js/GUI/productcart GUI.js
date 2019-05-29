@@ -60,42 +60,44 @@ class productCartGUI {
 
         let html = ` `;
 
+        html = `
+        <div class="cart_items">
+        <ul class="cart_items_list">`
+
 
 
         for (let x of app.cart.products) {
-
             html += `
-            <div class="cart_items">
-            <ul class="cart_items_list">
-
-        
-                <!-- Cart Item -->
                 <li class="cart_item item_list d-flex flex-lg-row  flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
-               
+        
                 <div class="product d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
-                        <div><div class="product_image ml-5"><img src="images/heine.png" alt=""></div></div>
-                        <div class="product_name_container">
-                            <div class="product_name ml-5"><a href="#">${x.productInCart.namn}</a></div>
-                            <div class="product_text"></div>
-                        </div>
+                    <div>
+                        <div class="product_image ml-5"><img src="images/heine.png" alt=""></div>
                     </div>
-                    
-                    <div class="product_price product_text ml-5"><span>Price: </span>${x.productInCart.prisinklmoms}</div>
-                    <div class="product_quantity_container">
-                        <div class="product_quantity ml-lg-auto mr-lg-auto text-center">
-                            <span class="product_text product_num "><input type="hidden" idart=${x.productInCart.artikelid}>${x.quantityInCart}</span>
-                            <div class="qty_sub qty_button trans_200 text-center "><input type="hidden" idart=${x.productInCart.artikelid}><span>-</span></div>
-                            <div class="qty_add qty_button trans_200 text-center"><input type="hidden" idart=${x.productInCart.artikelid}><span>+</span></div>
-                        </div>
+                    <div class="product_name_container">
+                        <div class="product_name ml-5"><a href="#">${x.productInCart.namn}</a></div>
+                        <div class="product_text"></div>
                     </div>
-                    <div class="product_total product_text ml-5"><span>Total: </span>${x.priceInCart}</div>
-
-                    <button type="button" class="remove_item btn btn-secondary ml-5"><input type="hidden" idart=${x.productInCart.artikelid}>Remove Item</button>
-                </li>
-            </ul>
-        </div> `;
-
+                </div>
+            
+                <div class="product_price product_text ml-5"><span>Price: </span>${x.productInCart.prisinklmoms}</div>
+                
+                <div class="product_quantity_container">
+                    <div class="product_quantity ml-lg-auto mr-lg-auto text-center">
+                        <span class="product_text product_num "><input type="hidden" idart=${x.productInCart.artikelid}>${x.quantityInCart}</span>
+                        <div class="qty_sub qty_button trans_200 text-center "><input type="hidden" idart=${x.productInCart.artikelid}><span>-</span></div>
+                        <div class="qty_add qty_button trans_200 text-center"><input type="hidden" idart=${x.productInCart.artikelid}><span>+</span></div>
+                    </div>
+                </div>
+            
+                <div class="product_total product_text ml-5"><span>Total: </span>${x.priceInCart}</div>
+            
+                <button type="button" class="remove_item btn btn-secondary ml-5"><input type="hidden" idart=${x.productInCart.artikelid}>Remove Item</button>
+            </li>`
         }
+        
+        html += '</ul></div> ';
+
         $('.cart_items tbody').html(html);
         $('.total tbody').html('Total sum of '+ app.cart.products.length +'  products: '+ Math.round( app.cart.totalSumOfProductsCart() ));
 
