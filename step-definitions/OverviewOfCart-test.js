@@ -54,7 +54,7 @@ module.exports = function () {
     let searchBox = await $('#myInput');
     //   assert.notEqual(searchBox, null, 'could not find the search bar');
 
-    await searchBox.sendKeys('Schlappeseppel ');
+    await searchBox.sendKeys('Excelso');
     await sleep(5000);
 
     let addButton = await $('.product-listing .product_cart');

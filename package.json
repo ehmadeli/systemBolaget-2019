@@ -15,7 +15,6 @@
       "shul1": "node node_modules/selenium-cucumber-js/index.js -b chrome -f ./features/adjustquantity.feature & exit 0",
     "shul2": "node node_modules/selenium-cucumber-js/index.js -b chrome -f ./features/shutbrowser.feature & exit 0",
 
-    "ahmad2": "node node_modules/selenium-cucumber-js/index.js -b chrome -f ./features/differentquantities.feature & exit 0",
     "ahmad1": "node node_modules/selenium-cucumber-js/index.js -b chrome -x 25000 f ./features/overviewofcart.feature & exit 0"
 
   },
