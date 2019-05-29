@@ -65,33 +65,8 @@ module.exports = function () {
 
   });
 
-    this.Then(/^It should show me ordering page$/, async function () {
-    let firstname = await $('#checkout_name');
-    await firstname.sendKeys('priya');
-    await sleep(1000);
-    let lastname = await $('#checkout_last_name');
-    assert(lastname != null, 'Could not find the last name');
-    await lastname.sendKeys('Panth');
-    await sleep(1000);
-    let addressline1 = await $('#checkout_address');
-    assert(addressline1 != null, 'Could not find the address');
-    await addressline1.sendKeys('systemBolaget');
-    await sleep(1000);
-    let address2 = await $('#checkout_address_2');
-    assert(address2 != null, 'Could not find the addressline2');
-    await address2.sendKeys('granövägen');
-    await sleep(1000);
-    let Zipcode = await $('#checkout_zipcode');
-    assert(Zipcode != null, 'Could not find the Zipcode');
-    await Zipcode.sendKeys('12345');
-    await sleep(1000);
-    let email = await $('#checkout_email');
-    assert(email != null, 'Could not find the emailadd');
-    await email.sendKeys('panthpriya12');
-    console.log('priya');
-    let button1 = await $('#myElement');
-    assert(button1 != null, 'Could not find chechout button');
-    await button1.click();
+  this.Then(/^It should show me ordering page$/, async function () {
+
   });
 
   this.When(/^I click on order button$/, async function () {
@@ -118,18 +93,16 @@ if (Array.isArray(add)===true){
     await cart.click();
     await sleep(1000);
     });
-
-    this.When(/^there are two products in the  cart$/, async function () {
+    
+    this.Given(/^there are two products in the cart$/, async function () {
+      helpers.loadPage("http://localhost:3306/categories.html");
       let searchButton = await $('#myInput');
         await searchButton.click();
         await sleep(1000);
         let add = await $('.product_cart');
-        assert(add != null, 'Could not find the product button');
-        console.log("HOW MANY ???", add.length)
+        assert(add != null, 'Could not find the add button');
         await add[0].click();
-        let add1 = await $('.product_cart');
-        assert(add1 != null, 'Could not find the add button');
-        console.log("HOW MANY ???", add.length)
+        assert(add.length > 1, 'Could not find the second add button');
         await add[1].click();
     })
     

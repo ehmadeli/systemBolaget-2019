@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;successfully--register-the-account" tests="4" failures="0" skipped="0">
+    <testsuite name="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" tests="6" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\Registrationform.feature">
+            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\purchasewithoutaccount.feature">
             </property>
         </properties>
-        <testcase name="Given that I am in registration page" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;successfully--register-the-account" time="0.116688213">
+        <testcase name="Given there are two products in the cart" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" time="1.655814827">
         </testcase>
-        <testcase name="When i input my name  in textbox" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;successfully--register-the-account" time="0.119381334">
+        <testcase name="And that I am on the web page localhost:3306/cart.html" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" time="1.41791104">
         </testcase>
-        <testcase name="When I  input  my password on textbox" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;successfully--register-the-account" time="0.07506304">
+        <testcase name="When I click on checkout button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" time="0.315269973">
         </testcase>
-        <testcase name="Then it should be signup Successfully" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;successfully--register-the-account" time="1.156340053">
+        <testcase name="And I filled the form with customer detail" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" time="9.426215254">
         </testcase>
-    </testsuite>
-    <testsuite name="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;unsuccessfully-register-the-account-." tests="4" failures="0" skipped="0">
-        <properties>
-            <property name="URI" value="C:\Users\Dindator\Desktop\systemBolaget-2019\features\Registrationform.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am in registration page" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;unsuccessfully-register-the-account-." time="0.1335744">
+        <testcase name="And I click on order button" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" time="0.257316694">
         </testcase>
-        <testcase name="When i input same username  in textbox" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;unsuccessfully-register-the-account-." time="0.11231104">
-        </testcase>
-        <testcase name="When i input same password  in textbox" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;unsuccessfully-register-the-account-." time="0.092041387">
-        </testcase>
-        <testcase name="Then It should be signup unSuccessfully" classname="as-a-user,-i-should-be-able-to-register-my-account-into-the-localhost-to-by-product-from-systembolaget.;unsuccessfully-register-the-account-." time="1.665790294">
+        <testcase name="Then It should show me ordering page" classname="as-a-user,-i-must-be-able-to-make-purchases-without-registering-an-account.-(payment-is-not-made-for-real);successfully-buy-differtent-products" time="0.000183893">
         </testcase>
     </testsuite>
 </testsuites>

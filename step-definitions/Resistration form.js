@@ -9,13 +9,13 @@ module.exports = function () {
   this.When(/^i input my name  in textbox$/, async function () {
     let username = await $('#name');
     assert(username != null, 'Could not find the username');
-    await username.sendKeys('priyapanth');
+    await username.sendKeys('priyapanth1');
 
   });
   this.When(/^I  input  my password on textbox$/, async function () {
     let password = await $('#word');
     assert(password != null, 'Could not find the password');
-    await password.sendKeys('panth');
+    await password.sendKeys('panth1');
   });
 
   this.Then(/^it should be signup Successfully$/, async function () {
@@ -28,19 +28,19 @@ module.exports = function () {
   this.When(/^i input  username  in textbox$/, async function () {
     let name = await $('#name');
     assert(name != null, 'Could not find the username');
-    await name.sendKeys('priyapanth');
+    await name.sendKeys('priyapanth1');
   });
 
   this.When(/^i input same username  in textbox$/,  async function () {
     let name = await $('#name');
     assert(name != null, 'Could not find the username');
-    await name.sendKeys('panth');
+    await name.sendKeys('panth1');
     
   });
   this.When(/^i input same password  in textbox$/, async function () {
     let password = await $('#word');
     assert(password != null, 'Could not find the password');
-    await password.sendKeys('panth');
+    await password.sendKeys('panth1');
   
   });
   this.Then(/^It should be signup unSuccessfully$/, async function () {
