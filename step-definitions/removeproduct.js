@@ -47,10 +47,8 @@ module.exports = function () {
   
     this.Then(/^product should be removed from the shopping cart$/, async function () {
      
-      await helpers.loadPage('http://localhost:3306/cart.html');
-     await sleep(3000);
-
-      let cartItem = await $('.cart_items .product_name a');
+ 
+      let cartItem = await $('.cart_items .product_name');
       assert(cartItem == null, "There is an item left in the cart");
          
     }); 
@@ -128,6 +126,7 @@ module.exports = function () {
 
 
       await searchBox.clear();
+      
       searchBar = await $('#myInput');
       assert.notEqual(searchBar, null, 'could not find the searchbar');
       await searchBar.sendKeys('Josés');
