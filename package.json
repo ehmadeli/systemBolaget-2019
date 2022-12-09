@@ -38,6 +38,6 @@
     "selenium-cucumber-js": "^1.6.2"
   },
   "devDependencies": {
-    "express": "^4.16.4"
+    "express": "^4.17.3"
   }
 }
